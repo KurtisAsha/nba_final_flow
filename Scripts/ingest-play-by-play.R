@@ -17,6 +17,11 @@ play_by_play_html <- list(
 play_by_play_raw <- map(play_by_play_html, ~html_element(., "table") %>%
                          html_table(header = FALSE))
 
+
+play_by_play_html$pbp_2024_06_06 %>% 
+ html_nodes("div.scorebox_meta")
+
+
 # Get row references for quarters
 quarter_rows <- map(play_by_play_raw, ~get_quarter_row_indicies(.x))
 
