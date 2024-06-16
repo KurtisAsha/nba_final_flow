@@ -21,13 +21,42 @@ play_by_play_raw <- map(play_by_play_html, ~html_element(., "table") %>%
 play_by_play_html$pbp_2024_06_06 %>% 
  html_nodes("div.scorebox_meta")
 
+# Select rows with times only and add quarter columnn
 
-# Get row references for quarters
+pbp_with_quarters <- map(play_by_play_raw, ~add_quarters_col(.x))
+
+        
+add_quarters_col <- function(play_by_play_raw) {
+
 quarter_rows <- map(play_by_play_raw, ~get_quarter_row_indicies(.x))
+ 
+ q1_pbp <- play_by_play_raw[quarter_rows[1, "min"]:quarter_rows[1, "max"], ] %<%
+ mutate(quarter = "quarter_1"}
+
+q2_pbp <- play_by_play_raw[quarter_rows[2, "min"]:quarter_rows[2, "max"], ] %<%
+ mutate(quarter = "quarter_2"}
+
+q3_pbp <- play_by_play_raw[quarter_rows[3, "min"]:quarter_rows[3, "max"], ] %<%
+ mutate(quarter = "quarter_3"}
+        
+q4_pbp <- play_by_play_raw[quarter_rows[4, "min"]:quarter_rows[4, "max"], ] %<%
+ mutate(quarter = "quarter_4"}
+
+pbp_with_quarters <- bind_rows(
+ q1_pbp,
+ q2_pbp,
+ q3_pbp,
+ q4_pbp
+ )
+
+  return(pbp_with_quarters)
+
+ }
+
+# Add sequence number
 
 
-# Quarter 1 selected for game pbp_2024_06_06
-play_by_play_raw$pbp_2024_06_06[quarter_rows$pbp_2024_06_06[1, "min"]:quarter_rows$pbp_2024_06_06[1, "max"], ]
+# Calculate timestamps # Add quarter columnn
 
 
 
