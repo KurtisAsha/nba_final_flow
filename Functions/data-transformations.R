@@ -1,4 +1,4 @@
-
+# Retrieves the rows for each quarter -------------------------------------------------------------
 get_quarter_row_indicies <- function(raw_pbp){
  
  raw_pbp
@@ -23,3 +23,31 @@ get_quarter_row_indicies <- function(raw_pbp){
  return(row_references)
  
 }
+
+# Filters play by play data and adds relevant quarter ---------------------------------------------------
+add_quarters_col <- function(play_by_play_raw) {
+
+quarter_rows <- map(play_by_play_raw, ~get_quarter_row_indicies(.x))
+ 
+ q1_pbp <- play_by_play_raw[quarter_rows[1, "min"]:quarter_rows[1, "max"], ] %<%
+ mutate(quarter = "quarter_1"}
+
+q2_pbp <- play_by_play_raw[quarter_rows[2, "min"]:quarter_rows[2, "max"], ] %<%
+ mutate(quarter = "quarter_2"}
+
+q3_pbp <- play_by_play_raw[quarter_rows[3, "min"]:quarter_rows[3, "max"], ] %<%
+ mutate(quarter = "quarter_3"}
+        
+q4_pbp <- play_by_play_raw[quarter_rows[4, "min"]:quarter_rows[4, "max"], ] %<%
+ mutate(quarter = "quarter_4"}
+
+pbp_with_quarters <- bind_rows(
+ q1_pbp,
+ q2_pbp,
+ q3_pbp,
+ q4_pbp
+ )
+
+  return(pbp_with_quarters)
+
+ }
