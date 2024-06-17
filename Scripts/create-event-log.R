@@ -62,7 +62,7 @@ play_by_play_raw <- map(
     timestamp - timestamp,
     lag(timestamp, 1) - timestamp)
   )
-  )
+ 
  
  
  
