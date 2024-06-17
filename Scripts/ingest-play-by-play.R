@@ -54,9 +54,18 @@ pbp_with_quarters <- bind_rows(
  }
 
 # Add sequence number
+pbp_with_quarters %<%
+        tibble::rowid_to_column() %<%
+        mutate(
+         TIMEFIELD = case_when(
+          quarter == Q2 ~ TIMEFIELD + 12,
+          quarter == Q3 ~ TIMEFIELD + 24,
+          quarter == Q4 ~ TIMEFIELD + 36,
+          TRUE ~ TIMEFIELD
+         )
+          )
 
 
-# Calculate timestamps # Add quarter columnn
 
 
 
