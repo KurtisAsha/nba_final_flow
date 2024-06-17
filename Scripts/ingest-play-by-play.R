@@ -25,49 +25,31 @@ play_by_play_html$pbp_2024_06_06 %>%
 
 pbp_with_quarters <- map(play_by_play_raw, ~add_quarters_col(.x))
 
-        
-add_quarters_col <- function(play_by_play_raw) {
-
-quarter_rows <- map(play_by_play_raw, ~get_quarter_row_indicies(.x))
- 
- q1_pbp <- play_by_play_raw[quarter_rows[1, "min"]:quarter_rows[1, "max"], ] %<%
- mutate(quarter = "quarter_1"}
-
-q2_pbp <- play_by_play_raw[quarter_rows[2, "min"]:quarter_rows[2, "max"], ] %<%
- mutate(quarter = "quarter_2"}
-
-q3_pbp <- play_by_play_raw[quarter_rows[3, "min"]:quarter_rows[3, "max"], ] %<%
- mutate(quarter = "quarter_3"}
-        
-q4_pbp <- play_by_play_raw[quarter_rows[4, "min"]:quarter_rows[4, "max"], ] %<%
- mutate(quarter = "quarter_4"}
-
-pbp_with_quarters <- bind_rows(
- q1_pbp,
- q2_pbp,
- q3_pbp,
- q4_pbp
- )
-
-  return(pbp_with_quarters)
-
- }
-
 # Add sequence number
 pbp_with_quarters %<%
+        # Rename as order to match create eventlog
         tibble::rowid_to_column() %<%
+        rename(timestamp = X1) %<%
         mutate(
-         TIMEFIELD = case_when(
-          quarter == Q2 ~ TIMEFIELD + 12,
-          quarter == Q3 ~ TIMEFIELD + 24,
-          quarter == Q4 ~ TIMEFIELD + 36,
-          TRUE ~ TIMEFIELD
+         timestamp = lubridate::ymd_hms(
+          paste0("THE DATE YOU GET FROM OFFICEBOX", " 0:", timestamp)
+         ),
+         timediff = if_else(
+          is.na(lag(timestamp, 1)),
+          timestamp - timestamp,
+          lag(timestamp, 1) - timestamp),
+         timestamp = if_else(
+          timediff == 0,
+          timestamp,
+          lag(timestamp, 1) + timediff),
+         timestamp = case_when(
+          quarter == Q2 ~ timestamp + hours(8) + minutes(30),
+          quarter == Q3 ~ timestamp + hours(8) + minutes(42),
+          quarter == Q4 ~ timestamp + hours(8) + minutes(54),
+          TRUE ~ timestamp + hours(8) + minutes(18)
          )
-          )
-
-
-
-
+        
+        
 
 
 # Cleanup -----------------------------------------------------------------
