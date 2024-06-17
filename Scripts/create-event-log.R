@@ -60,7 +60,10 @@ play_by_play_raw <- map(
    timediff = if_else(
     is.na(lag(timestamp, 1)),
     timestamp - timestamp,
-    lag(timestamp, 1) - timestamp)
+    lag(timestamp, 1) - timestamp),
+    timestamp = lubridate::ymd_hms(
+scorebox_dates$pbp_2024_06_06 + timediff
+      )
   )
  
  
