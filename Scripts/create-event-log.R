@@ -73,10 +73,15 @@ roster_data <- map(
 
 # Create event log --------------------------------------------------------
 
-nba_final_2024_game_5 <- read_csv("./Data/nba_final_2024_game_5.csv", col_names = TRUE)
+nba_final_2024_game_5 <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE) 
 
-nba_eventlog <-  eventlog(nba_final_2024_game_5,
-          case_id = "case_id", 
+nba_eventlog <-  nba_final_2024_game_5 %>% 
+ mutate(
+  activity_instance_id = seq_len(nrow(nba_final_2024_game_5)), 
+  lifecycle_id = "complete",
+  order = seq_len(nrow(nba_final_2024_game_5)),
+ ) %>% 
+ eventlog(case_id = "case_id", 
           activity_id = "activity_id", 
           activity_instance_id = "activity_instance_id", 
           lifecycle_id = "lifecycle_id", 
