@@ -12,9 +12,9 @@ source("./Functions/data-transformations.R")
 pbp_html <- list(
   pbp_2024_06_06 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406060BOS.html") 
  ,pbp_2024_06_09 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406090BOS.html")
- ,pbp_2024_06_12 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406090BOS.html")
- ,pbp_2024_06_14 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406090BOS.html")
- ,pbp_2024_06_17 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406090BOS.html")
+ ,pbp_2024_06_12 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406120BOS.html")
+ ,pbp_2024_06_14 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406140BOS.html")
+ ,pbp_2024_06_17 = read_html("https://www.basketball-reference.com/boxscores/pbp/202406170BOS.html")
 )
 
 # Get scorebox date
