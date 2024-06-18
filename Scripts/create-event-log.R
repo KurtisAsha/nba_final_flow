@@ -29,10 +29,15 @@ roster_html <- list(
 
 # Transform roster data ---------------------------------------------------
 
-roster_data <- map(
+roster_raw <- map(
  # Get roster table and convert to data frame
  roster_html, ~html_element(., "table") %>% 
-                    html_table()) %>% 
+                    html_table()) 
+
+roster_raw$bos_roster["team_name"] <- "Boston Celtics"
+roster_raw$dal_roster["team_name"] <- "Dallas Mavericks"
+
+roster_data <- roster_raw %>% 
  bind_rows() %>% 
  janitor::clean_names() %>% 
  rename(number = no, 
@@ -68,8 +73,6 @@ roster_data <- map(
   )
  
 # Data transformations ----------------------------------------------------
-
-
 
 # Create event log --------------------------------------------------------
 
