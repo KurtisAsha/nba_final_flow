@@ -1,0 +1,503 @@
+"order","timestamp","DAL_play","DAL_score_tally","score_board","BOS_score_tally","BOS_play","quarter","timediff"
+1,2024-06-09 20:00:00,"Jump ball: D. Gafford vs. A. Horford (D. Jones gains possession)","Jump ball: D. Gafford vs. A. Horford (D. Jones gains possession)","Jump ball: D. Gafford vs. A. Horford (D. Jones gains possession)","Jump ball: D. Gafford vs. A. Horford (D. Jones gains possession)","Jump ball: D. Gafford vs. A. Horford (D. Jones gains possession)","q1",0S
+2,2024-06-09 20:00:22,"L. Dončić makes 2-pt jump shot from 14 ft","+2","2-0","","","q1",22S
+3,2024-06-09 20:00:30,"","","2-2","+2","J. Holiday makes 2-pt layup from 1 ft (assist by D. White)","q1",30S
+4,2024-06-09 20:00:49,"K. Irving makes 2-pt layup from 1 ft","+2","4-2","","","q1",49S
+5,2024-06-09 20:01:01,"","","4-2","","Turnover by J. Brown (bad pass)","q1",61S
+6,2024-06-09 20:01:12,"P. Washington makes 3-pt jump shot from 28 ft (assist by K. Irving)","+3","7-2","","","q1",72S
+7,2024-06-09 20:01:32,"","","7-2","","J. Brown misses 2-pt jump shot from 7 ft","q1",92S
+8,2024-06-09 20:01:33,"Defensive rebound by Team","","7-2","","","q1",93S
+9,2024-06-09 20:01:48,"L. Dončić misses 2-pt jump shot from 17 ft","","7-2","","","q1",108S
+10,2024-06-09 20:01:52,"","","7-2","","Defensive rebound by J. Brown","q1",112S
+11,2024-06-09 20:01:55,"","","7-4","+2","A. Horford makes 2-pt dunk from 1 ft (assist by J. Brown)","q1",115S
+12,2024-06-09 20:02:08,"P. Washington misses 2-pt layup from 4 ft","","7-4","","","q1",128S
+13,2024-06-09 20:02:10,"Offensive rebound by Team","","7-4","","","q1",130S
+14,2024-06-09 20:02:10,"","","7-4","","Loose ball foul by J. Holiday (drawn by D. Gafford)","q1",130S
+15,2024-06-09 20:02:20,"L. Dončić makes 2-pt jump shot from 12 ft","+2","9-4","","","q1",140S
+16,2024-06-09 20:02:40,"","","9-6","+2","J. Holiday makes 2-pt layup from 2 ft (assist by J. Tatum)","q1",160S
+17,2024-06-09 20:02:55,"D. Gafford misses 2-pt layup from 7 ft","","9-6","","","q1",175S
+18,2024-06-09 20:02:57,"Offensive rebound by Team","","9-6","","","q1",177S
+19,2024-06-09 20:02:57,"","","9-6","","Loose ball foul by A. Horford (drawn by D. Gafford)","q1",177S
+20,2024-06-09 20:03:09,"L. Dončić makes 2-pt jump shot from 10 ft","+2","11-6","","","q1",189S
+21,2024-06-09 20:03:27,"","","11-6","","J. Tatum misses 2-pt layup from 2 ft","q1",207S
+22,2024-06-09 20:03:28,"Defensive rebound by D. Gafford","","11-6","","","q1",208S
+23,2024-06-09 20:03:34,"K. Irving misses 2-pt layup from 6 ft (block by D. White)","","11-6","","","q1",214S
+24,2024-06-09 20:03:35,"Offensive rebound by Team","","11-6","","","q1",215S
+25,2024-06-09 20:03:35,"D. Lively enters the game for D. Gafford","","11-6","","","q1",215S
+26,2024-06-09 20:03:41,"K. Irving makes 2-pt jump shot from 20 ft (assist by L. Dončić)","+2","13-6","","","q1",221S
+27,2024-06-09 20:03:42,"","","13-6","","Boston full timeout","q1",222S
+28,2024-06-09 20:03:56,"","","13-6","","J. Holiday misses 3-pt jump shot from 26 ft","q1",236S
+29,2024-06-09 20:03:58,"","","13-6","","Offensive rebound by J. Brown","q1",238S
+30,2024-06-09 20:04:04,"","","13-6","","A. Horford misses 3-pt jump shot from 23 ft","q1",244S
+31,2024-06-09 20:04:06,"Defensive rebound by L. Dončić","","13-6","","","q1",246S
+32,2024-06-09 20:04:16,"L. Dončić misses 3-pt jump shot from 26 ft","","13-6","","","q1",256S
+33,2024-06-09 20:04:17,"","","13-6","","Defensive rebound by A. Horford","q1",257S
+34,2024-06-09 20:04:33,"","","13-6","","J. Tatum misses 3-pt jump shot from 27 ft","q1",273S
+35,2024-06-09 20:04:34,"Defensive rebound by P. Washington","","13-6","","","q1",274S
+36,2024-06-09 20:04:45,"Turnover by L. Dončić (lost ball; steal by D. White)","","13-6","","","q1",285S
+37,2024-06-09 20:04:49,"","","13-6","","Shooting foul by P. Washington (drawn by D. White)","q1",289S
+38,2024-06-09 20:04:49,"Dallas full timeout","","13-6","","","q1",289S
+39,2024-06-09 20:04:49,"Instant Replay (Challenge: Ruling Stands)","","13-6","","","q1",289S
+40,2024-06-09 20:04:49,"M. Kleber enters the game for P. Washington","","13-6","","","q1",289S
+41,2024-06-09 20:04:49,"","","13-6","","K. Porziņģis enters the game for A. Horford","q1",289S
+42,2024-06-09 20:04:49,"","","13-7","+1","D. White makes free throw 1 of 2","q1",289S
+43,2024-06-09 20:04:49,"","","13-8","+1","D. White makes free throw 2 of 2","q1",289S
+44,2024-06-09 20:05:06,"M. Kleber misses 3-pt jump shot from 25 ft","","13-8","","","q1",306S
+45,2024-06-09 20:05:08,"Offensive rebound by D. Lively","","13-8","","","q1",308S
+46,2024-06-09 20:05:13,"D. Lively misses 2-pt layup from 5 ft (block by J. Holiday)","","13-8","","","q1",313S
+47,2024-06-09 20:05:14,"Offensive rebound by D. Lively","","13-8","","","q1",314S
+48,2024-06-09 20:05:15,"Turnover by D. Lively (bad pass; steal by J. Brown)","","13-8","","","q1",315S
+49,2024-06-09 20:05:17,"","","13-10","+2","J. Brown makes 2-pt dunk from 1 ft","q1",317S
+50,2024-06-09 20:05:36,"M. Kleber misses 2-pt jump shot from 23 ft","","13-10","","","q1",336S
+51,2024-06-09 20:05:37,"","","13-10","","Defensive rebound by K. Porziņģis","q1",337S
+52,2024-06-09 20:05:44,"","","13-10","","Personal foul by M. Kleber (drawn by J. Tatum)","q1",344S
+53,2024-06-09 20:05:54,"","","13-10","","Personal foul by K. Irving (drawn by J. Tatum)","q1",354S
+54,2024-06-09 20:06:02,"","","13-10","","Shooting foul by D. Jones (drawn by K. Porziņģis)","q1",362S
+55,2024-06-09 20:06:02,"","","13-11","+1","K. Porziņģis makes free throw 1 of 2","q1",362S
+56,2024-06-09 20:06:02,"J. Green enters the game for K. Irving","","13-11","","","q1",362S
+57,2024-06-09 20:06:02,"","","13-12","+1","K. Porziņģis makes free throw 2 of 2","q1",362S
+58,2024-06-09 20:06:10,"M. Kleber misses 2-pt layup from 2 ft (block by K. Porziņģis)","","13-12","","","q1",370S
+59,2024-06-09 20:06:11,"","","13-12","","Defensive rebound by J. Tatum","q1",371S
+60,2024-06-09 20:06:23,"","","13-12","","J. Tatum misses 2-pt jump shot from 13 ft","q1",383S
+61,2024-06-09 20:06:25,"Defensive rebound by D. Lively","","13-12","","","q1",385S
+62,2024-06-09 20:06:38,"Shooting foul by J. Tatum (drawn by L. Dončić)","","13-12","","","q1",398S
+63,2024-06-09 20:06:38,"L. Dončić misses free throw 1 of 2","","13-12","","","q1",398S
+64,2024-06-09 20:06:38,"Offensive rebound by Team","","13-12","","","q1",398S
+65,2024-06-09 20:06:38,"","","13-12","","S. Hauser enters the game for D. White","q1",398S
+66,2024-06-09 20:06:38,"L. Dončić misses free throw 2 of 2","","13-12","","","q1",398S
+67,2024-06-09 20:06:40,"","","13-12","","Defensive rebound by K. Porziņģis","q1",400S
+68,2024-06-09 20:06:55,"","","13-12","","S. Hauser misses 3-pt jump shot from 28 ft","q1",415S
+69,2024-06-09 20:06:57,"Defensive rebound by L. Dončić","","13-12","","","q1",417S
+70,2024-06-09 20:07:03,"Turnover by L. Dončić (bad pass)","","13-12","","","q1",423S
+71,2024-06-09 20:07:07,"","","13-12","","Turnover by J. Brown (traveling)","q1",427S
+72,2024-06-09 20:07:23,"L. Dončić makes 2-pt jump shot from 18 ft","+2","15-12","","","q1",443S
+73,2024-06-09 20:07:42,"","","15-14","+2","K. Porziņģis makes 2-pt jump shot from 13 ft","q1",462S
+74,2024-06-09 20:07:59,"Turnover by L. Dončić (traveling)","","15-14","","","q1",479S
+75,2024-06-09 20:07:59,"P. Washington enters the game for D. Jones","","15-14","","","q1",479S
+76,2024-06-09 20:08:11,"","","15-14","","K. Porziņģis misses 3-pt jump shot from 27 ft","q1",491S
+77,2024-06-09 20:08:12,"Defensive rebound by D. Lively","","15-14","","","q1",492S
+78,2024-06-09 20:08:20,"L. Dončić makes 3-pt jump shot from 26 ft","+3","18-14","","","q1",500S
+79,2024-06-09 20:08:40,"","","18-14","","S. Hauser misses 3-pt jump shot from 25 ft","q1",520S
+80,2024-06-09 20:08:41,"","","18-14","","Offensive rebound by J. Tatum","q1",521S
+81,2024-06-09 20:08:41,"","","18-14","","J. Tatum misses 2-pt layup at rim","q1",521S
+82,2024-06-09 20:08:43,"Defensive rebound by M. Kleber","","18-14","","","q1",523S
+83,2024-06-09 20:08:51,"P. Washington makes 2-pt jump shot from 6 ft","+2","20-14","","","q1",531S
+84,2024-06-09 20:09:08,"","","20-14","","J. Brown misses 3-pt jump shot from 28 ft","q1",548S
+85,2024-06-09 20:09:09,"","","20-14","","Offensive rebound by Team","q1",549S
+86,2024-06-09 20:09:09,"Loose ball foul by J. Green (drawn by J. Holiday)","","20-14","","","q1",549S
+87,2024-06-09 20:09:09,"","","20-15","+1","J. Holiday makes free throw 1 of 2","q1",549S
+88,2024-06-09 20:09:09,"K. Irving enters the game for M. Kleber","","20-15","","","q1",549S
+89,2024-06-09 20:09:09,"","","20-15","","A. Horford enters the game for K. Porziņģis","q1",549S
+90,2024-06-09 20:09:09,"","","20-15","","D. White enters the game for J. Tatum","q1",549S
+91,2024-06-09 20:09:09,"","","20-16","+1","J. Holiday makes free throw 2 of 2","q1",549S
+92,2024-06-09 20:09:22,"Shooting foul by J. Holiday (drawn by L. Dončić)","","20-16","","","q1",562S
+93,2024-06-09 20:09:22,"L. Dončić makes free throw 1 of 2","+1","21-16","","","q1",562S
+94,2024-06-09 20:09:22,"L. Dončić makes free throw 2 of 2","+1","22-16","","","q1",562S
+95,2024-06-09 20:09:40,"","","22-16","","Personal foul by K. Irving (drawn by S. Hauser)","q1",580S
+96,2024-06-09 20:09:40,"M. Kleber enters the game for L. Dončić","","22-16","","","q1",580S
+97,2024-06-09 20:09:40,"","","22-17","+1","S. Hauser makes free throw 1 of 2","q1",580S
+98,2024-06-09 20:09:40,"D. Gafford enters the game for D. Lively","","22-17","","","q1",580S
+99,2024-06-09 20:09:40,"","","22-17","","K. Porziņģis enters the game for J. Holiday","q1",580S
+100,2024-06-09 20:09:40,"","","22-18","+1","S. Hauser makes free throw 2 of 2","q1",580S
+101,2024-06-09 20:09:58,"Turnover by K. Irving (traveling)","","22-18","","","q1",598S
+102,2024-06-09 20:10:05,"","","22-18","","Personal foul by M. Kleber (drawn by K. Porziņģis)","q1",605S
+103,2024-06-09 20:10:05,"","","22-19","+1","K. Porziņģis makes free throw 1 of 2","q1",605S
+104,2024-06-09 20:10:05,"","","22-20","+1","K. Porziņģis makes free throw 2 of 2","q1",605S
+105,2024-06-09 20:10:29,"M. Kleber misses 3-pt jump shot from 29 ft","","22-20","","","q1",629S
+106,2024-06-09 20:10:30,"Offensive rebound by Team","","22-20","","","q1",630S
+107,2024-06-09 20:10:30,"","","22-20","","Loose ball foul by J. Brown (drawn by D. Gafford)","q1",630S
+108,2024-06-09 20:10:30,"D. Gafford misses free throw 1 of 2","","22-20","","","q1",630S
+109,2024-06-09 20:10:30,"Offensive rebound by Team","","22-20","","","q1",630S
+110,2024-06-09 20:10:30,"D. Gafford misses free throw 2 of 2","","22-20","","","q1",630S
+111,2024-06-09 20:10:30,"Offensive rebound by P. Washington","","22-20","","","q1",630S
+112,2024-06-09 20:10:32,"Turnover by P. Washington (lost ball; steal by D. White)","","22-20","","","q1",632S
+113,2024-06-09 20:10:51,"","","22-22","+2","K. Porziņģis makes 2-pt jump shot from 16 ft (assist by J. Brown)","q1",651S
+114,2024-06-09 20:11:15,"K. Irving makes 2-pt jump shot from 8 ft","+2","24-22","","","q1",675S
+115,2024-06-09 20:11:29,"","","24-22","","D. White misses 3-pt jump shot from 27 ft","q1",689S
+116,2024-06-09 20:11:31,"Defensive rebound by D. Gafford","","24-22","","","q1",691S
+117,2024-06-09 20:11:52,"K. Irving makes 2-pt layup from 1 ft","+2","26-22","","","q1",712S
+118,2024-06-09 20:11:55,"","","26-25","+3","A. Horford makes 3-pt jump shot from 24 ft (assist by J. Brown)","q1",715S
+119,2024-06-09 20:12:00,"Shooting foul by K. Porziņģis (drawn by J. Green)","","26-25","","","q1",720S
+120,2024-06-09 20:12:00,"J. Green misses free throw 1 of 3","","26-25","","","q1",720S
+121,2024-06-09 20:12:00,"Offensive rebound by Team","","26-25","","","q1",720S
+122,2024-06-09 20:12:00,"J. Green makes free throw 2 of 3","+1","27-25","","","q1",720S
+123,2024-06-09 20:12:00,"J. Hardy enters the game for K. Irving","","27-25","","","q1",720S
+124,2024-06-09 20:12:00,"J. Green makes free throw 3 of 3","+1","28-25","","","q1",720S
+125,2024-06-09 20:10:30,"Offensive rebound by Team","","22-20","","","q2",630S
+126,2024-06-09 20:10:30,"","","22-20","","Loose ball foul by J. Brown (drawn by D. Gafford)","q2",630S
+127,2024-06-09 20:10:30,"D. Gafford misses free throw 1 of 2","","22-20","","","q2",630S
+128,2024-06-09 20:10:30,"Offensive rebound by Team","","22-20","","","q2",630S
+129,2024-06-09 20:10:30,"D. Gafford misses free throw 2 of 2","","22-20","","","q2",630S
+130,2024-06-09 20:10:30,"Offensive rebound by P. Washington","","22-20","","","q2",630S
+131,2024-06-09 20:10:32,"Turnover by P. Washington (lost ball; steal by D. White)","","22-20","","","q2",632S
+132,2024-06-09 20:10:51,"","","22-22","+2","K. Porziņģis makes 2-pt jump shot from 16 ft (assist by J. Brown)","q2",651S
+133,2024-06-09 20:11:15,"K. Irving makes 2-pt jump shot from 8 ft","+2","24-22","","","q2",675S
+134,2024-06-09 20:11:29,"","","24-22","","D. White misses 3-pt jump shot from 27 ft","q2",689S
+135,2024-06-09 20:11:31,"Defensive rebound by D. Gafford","","24-22","","","q2",691S
+136,2024-06-09 20:11:52,"K. Irving makes 2-pt layup from 1 ft","+2","26-22","","","q2",712S
+137,2024-06-09 20:11:55,"","","26-25","+3","A. Horford makes 3-pt jump shot from 24 ft (assist by J. Brown)","q2",715S
+138,2024-06-09 20:12:00,"Shooting foul by K. Porziņģis (drawn by J. Green)","","26-25","","","q2",720S
+139,2024-06-09 20:12:00,"J. Green misses free throw 1 of 3","","26-25","","","q2",720S
+140,2024-06-09 20:12:00,"Offensive rebound by Team","","26-25","","","q2",720S
+141,2024-06-09 20:12:00,"J. Green makes free throw 2 of 3","+1","27-25","","","q2",720S
+142,2024-06-09 20:12:00,"J. Hardy enters the game for K. Irving","","27-25","","","q2",720S
+143,2024-06-09 20:12:00,"J. Green makes free throw 3 of 3","+1","28-25","","","q2",720S
+144,2024-06-09 20:12:00,"End of 1st quarter","End of 1st quarter","End of 1st quarter","End of 1st quarter","End of 1st quarter","q2",720S
+145,NA,"2nd Q","2nd Q","2nd Q","2nd Q","2nd Q","q2",NA
+146,NA,"Dallas","","Score","","Boston","q2",NA
+147,NA,"Start of 2nd quarter","Start of 2nd quarter","Start of 2nd quarter","Start of 2nd quarter","Start of 2nd quarter","q2",NA
+148,NA,"","","28-27","+2","D. White makes 2-pt jump shot from 10 ft (assist by J. Brown)","q2",NA
+149,NA,"L. Dončić makes 2-pt jump shot from 16 ft","+2","30-27","","","q2",NA
+150,NA,"","","30-29","+2","J. Brown makes 2-pt dunk from 1 ft (assist by J. Tatum)","q2",NA
+151,NA,"L. Dončić makes 3-pt jump shot from 24 ft (assist by K. Irving)","+3","33-29","","","q2",NA
+152,NA,"","","33-29","","P. Pritchard misses 3-pt jump shot from 29 ft","q2",NA
+153,NA,"Defensive rebound by D. Exum","","33-29","","","q2",NA
+154,NA,"Turnover by D. Exum (out of bounds lost ball)","","33-29","","","q2",NA
+155,NA,"","","33-29","","Turnover by J. Brown (out of bounds lost ball)","q2",NA
+156,NA,"L. Dončić makes 2-pt jump shot from 14 ft","+2","35-29","","","q2",NA
+157,NA,"","","35-29","","Turnover by D. White (bad pass)","q2",NA
+158,NA,"","","35-29","","J. Holiday enters the game for J. Brown","q2",NA
+159,NA,"L. Dončić misses 3-pt jump shot from 26 ft","","35-29","","","q2",NA
+160,NA,"","","35-29","","Defensive rebound by J. Holiday","q2",NA
+161,NA,"","","35-31","+2","J. Tatum makes 2-pt layup from 2 ft (assist by J. Holiday)","q2",NA
+162,NA,"K. Irving misses 2-pt jump shot from 13 ft","","35-31","","","q2",NA
+163,NA,"","","35-31","","Defensive rebound by J. Holiday","q2",NA
+164,NA,"","","35-33","+2","K. Porziņģis makes 2-pt jump shot from 9 ft (assist by J. Tatum)","q2",NA
+165,NA,"L. Dončić misses 3-pt jump shot from 26 ft","","35-33","","","q2",NA
+166,NA,"","","35-33","","Defensive rebound by D. White","q2",NA
+167,NA,"","","35-33","","J. Tatum misses 3-pt jump shot from 24 ft","q2",NA
+168,NA,"","","35-33","","Offensive rebound by P. Pritchard","q2",NA
+169,NA,"","","35-33","","J. Tatum misses 2-pt layup from 1 ft","q2",NA
+170,NA,"Defensive rebound by L. Dončić","","35-33","","","q2",NA
+171,NA,"Offensive foul by D. Lively (drawn by K. Porziņģis)","","35-33","","","q2",NA
+172,NA,"Turnover by D. Lively (offensive foul)","","35-33","","","q2",NA
+173,NA,"J. Green enters the game for D. Exum","","35-33","","","q2",NA
+174,NA,"D. Jones enters the game for K. Irving","","35-33","","","q2",NA
+175,NA,"","","35-33","","A. Horford enters the game for K. Porziņģis","q2",NA
+176,NA,"","","35-36","+3","D. White makes 3-pt jump shot from 24 ft (assist by J. Tatum)","q2",NA
+177,NA,"P. Washington misses 3-pt jump shot from 28 ft","","35-36","","","q2",NA
+178,NA,"","","35-36","","Defensive rebound by A. Horford","q2",NA
+179,NA,"","","35-36","","D. White misses 2-pt layup from 2 ft (block by P. Washington)","q2",NA
+180,NA,"","","35-36","","Offensive rebound by D. White","q2",NA
+181,NA,"","","35-36","","Turnover by J. Tatum (lost ball; steal by L. Dončić)","q2",NA
+182,NA,"D. Lively misses 2-pt hook shot from 5 ft","","35-36","","","q2",NA
+183,NA,"","","35-36","","Defensive rebound by A. Horford","q2",NA
+184,NA,"","","35-36","","Boston full timeout","q2",NA
+185,NA,"M. Kleber enters the game for D. Lively","","35-36","","","q2",NA
+186,NA,"","","35-36","","D. White misses 3-pt jump shot from 26 ft","q2",NA
+187,NA,"Defensive rebound by M. Kleber","","35-36","","","q2",NA
+188,NA,"Def 3 sec tech foul by Team","","35-36","","","q2",NA
+189,NA,"L. Dončić misses technical free throw","","35-36","","","q2",NA
+190,NA,"Offensive rebound by Team","","35-36","","","q2",NA
+191,NA,"K. Irving enters the game for P. Washington","","35-36","","","q2",NA
+192,NA,"","","35-36","","J. Brown enters the game for D. White","q2",NA
+193,NA,"J. Green misses 3-pt jump shot from 27 ft","","35-36","","","q2",NA
+194,NA,"","","35-36","","Defensive rebound by J. Tatum","q2",NA
+195,NA,"","","35-38","+2","J. Brown makes 2-pt layup from 1 ft","q2",NA
+196,NA,"J. Green misses 3-pt jump shot from 23 ft","","35-38","","","q2",NA
+197,NA,"Offensive rebound by D. Jones","","35-38","","","q2",NA
+198,NA,"J. Green makes 2-pt layup from 2 ft (assist by D. Jones)","+2","37-38","","","q2",NA
+199,NA,"","","37-40","+2","J. Holiday makes 2-pt layup from 3 ft (assist by P. Pritchard)","q2",NA
+200,NA,"D. Jones makes 2-pt layup from 3 ft (assist by L. Dončić)","+2","39-40","","","q2",NA
+201,NA,"","","39-40","","Turnover by J. Brown (bad pass; steal by D. Jones)","q2",NA
+202,NA,"D. Jones makes 2-pt layup from 1 ft","+2","41-40","","","q2",NA
+203,NA,"Shooting foul by J. Tatum (drawn by D. Jones)","","41-40","","","q2",NA
+204,NA,"P. Washington enters the game for L. Dončić","","41-40","","","q2",NA
+205,NA,"D. Jones makes free throw 1 of 1","+1","42-40","","","q2",NA
+206,NA,"","","42-42","+2","J. Holiday makes 2-pt layup from 3 ft (assist by J. Tatum)","q2",NA
+207,NA,"K. Irving misses 2-pt jump shot from 10 ft","","42-42","","","q2",NA
+208,NA,"","","42-42","","Defensive rebound by A. Horford","q2",NA
+209,NA,"","","42-42","","Personal foul by M. Kleber (drawn by J. Tatum)","q2",NA
+210,NA,"D. Lively enters the game for M. Kleber","","42-42","","","q2",NA
+211,NA,"","","42-42","","J. Tatum misses 3-pt jump shot from 26 ft","q2",NA
+212,NA,"","","42-42","","Offensive rebound by J. Holiday","q2",NA
+213,NA,"","","42-42","","J. Holiday misses 2-pt jump shot from 14 ft","q2",NA
+214,NA,"Defensive rebound by J. Green","","42-42","","","q2",NA
+215,NA,"Dallas full timeout","","42-42","","","q2",NA
+216,NA,"L. Dončić enters the game for J. Green","","42-42","","","q2",NA
+217,NA,"","","42-42","","K. Porziņģis enters the game for A. Horford","q2",NA
+218,NA,"","","42-42","","D. White enters the game for P. Pritchard","q2",NA
+219,NA,"D. Jones misses 3-pt jump shot from 26 ft","","42-42","","","q2",NA
+220,NA,"","","42-42","","Defensive rebound by J. Holiday","q2",NA
+221,NA,"","","42-44","+2","J. Holiday makes 2-pt layup from 2 ft (assist by J. Tatum)","q2",NA
+222,NA,"K. Irving misses 2-pt jump shot from 10 ft","","42-44","","","q2",NA
+223,NA,"","","42-44","","Defensive rebound by K. Porziņģis","q2",NA
+224,NA,"","","42-44","","D. White misses 2-pt jump shot from 9 ft","q2",NA
+225,NA,"Defensive rebound by D. Lively","","42-44","","","q2",NA
+226,NA,"D. Jones makes 2-pt dunk from 1 ft (assist by L. Dončić)","+2","44-44","","","q2",NA
+227,NA,"","","44-46","+2","J. Holiday makes 2-pt layup from 5 ft (assist by J. Tatum)","q2",NA
+228,NA,"L. Dončić makes 3-pt jump shot from 27 ft","+3","47-46","","","q2",NA
+229,NA,"","","47-48","+2","J. Tatum makes 2-pt layup from 3 ft","q2",NA
+230,NA,"","","47-48","","Shooting foul by D. Jones (drawn by J. Tatum)","q2",NA
+231,NA,"","","47-49","+1","J. Tatum makes free throw 1 of 1","q2",NA
+232,NA,"K. Irving misses 2-pt jump shot from 17 ft","","47-49","","","q2",NA
+233,NA,"Offensive rebound by D. Lively","","47-49","","","q2",NA
+234,NA,"K. Irving makes 2-pt jump shot from 10 ft (assist by D. Jones)","+2","49-49","","","q2",NA
+235,NA,"","","49-49","","Personal foul by L. Dončić (drawn by J. Brown)","q2",NA
+236,NA,"","","49-50","+1","J. Brown makes free throw 1 of 2","q2",NA
+237,NA,"D. Gafford enters the game for D. Jones","","49-50","","","q2",NA
+238,NA,"J. Green enters the game for D. Lively","","49-50","","","q2",NA
+239,NA,"","","49-50","","A. Horford enters the game for K. Porziņģis","q2",NA
+240,NA,"","","49-51","+1","J. Brown makes free throw 2 of 2","q2",NA
+241,NA,"P. Washington misses 2-pt layup from 4 ft","","49-51","","","q2",NA
+242,NA,"","","49-51","","Defensive rebound by A. Horford","q2",NA
+243,NA,"","","49-54","+3","J. Holiday makes 3-pt jump shot from 23 ft (assist by J. Tatum)","q2",NA
+244,NA,"D. Gafford makes 2-pt dunk from 1 ft (assist by K. Irving)","+2","51-54","","","q2",NA
+245,NA,"","","51-54","","Violation by Team (def goaltending)","q2",NA
+246,NA,"Defensive rebound by D. Lively","","42-44","","","q3",NA
+247,NA,"D. Jones makes 2-pt dunk from 1 ft (assist by L. Dončić)","+2","44-44","","","q3",NA
+248,NA,"","","44-46","+2","J. Holiday makes 2-pt layup from 5 ft (assist by J. Tatum)","q3",NA
+249,NA,"L. Dončić makes 3-pt jump shot from 27 ft","+3","47-46","","","q3",NA
+250,NA,"","","47-48","+2","J. Tatum makes 2-pt layup from 3 ft","q3",NA
+251,NA,"","","47-48","","Shooting foul by D. Jones (drawn by J. Tatum)","q3",NA
+252,NA,"","","47-49","+1","J. Tatum makes free throw 1 of 1","q3",NA
+253,NA,"K. Irving misses 2-pt jump shot from 17 ft","","47-49","","","q3",NA
+254,NA,"Offensive rebound by D. Lively","","47-49","","","q3",NA
+255,NA,"K. Irving makes 2-pt jump shot from 10 ft (assist by D. Jones)","+2","49-49","","","q3",NA
+256,NA,"","","49-49","","Personal foul by L. Dončić (drawn by J. Brown)","q3",NA
+257,NA,"","","49-50","+1","J. Brown makes free throw 1 of 2","q3",NA
+258,NA,"D. Gafford enters the game for D. Jones","","49-50","","","q3",NA
+259,NA,"J. Green enters the game for D. Lively","","49-50","","","q3",NA
+260,NA,"","","49-50","","A. Horford enters the game for K. Porziņģis","q3",NA
+261,NA,"","","49-51","+1","J. Brown makes free throw 2 of 2","q3",NA
+262,NA,"P. Washington misses 2-pt layup from 4 ft","","49-51","","","q3",NA
+263,NA,"","","49-51","","Defensive rebound by A. Horford","q3",NA
+264,NA,"","","49-54","+3","J. Holiday makes 3-pt jump shot from 23 ft (assist by J. Tatum)","q3",NA
+265,NA,"D. Gafford makes 2-pt dunk from 1 ft (assist by K. Irving)","+2","51-54","","","q3",NA
+266,NA,"","","51-54","","Violation by Team (def goaltending)","q3",NA
+267,NA,"End of 2nd quarter","End of 2nd quarter","End of 2nd quarter","End of 2nd quarter","End of 2nd quarter","q3",NA
+268,NA,"3rd Q","3rd Q","3rd Q","3rd Q","3rd Q","q3",NA
+269,NA,"Dallas","","Score","","Boston","q3",NA
+270,NA,"Start of 3rd quarter","Start of 3rd quarter","Start of 3rd quarter","Start of 3rd quarter","Start of 3rd quarter","q3",NA
+271,NA,"","","51-54","","J. Tatum misses 3-pt jump shot from 26 ft","q3",NA
+272,NA,"Defensive rebound by D. Gafford","","51-54","","","q3",NA
+273,NA,"D. Gafford makes 2-pt dunk from 1 ft (assist by L. Dončić)","+2","53-54","","","q3",NA
+274,NA,"","","53-54","","Turnover by J. Brown (lost ball; steal by L. Dončić)","q3",NA
+275,NA,"P. Washington makes 2-pt jump shot from 9 ft (assist by L. Dončić)","+2","55-54","","","q3",NA
+276,NA,"","","55-54","","D. White misses 3-pt jump shot from 28 ft","q3",NA
+277,NA,"","","55-54","","Offensive rebound by J. Holiday","q3",NA
+278,NA,"","","55-56","+2","J. Tatum makes 2-pt layup from 2 ft (assist by J. Holiday)","q3",NA
+279,NA,"","","55-56","","Shooting foul by K. Irving (drawn by J. Tatum)","q3",NA
+280,NA,"","","55-57","+1","J. Tatum makes free throw 1 of 1","q3",NA
+281,NA,"D. Gafford makes 2-pt layup from 4 ft (assist by L. Dončić)","+2","57-57","","","q3",NA
+282,NA,"","","57-57","","J. Brown misses 3-pt jump shot from 24 ft","q3",NA
+283,NA,"Defensive rebound by L. Dončić","","57-57","","","q3",NA
+284,NA,"Turnover by L. Dončić (lost ball; steal by J. Brown)","","57-57","","","q3",NA
+285,NA,"","","57-59","+2","J. Holiday makes 2-pt layup from 3 ft (assist by A. Horford)","q3",NA
+286,NA,"K. Irving misses 3-pt jump shot from 32 ft","","57-59","","","q3",NA
+287,NA,"","","57-59","","Defensive rebound by J. Holiday","q3",NA
+288,NA,"","","57-62","+3","D. White makes 3-pt jump shot from 23 ft (assist by J. Tatum)","q3",NA
+289,NA,"L. Dončić makes 2-pt jump shot from 17 ft (assist by P. Washington)","+2","59-62","","","q3",NA
+290,NA,"","","59-62","","J. Brown misses 3-pt jump shot from 27 ft (block by D. Gafford)","q3",NA
+291,NA,"Defensive rebound by L. Dončić","","59-62","","","q3",NA
+292,NA,"P. Washington misses 3-pt jump shot from 24 ft","","59-62","","","q3",NA
+293,NA,"","","59-62","","Defensive rebound by D. White","q3",NA
+294,NA,"","","59-62","","J. Brown misses 2-pt jump shot from 13 ft","q3",NA
+295,NA,"Defensive rebound by P. Washington","","59-62","","","q3",NA
+296,NA,"D. Jones misses 3-pt jump shot from 24 ft","","59-62","","","q3",NA
+297,NA,"Offensive rebound by D. Jones","","59-62","","","q3",NA
+298,NA,"Turnover by D. Jones (bad pass; steal by J. Holiday)","","59-62","","","q3",NA
+299,NA,"","","59-62","","Personal foul by P. Washington (drawn by J. Holiday)","q3",NA
+300,NA,"","","59-63","+1","J. Tatum makes free throw 1 of 1","q3",NA
+301,NA,"D. Lively enters the game for D. Gafford","","59-63","","","q3",NA
+302,NA,"","","59-63","","D. White misses 3-pt jump shot from 27 ft","q3",NA
+303,NA,"Defensive rebound by L. Dončić","","59-63","","","q3",NA
+304,NA,"D. Lively makes 2-pt dunk from 1 ft (assist by L. Dončić)","+2","61-63","","","q3",NA
+305,NA,"","","61-63","","Boston full timeout","q3",NA
+306,NA,"","","61-63","","K. Porziņģis enters the game for A. Horford","q3",NA
+307,NA,"","","61-63","","K. Porziņģis misses 3-pt jump shot from 27 ft","q3",NA
+308,NA,"","","61-63","","Offensive rebound by D. White","q3",NA
+309,NA,"","","61-65","+2","K. Porziņģis makes 2-pt jump shot from 15 ft (assist by J. Brown)","q3",NA
+310,NA,"K. Irving misses 2-pt jump shot from 12 ft","","61-65","","","q3",NA
+311,NA,"","","61-65","","Defensive rebound by D. White","q3",NA
+312,NA,"","","61-65","","D. White misses 3-pt jump shot from 28 ft","q3",NA
+313,NA,"Defensive rebound by P. Washington","","61-65","","","q3",NA
+314,NA,"P. Washington makes 2-pt jump shot from 8 ft (assist by L. Dončić)","+2","63-65","","","q3",NA
+315,NA,"","","63-67","+2","J. Tatum makes 2-pt layup from 2 ft (assist by J. Brown)","q3",NA
+316,NA,"","","63-67","","Shooting foul by P. Washington (drawn by J. Tatum)","q3",NA
+317,NA,"M. Kleber enters the game for P. Washington","","63-67","","","q3",NA
+318,NA,"","","63-67","","J. Tatum misses free throw 1 of 1","q3",NA
+319,NA,"Defensive rebound by Team","","63-67","","","q3",NA
+320,NA,"","","63-67","","Loose ball foul by K. Porziņģis (drawn by D. Lively)","q3",NA
+321,NA,"Turnover by L. Dončić (bad pass; steal by J. Tatum)","","63-67","","","q3",NA
+322,NA,"","","63-67","","Personal foul by M. Kleber (drawn by J. Tatum)","q3",NA
+323,NA,"","","63-67","","J. Tatum misses 2-pt layup from 3 ft","q3",NA
+324,NA,"Defensive rebound by L. Dončić","","63-67","","","q3",NA
+325,NA,"D. Jones misses 3-pt jump shot from 27 ft","","63-67","","","q3",NA
+326,NA,"","","63-67","","Defensive rebound by Team","q3",NA
+327,NA,"","","63-69","+2","J. Brown makes 2-pt layup from 2 ft (assist by D. White)","q3",NA
+328,NA,"Dallas full timeout","","63-69","","","q3",NA
+329,NA,"J. Green enters the game for K. Irving","","63-69","","","q3",NA
+330,NA,"J. Hardy enters the game for D. Jones","","63-69","","","q3",NA
+331,NA,"P. Washington enters the game for M. Kleber","","63-69","","","q3",NA
+332,NA,"","","63-69","","S. Hauser enters the game for D. White","q3",NA
+333,NA,"P. Washington misses 3-pt jump shot from 26 ft","","63-69","","","q3",NA
+334,NA,"","","63-69","","Defensive rebound by J. Tatum","q3",NA
+335,NA,"","","63-69","","K. Porziņģis misses 3-pt jump shot from 28 ft","q3",NA
+336,NA,"Defensive rebound by D. Lively","","63-69","","","q3",NA
+337,NA,"Turnover by L. Dončić (bad pass; steal by J. Brown)","","63-69","","","q3",NA
+338,NA,"","","63-71","+2","J. Holiday makes 2-pt dunk at rim (assist by J. Brown)","q3",NA
+339,NA,"J. Green misses 3-pt jump shot from 24 ft","","63-71","","","q3",NA
+340,NA,"","","63-71","","Defensive rebound by J. Holiday","q3",NA
+341,NA,"","","63-71","","Personal foul by J. Green (drawn by J. Brown)","q3",NA
+342,NA,"","","63-72","+1","J. Brown makes free throw 1 of 2","q3",NA
+343,NA,"K. Irving enters the game for L. Dončić","","63-72","","","q3",NA
+344,NA,"","","63-73","+1","J. Brown makes free throw 2 of 2","q3",NA
+345,NA,"K. Irving misses 3-pt jump shot from 26 ft","","63-73","","","q3",NA
+346,NA,"","","63-73","","Defensive rebound by J. Tatum","q3",NA
+347,NA,"","","63-75","+2","J. Holiday makes 2-pt layup from 3 ft (assist by J. Tatum)","q3",NA
+348,NA,"Dallas full timeout","","63-75","","","q3",NA
+349,NA,"L. Dončić enters the game for J. Green","","63-75","","","q3",NA
+350,NA,"D. Exum enters the game for J. Hardy","","63-75","","","q3",NA
+351,NA,"D. Gafford enters the game for D. Lively","","63-75","","","q3",NA
+352,NA,"L. Dončić makes 3-pt jump shot from 26 ft (assist by D. Exum)","+3","66-75","","","q3",NA
+353,NA,"","","66-77","+2","J. Tatum makes 2-pt layup from 1 ft","q3",NA
+354,NA,"Shooting foul by J. Brown (drawn by L. Dončić)","","66-77","","","q3",NA
+355,NA,"L. Dončić makes free throw 1 of 2","+1","67-77","","","q3",NA
+356,NA,"L. Dončić misses free throw 2 of 2","","67-77","","","q3",NA
+357,NA,"","","67-77","","Defensive rebound by J. Tatum","q3",NA
+358,NA,"","","67-80","+3","J. Brown makes 3-pt jump shot from 27 ft (assist by K. Porziņģis)","q3",NA
+359,NA,"D. Exum makes 3-pt jump shot from 28 ft (assist by L. Dončić)","+3","70-80","","","q3",NA
+360,NA,"","","70-80","","S. Hauser misses 3-pt jump shot from 26 ft","q3",NA
+361,NA,"","","70-80","","Offensive rebound by J. Holiday","q3",NA
+362,NA,"","","70-80","","Turnover by J. Tatum (lost ball; steal by L. Dončić)","q3",NA
+363,NA,"D. Gafford misses 2-pt dunk from 1 ft (block by K. Porziņģis)","","70-80","","","q3",NA
+364,NA,"","","70-80","","Defensive rebound by J. Brown","q3",NA
+365,NA,"","","70-80","","S. Hauser misses 3-pt jump shot from 24 ft","q3",NA
+366,NA,"Defensive rebound by D. Gafford","","70-80","","","q3",NA
+367,NA,"Shooting foul by S. Hauser (drawn by P. Washington)","","70-80","","","q3",NA
+368,NA,"P. Washington makes free throw 1 of 2","+1","71-80","","","q3",NA
+369,NA,"D. Jones enters the game for L. Dončić","","71-80","","","q3",NA
+370,NA,"","","71-80","","A. Horford enters the game for K. Porziņģis","q3",NA
+371,NA,"P. Washington makes free throw 2 of 2","+1","72-80","","","q3",NA
+372,NA,"","","72-80","","J. Tatum misses 3-pt jump shot from 28 ft","q3",NA
+373,NA,"","","72-80","","Offensive rebound by J. Brown","q3",NA
+374,NA,"","","72-80","","S. Hauser misses 3-pt jump shot from 24 ft","q3",NA
+375,NA,"Defensive rebound by D. Gafford","","72-80","","","q3",NA
+376,NA,"Shooting foul by J. Holiday (drawn by K. Irving)","","72-80","","","q3",NA
+377,NA,"K. Irving makes free throw 1 of 2","+1","73-80","","","q3",NA
+378,NA,"J. Green enters the game for P. Washington","","73-80","","","q3",NA
+379,NA,"","","73-80","","P. Pritchard enters the game for J. Holiday","q3",NA
+380,NA,"K. Irving makes free throw 2 of 2","+1","74-80","","","q3",NA
+381,NA,"","","74-83","+3","P. Pritchard makes 3-pt jump shot from 34 ft","q3",NA
+382,NA,"","","74-83","","Instant Replay (Request: Ruling Stands)","q3",NA
+383,NA,"","","70-80","","Defensive rebound by J. Brown","q4",NA
+384,NA,"","","70-80","","S. Hauser misses 3-pt jump shot from 24 ft","q4",NA
+385,NA,"Defensive rebound by D. Gafford","","70-80","","","q4",NA
+386,NA,"Shooting foul by S. Hauser (drawn by P. Washington)","","70-80","","","q4",NA
+387,NA,"P. Washington makes free throw 1 of 2","+1","71-80","","","q4",NA
+388,NA,"D. Jones enters the game for L. Dončić","","71-80","","","q4",NA
+389,NA,"","","71-80","","A. Horford enters the game for K. Porziņģis","q4",NA
+390,NA,"P. Washington makes free throw 2 of 2","+1","72-80","","","q4",NA
+391,NA,"","","72-80","","J. Tatum misses 3-pt jump shot from 28 ft","q4",NA
+392,NA,"","","72-80","","Offensive rebound by J. Brown","q4",NA
+393,NA,"","","72-80","","S. Hauser misses 3-pt jump shot from 24 ft","q4",NA
+394,NA,"Defensive rebound by D. Gafford","","72-80","","","q4",NA
+395,NA,"Shooting foul by J. Holiday (drawn by K. Irving)","","72-80","","","q4",NA
+396,NA,"K. Irving makes free throw 1 of 2","+1","73-80","","","q4",NA
+397,NA,"J. Green enters the game for P. Washington","","73-80","","","q4",NA
+398,NA,"","","73-80","","P. Pritchard enters the game for J. Holiday","q4",NA
+399,NA,"K. Irving makes free throw 2 of 2","+1","74-80","","","q4",NA
+400,NA,"","","74-83","+3","P. Pritchard makes 3-pt jump shot from 34 ft","q4",NA
+401,NA,"","","74-83","","Instant Replay (Request: Ruling Stands)","q4",NA
+402,NA,"End of 3rd quarter","End of 3rd quarter","End of 3rd quarter","End of 3rd quarter","End of 3rd quarter","q4",NA
+403,NA,"4th Q","4th Q","4th Q","4th Q","4th Q","q4",NA
+404,NA,"Dallas","","Score","","Boston","q4",NA
+405,NA,"Start of 4th quarter","Start of 4th quarter","Start of 4th quarter","Start of 4th quarter","Start of 4th quarter","q4",NA
+406,NA,"P. Washington makes 2-pt hook shot from 5 ft (assist by L. Dončić)","+2","76-83","","","q4",NA
+407,NA,"","","76-83","","Turnover by J. Tatum (traveling)","q4",NA
+408,NA,"L. Dončić misses 2-pt jump shot from 14 ft","","76-83","","","q4",NA
+409,NA,"Offensive rebound by D. Gafford","","76-83","","","q4",NA
+410,NA,"D. Gafford misses 2-pt layup at rim","","76-83","","","q4",NA
+411,NA,"","","76-83","","Defensive rebound by A. Horford","q4",NA
+412,NA,"","","76-83","","J. Tatum misses 3-pt jump shot from 26 ft","q4",NA
+413,NA,"Defensive rebound by P. Washington","","76-83","","","q4",NA
+414,NA,"Turnover by L. Dončić (lost ball; steal by P. Pritchard)","","76-83","","","q4",NA
+415,NA,"","","76-85","+2","J. Brown makes 2-pt dunk from 2 ft (assist by J. Tatum)","q4",NA
+416,NA,"D. Gafford makes 2-pt layup from 1 ft (assist by K. Irving)","+2","78-85","","","q4",NA
+417,NA,"","","78-88","+3","J. Tatum makes 3-pt jump shot from 23 ft (assist by P. Pritchard)","q4",NA
+418,NA,"L. Dončić misses 2-pt jump shot from 17 ft","","78-88","","","q4",NA
+419,NA,"","","78-88","","Defensive rebound by J. Tatum","q4",NA
+420,NA,"","","78-88","","A. Horford misses 3-pt jump shot from 26 ft","q4",NA
+421,NA,"Defensive rebound by K. Irving","","78-88","","","q4",NA
+422,NA,"K. Irving misses 2-pt hook shot from 4 ft","","78-88","","","q4",NA
+423,NA,"Offensive rebound by D. Gafford","","78-88","","","q4",NA
+424,NA,"Shooting foul by D. White (drawn by D. Gafford)","","78-88","","","q4",NA
+425,NA,"D. Gafford misses free throw 1 of 2","","78-88","","","q4",NA
+426,NA,"Offensive rebound by Team","","78-88","","","q4",NA
+427,NA,"D. Jones enters the game for L. Dončić","","78-88","","","q4",NA
+428,NA,"M. Kleber enters the game for P. Washington","","78-88","","","q4",NA
+429,NA,"","","78-88","","J. Holiday enters the game for J. Brown","q4",NA
+430,NA,"D. Gafford makes free throw 2 of 2","+1","79-88","","","q4",NA
+431,NA,"","","79-90","+2","D. White makes 2-pt jump shot from 9 ft (assist by J. Tatum)","q4",NA
+432,NA,"D. Gafford makes 2-pt dunk from 1 ft (assist by K. Irving)","+2","81-90","","","q4",NA
+433,NA,"","","81-90","","J. Tatum misses 2-pt jump shot from 19 ft","q4",NA
+434,NA,"Defensive rebound by K. Irving","","81-90","","","q4",NA
+435,NA,"K. Irving makes 2-pt layup from 1 ft","+2","83-90","","","q4",NA
+436,NA,"","","83-90","","Boston full timeout","q4",NA
+437,NA,"L. Dončić enters the game for D. Exum","","83-90","","","q4",NA
+438,NA,"","","83-90","","K. Porziņģis enters the game for P. Pritchard","q4",NA
+439,NA,"","","83-93","+3","D. White makes 3-pt jump shot from 27 ft","q4",NA
+440,NA,"K. Irving misses 2-pt jump shot from 19 ft","","83-93","","","q4",NA
+441,NA,"","","83-93","","Defensive rebound by A. Horford","q4",NA
+442,NA,"","","83-93","","Shooting foul by K. Irving (drawn by J. Tatum)","q4",NA
+443,NA,"","","83-94","+1","J. Tatum makes free throw 1 of 2","q4",NA
+444,NA,"P. Washington enters the game for M. Kleber","","83-94","","","q4",NA
+445,NA,"","","83-94","","J. Brown enters the game for A. Horford","q4",NA
+446,NA,"","","83-95","+1","J. Tatum makes free throw 2 of 2","q4",NA
+447,NA,"L. Dončić misses 2-pt jump shot from 15 ft","","83-95","","","q4",NA
+448,NA,"","","83-95","","Defensive rebound by K. Porziņģis","q4",NA
+449,NA,"","","83-95","","J. Tatum misses 2-pt layup from 5 ft","q4",NA
+450,NA,"Defensive rebound by D. Jones","","83-95","","","q4",NA
+451,NA,"P. Washington misses 3-pt jump shot from 23 ft","","83-95","","","q4",NA
+452,NA,"Offensive rebound by P. Washington","","83-95","","","q4",NA
+453,NA,"P. Washington makes 2-pt layup from 1 ft","+2","85-95","","","q4",NA
+454,NA,"","","85-95","","J. Holiday misses 3-pt jump shot from 23 ft","q4",NA
+455,NA,"Defensive rebound by D. Gafford","","85-95","","","q4",NA
+456,NA,"L. Dončić misses 3-pt jump shot from 26 ft","","85-95","","","q4",NA
+457,NA,"","","85-95","","Defensive rebound by J. Tatum","q4",NA
+458,NA,"","","85-97","+2","J. Brown makes 2-pt jump shot from 11 ft","q4",NA
+459,NA,"K. Irving makes 2-pt layup from 3 ft","+2","87-97","","","q4",NA
+460,NA,"","","87-97","","J. Brown misses 2-pt jump shot from 11 ft","q4",NA
+461,NA,"Defensive rebound by L. Dončić","","87-97","","","q4",NA
+462,NA,"D. Gafford makes 2-pt dunk from 1 ft (assist by K. Irving)","+2","89-97","","","q4",NA
+463,NA,"","","89-97","","Boston full timeout","q4",NA
+464,NA,"","","89-97","","A. Horford enters the game for K. Porziņģis","q4",NA
+465,NA,"","","89-97","","D. White misses 3-pt jump shot from 23 ft","q4",NA
+466,NA,"Defensive rebound by D. Gafford","","89-97","","","q4",NA
+467,NA,"Turnover by L. Dončić (bad pass; steal by D. White)","","89-97","","","q4",NA
+468,NA,"","","89-100","+3","J. Holiday makes 3-pt jump shot from 27 ft (assist by A. Horford)","q4",NA
+469,NA,"K. Irving misses 3-pt jump shot from 27 ft","","89-100","","","q4",NA
+470,NA,"","","89-100","","Defensive rebound by J. Tatum","q4",NA
+471,NA,"","","89-100","","J. Tatum misses 2-pt dunk from 3 ft","q4",NA
+472,NA,"","","89-100","","Offensive rebound by J. Holiday","q4",NA
+473,NA,"","","89-103","+3","D. White makes 3-pt jump shot from 26 ft (assist by J. Holiday)","q4",NA
+474,NA,"Dallas full timeout","","89-103","","","q4",NA
+475,NA,"M. Kleber enters the game for D. Gafford","","89-103","","","q4",NA
+476,NA,"D. Jones makes 2-pt layup from 2 ft (assist by L. Dončić)","+2","91-103","","","q4",NA
+477,NA,"","","91-103","","D. White misses 2-pt jump shot from 11 ft","q4",NA
+478,NA,"Defensive rebound by L. Dončić","","91-103","","","q4",NA
+479,NA,"Shooting foul by D. White (drawn by D. Jones)","","91-103","","","q4",NA
+480,NA,"D. Jones makes free throw 1 of 2","+1","92-103","","","q4",NA
+481,NA,"D. Jones makes free throw 2 of 2","+1","93-103","","","q4",NA
+482,NA,"","","93-103","","Turnover by J. Brown (bad pass; steal by L. Dončić)","q4",NA
+483,NA,"Turnover by K. Irving (lost ball; steal by A. Horford)","","93-103","","","q4",NA
+484,NA,"","","93-103","","J. Tatum misses 2-pt jump shot from 16 ft","q4",NA
+485,NA,"Defensive rebound by L. Dončić","","93-103","","","q4",NA
+486,NA,"Shooting foul by J. Brown (drawn by P. Washington)","","93-103","","","q4",NA
+487,NA,"P. Washington makes free throw 1 of 2","+1","94-103","","","q4",NA
+488,NA,"P. Washington makes free throw 2 of 2","+1","95-103","","","q4",NA
+489,NA,"","","95-103","","J. Brown misses 3-pt jump shot from 30 ft","q4",NA
+490,NA,"Defensive rebound by L. Dončić","","95-103","","","q4",NA
+491,NA,"L. Dončić makes 2-pt layup from 2 ft","+2","97-103","","","q4",NA
+492,NA,"Shooting foul by A. Horford (drawn by L. Dončić)","","97-103","","","q4",NA
+493,NA,"L. Dončić makes free throw 1 of 1","+1","98-103","","","q4",NA
+494,NA,"","","98-103","","J. Tatum misses 2-pt dunk from 3 ft (block by D. Jones)","q4",NA
+495,NA,"Defensive rebound by P. Washington","","98-103","","","q4",NA
+496,NA,"P. Washington misses 2-pt dunk from 2 ft (block by D. White)","","98-103","","","q4",NA
+497,NA,"","","98-103","","Defensive rebound by J. Holiday","q4",NA
+498,NA,"","","98-105","+2","J. Brown makes 2-pt layup from 3 ft","q4",NA
+499,NA,"Dallas full timeout","","98-105","","","q4",NA
+500,NA,"L. Dončić misses 3-pt jump shot from 25 ft","","98-105","","","q4",NA
+501,NA,"","","98-105","","Defensive rebound by J. Holiday","q4",NA
+502,NA,"","","98-105","","Turnover by Team (shot clock)","q4",NA
