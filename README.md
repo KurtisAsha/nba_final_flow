@@ -17,3 +17,7 @@ Activities: Pass, Shoot, Rebound
 Who
 
 Players. Named as resources.
+
+
+Every ball ends with a shot
+Free throws are each a play

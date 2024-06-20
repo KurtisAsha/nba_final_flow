@@ -170,24 +170,52 @@ play_26,dribble,20:06:05,white,1,1,,,,,8,13
 play_26,pass,20:06:06,white,1,1,,,,,8,13
 play_26,dribble,20:06:09,jrue,1,1,,,,,8,13
 play_26,shot,20:06:14,jrue,0,1,,driving layup,1,2,8,13
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
+play_27,defensive-rebound,20:06:15,green,1,1,,,,,8,13
+play_27,dribble,20:06:15,green,1,1,,,,,8,13
+play_27,pass,20:06:21,green,1,1,,,,,8,13
+play_27,pass,20:06:22,washington,1,1,,,,,8,13
+play_27,pass,20:06:27,doncic,1,1,,,,,8,13
+play_27,pass,20:06:27,green,1,1,,,,,8,13
+play_27,dribble,20:06:29,doncic,1,1,,,,,8,13
+play_27,pass,20:06:29,doncic,1,1,assist,,,,8,13
+play_27,shot,20:06:32,green,1,1,,jump shot,28,3,11,13
+play_28,pass,20:06:34,white,1,1,,,,,11,13
+play_28,dribble,20:06:37,tatum,1,1,,,,,11,13
+play_28,pass,20:06:38,tatum,1,1,,,,,11,13
+play_28,dribble,20:06:40,jrue,1,1,,,,,11,13
+play_28,pass,20:06:42,jrue,1,1,,,,,11,13
+play_28,dribble,20:06:44,tatum,1,1,,,,,11,13
+play_28,shot,20:06:51,tatum,0,1,,driving layup,7,2,11,13
+play_29,block,20:06:51,washington,1,1,,,,,11,13
+play_29,jump ball,20:06:52,tatum,1,1,,,,,11,13
+play_29,shot,20:06:57,white,1,1,,jump shot,26,3,11,16
+play_30,pass,20:06:58,washington,1,1,,,,,11,16
+play_30,dribble,20:07:00,doncic,1,1,,,,,11,16
+play_30,pass,20:07:09,doncic,1,1,,,,,11,16
+play_30,pass,20:07:10,washington,1,1,,,,,11,16
+play_30,pass,20:07:11,green,1,1,,,,,11,16
+play_30,shot,20:07:13,washington,0,1,,,27,3,11,16
+play_31,defensive-rebound,20:07:15,brown,1,1,,,,,11,16
+play_31,dribble,20:07:16,brown,1,1,,,,,11,16
+play_31,pass,20:07:21,brown,1,1,,,,,11,16
+play_31,dribble,20:07:22,tatum,1,1,,,,,11,16
+play_31,pass,20:07:23,tatum,1,1,,,,,11,16
+play_31,shot,20:07:26,porzingas,0,1,,jump shot,25,3,11,16
+play_32,offensive-rebound,20:07:28,hauser,1,1,,,,,11,16
+play_32,pass,20:07:28,hasuer,1,1,,,,,11,16
+play_32,dribble,20:07:31,tatum,1,1,,,,,11,16
+play_32,shot,20:07:37,tatum,0,1,,turnaround fadeaway shot,7,2,11,16
+play_33,defensive-rebound,20:07:39,doncic,1,1,,,,,11,16
+play_33,dribble,20:07:39,doncic,1,1,,,,,11,16
+play_33,pass,20:07:46,doncic,1,1,,,,,11,16
+play_33,dribble,20:07:48,washington,1,1,,,,,11,16
+play_33,pass,20:07:49,washington,1,1,,,,,11,16
+play_33,dribble,20:07:50,kyrie,1,1,,,,,11,16
+play_33,pass,20:07:51,kyrie,1,1,,,,,11,16
+play_33,pass,20:07:54,lively,1,1,,,,,11,16
+play_33,dribble,20:07:55,doncic,1,1,,,,,11,16
+play_33,pass,20:07:58,doncic,1,1,,,,,11,16
+play_33,dribble,20:07:59,kyrie,1,1,,,,,11,16
+play_33,pass,20:08:02,kyrie,1,1,assist,,,,11,16
+play_33,shot,20:08:03,lively,1,1,,alley oop dunk,1,2,13,16
+play_34,,,,,,,,,,,
