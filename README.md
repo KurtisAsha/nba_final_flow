@@ -2,6 +2,8 @@
 
 # Data
 
+https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play
+
 Thanks to https://www.basketball-reference.com/ for all the data
 
 Why 
