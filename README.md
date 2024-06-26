@@ -2,7 +2,7 @@
 
 # Data
 
-https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play
+https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=Q2
 
 Thanks to https://www.basketball-reference.com/ for all the data
 
@@ -20,4 +20,6 @@ Players. Named as resources.
 
 
 Every ball ends with a shot
-Free throws are each a play
+Free throws are within the same play
+Each activity is from the activity commencement
+
