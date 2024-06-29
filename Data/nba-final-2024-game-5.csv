@@ -595,3 +595,52 @@ seq,case_id,activity_id,timestamp,resource_id,outcome,shot_type,shot_distance_by
 594,play_93,pass-to-assist,20:23:58,Al Horford,1,,,,46,64
 595,play_93,dribble,20:23:58,Payton Pritchard,1,,,,46,64
 596,play_93,shot,20:24:00,Payton Pritchard,1,pullup jump shot,49,3,46,67
+597,play_94,pass,20:24:00,P.J. Washington,1,,,,46,67
+598,play_94,dribble,20:24:03,Derrick Jones Jr.,1,,,,46,67
+599,play_94,pass,20:24:03,Derrick Jones Jr.,1,,,,46,67
+600,play_94,dribble,20:24:04,Kyrie Irving,1,,,,46,67
+601,play_94,pass,20:24:08,Kyrie Irving,1,,,,46,67
+602,play_94,dribble,20:24:13,Daniel Gafford,1,,,,46,67
+603,play_94,shot,20:24:15,Daniel Gafford,0,driving layup,3,2,46,67
+604,play_95,defensive-rebound,20:24:16,Jayson Tatum,1,,,,46,67
+605,play_95,dribble,20:24:16,Jayson Tatum,1,,,,46,67
+606,play_95,pass,20:24:18,Jayson Tatum,1,,,,46,67
+607,play_95,dribble,20:24:19,Derrick White,1,,,,46,67
+608,play_95,pass,20:24:21,Derrick White,1,,,,46,67
+609,play_95,dribble,20:24:22,Jayson Tatum,1,,,,46,67
+610,play_95,shot,20:24:25,Jayson Tatum,0,turnaround fadeaway shot,12,2,46,67
+611,play_96,defensive-rebound,20:24:26,P.J. Washington,1,,,,46,67
+612,play_96,pass,20:24:26,P.J. Washington,1,,,,46,67
+613,play_96,dribble,20:24:27,Luka Doncic,1,,,,46,67
+614,play_96,shot,20:24:36,Luka Doncic,1,turnaround fadeaway shot,13,2,48,67
+615,play_97,pass,20:24:38,Jrue Holiday,1,,,,48,67
+616,play_97,dribble,20:24:39,Derrick White,1,,,,48,67
+617,play_97,pass,20:24:48,Derrick White,1,,,,48,67
+618,play_97,pass,20:24:49,Al Horford,1,,,,48,67
+619,play_97,dribble,20:24:50,Jayson Tatum,1,,,,48,67
+620,play_97,pass,20:24:51,Jrue Holiday,1,,,,48,67
+621,play_97,dribble,20:24:52,Jrue Holiday,1,,,,48,67
+622,play_97,pass-to-assist,20:24:54,Jrue Holiday,1,,,,48,67
+623,play_97,shot,20:24:56,Jayson Tatum,1,Dunk,1,2,48,69
+624,play_98,pass,20:25:00,Daniel Gafford,1,,,,48,69
+625,play_98,dribble,20:25:01,P.J. Washington,1,,,,48,69
+626,play_98,pass,20:25:05,P.J. Washington,1,,,,48,69
+627,play_98,pass,20:25:06,Kyrie Irving,1,,,,48,69
+628,play_98,pass,20:25:08,Daniel Gafford,1,,,,48,69
+629,play_98,shot,20:25:12,Kyrie Irving,0,jump shot,25,3,48,69
+630,play_99,defensive-rebound,20:25:13,Derrick White,1,,,,48,69
+631,play_99,dribble,20:25:14,Derrick White,1,,,,48,69
+632,play_99,pass,20:25:18,Derrick White,1,,,,48,69
+633,play_99,dribble,20:25:23,Jayson Tatum,1,,,,48,69
+634,play_99,foul,20:25:29,Daniel Gafford,1,,,,48,69
+635,play_99,pass,20:25:29,Jayson Tatum,1,,,,48,69
+636,play_99,dribble,20:25:31,Jrue Holiday,1,,,,48,69
+637,play_99,pass-to-assist,20:25:36,Jrue Holiday,1,,,,48,69
+638,play_99,dribble,20:25:37,Derrick White,1,,,,48,69
+639,play_99,shot,20:25:38,Derrick White,1,step back jump shot,27,3,48,72
+640,play_100,pass,20:25:41,Derrick Jones Jr.,1,,,,48,72
+641,play_100,dribble,20:25:43,Kyrie Irving,1,,,,48,72
+642,play_100,pass,20:25:57,Kyrie Irving,1,,,,48,72
+643,play_100,foul,20:25:57,Jrue Holiday,1,,,,48,72
+644,play_100,pass-to-assist,20:25:58,Kyrie Irving,1,,,,48,72
+645,play_100,shot,20:26:00,Daniel Gafford,1,cutting layup shot,3,2,50,72

@@ -2,7 +2,7 @@
 
 # Data
 
-https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=Q2
+https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=Q3
 
 Thanks to https://www.basketball-reference.com/ for all the data
 
