@@ -309,7 +309,7 @@ seq,case_id,activity_id,timestamp,resource_id,outcome,shot_type,shot_distance_by
 308,play_48,defensive-rebound,20:11:56,P.J. Washington,1,,,,18,28
 309,play_48,pass,20:11:59,Dante Exum,1,,,,18,28
 310,play_48,dribble,20:11:59,Dante Exum,1,,,,18,28
-311,play_48,pass,20:12:00,Derrick Jones Jr.,1,,,,18,28
+311,play_48,pass-to-start-quarter,20:12:00,Derrick Jones Jr.,1,,,,18,28
 312,play_48,dribble,20:12:01,P.J. Washington,1,,,,18,28
 313,play_48,pass,20:12:06,P.J. Washington,1,,,,18,28
 314,play_48,dribble,20:12:06,Dante Exum,1,,,,18,28
@@ -595,7 +595,7 @@ seq,case_id,activity_id,timestamp,resource_id,outcome,shot_type,shot_distance_by
 594,play_93,pass-to-assist,20:23:58,Al Horford,1,,,,46,64
 595,play_93,dribble,20:23:58,Payton Pritchard,1,,,,46,64
 596,play_93,shot,20:24:00,Payton Pritchard,1,pullup jump shot,49,3,46,67
-597,play_94,pass,20:24:00,P.J. Washington,1,,,,46,67
+597,play_94,pass-to-start-quarter,20:24:00,P.J. Washington,1,,,,46,67
 598,play_94,dribble,20:24:03,Derrick Jones Jr.,1,,,,46,67
 599,play_94,pass,20:24:03,Derrick Jones Jr.,1,,,,46,67
 600,play_94,dribble,20:24:04,Kyrie Irving,1,,,,46,67
@@ -798,49 +798,204 @@ seq,case_id,activity_id,timestamp,resource_id,outcome,shot_type,shot_distance_by
 797,play_121,foul,20:31:19,Tim Hardaway Jr.,1,,,,62,80
 798,play_121,shot,20:31:19,Jayson Tatum,1,free throw,15,1,62,81
 799,play_121,shot,20:31:19,Jayson Tatum,1,free throw,15,1,62,82
-800,,,,,,,,,,
-801,,,,,,,,,,
-802,,,,,,,,,,
-803,,,,,,,,,,
-804,,,,,,,,,,
-805,,,,,,,,,,
-806,,,,,,,,,,
-807,,,,,,,,,,
-808,,,,,,,,,,
-809,,,,,,,,,,
-810,,,,,,,,,,
-811,,,,,,,,,,
-812,,,,,,,,,,
-813,,,,,,,,,,
-814,,,,,,,,,,
-815,,,,,,,,,,
-816,,,,,,,,,,
-817,,,,,,,,,,
-818,,,,,,,,,,
-819,,,,,,,,,,
-820,,,,,,,,,,
-821,,,,,,,,,,
-822,,,,,,,,,,
-823,,,,,,,,,,
-824,,,,,,,,,,
-825,,,,,,,,,,
-826,,,,,,,,,,
-827,,,,,,,,,,
-828,,,,,,,,,,
-829,,,,,,,,,,
-830,,,,,,,,,,
-831,,,,,,,,,,
-832,,,,,,,,,,
-833,,,,,,,,,,
-834,,,,,,,,,,
-835,,,,,,,,,,
-836,,,,,,,,,,
-837,,,,,,,,,,
-838,,,,,,,,,,
-839,,,,,,,,,,
-840,,,,,,,,,,
-841,,,,,,,,,,
-842,,,,,,,,,,
-843,,,,,,,,,,
-844,,,,,,,,,,
-845,,,,,,,,,,
+800,play_122,pass,20:31:19,P.J. Washington,1,,,,62,82
+801,play_122,dribble,20:31:21,Kyrie Irving,1,,,,62,82
+802,play_122,shot,20:31:27,Kyrie Irving,0,pullup jump shot,10,2,62,82
+803,play_123,defensive-rebound,20:31:31,Al Horford,1,,,,62,82
+804,play_123,pass,20:31:31,Al Horford,1,,,,62,82
+805,play_123,dribble,20:31:32,Derrick White,1,,,,62,82
+806,play_123,pass,20:31:35,Derrick White,1,,,,62,82
+807,play_123,dribble,20:31:40,Jayson Tatum,1,,,,62,82
+808,play_123,shot,20:31:48,Jayson Tatum,0,driving layup,3,2,62,82
+809,play_124,defensive-rebound,20:31:50,Luka Doncic,1,,,,62,82
+810,play_124,dribble,20:31:50,Luka Doncic,1,,,,62,82
+811,play_124,shot,20:31:55,Luka Doncic,1,running layup,3,2,64,82
+812,play_125,pass,20:31:56,Al Horford,1,,,,64,82
+813,play_125,dribble,20:31:57,Derrick White,1,,,,64,82
+814,play_125,pass,20:32:03,Derrick White,1,,,,64,82
+815,play_125,pass,20:32:07,Jaylen Brown,1,,,,64,82
+816,play_125,pass,20:32:08,Derrick White,1,,,,64,82
+817,play_125,pass,20:32:10,Al Horford,1,,,,64,82
+818,play_125,dribble,20:32:11,Jayson Tatum,1,,,,64,82
+819,play_125,pass,20:32:17,Derrick White,1,,,,64,82
+820,play_125,shot,20:32:19,Jaylen Brown,0,fadeaway jumpshot,17,2,64,82
+821,play_126,offensive-rebound,20:32:21,Derrick White,1,,,,64,82
+822,play_126,dribble,20:32:21,Derrick White,1,,,,64,82
+823,play_126,pass,20:32:30,Derrick White,1,,,,64,82
+824,play_126,dribble,20:32:31,Jaylen Brown,1,,,,64,82
+825,play_126,shot,20:32:35,Jaylen Brown,0,driving floating jump shot,8,2,64,82
+826,play_127,offensive-rebound,20:32:36,Al Horford,1,,,,64,82
+827,play_127,shot,20:32:37,Al Horford,0,putback layup,4,2,64,82
+828,play_128,offensive-rebound,20:32:38,Al Horford,1,,,,64,82
+829,play_128,shot,20:32:39,Al Horford,0,putback layup,4,2,64,82
+830,play_129,defensive-rebound,20:32:40,Luka Doncic,1,,,,64,82
+831,play_129,dribble,20:32:40,Luka Doncic,1,,,,64,82
+832,play_129,pass,20:32:45,Luka Doncic,1,,,,64,82
+833,play_129,dribble,20:32:46,Tim Hardaway Jr.,1,,,,64,82
+834,play_129,shot,20:32:47,Tim Hardaway Jr.,0,pullup jump shot,26,3,64,82
+835,play_130,defensive-rebound,20:32:48,Sam Hauser,1,,,,64,82
+836,play_130,pass,20:32:50,Sam Hauser,1,,,,64,82
+837,play_130,pass,20:32:50,Jayson Tatum,1,,,,64,82
+838,play_130,pass,20:32:52,Derrick White,1,,,,64,82
+839,play_130,shot,20:32:55,Jaylen Brown,0,running jump shot,26,3,64,82
+840,play_131,foul,20:32:57,Al Horford,1,,,,64,82
+841,play_131,shot,20:32:57,Dante Exum,1,free throw,15,1,65,82
+842,play_131,shot,20:32:57,Dante Exum,0,free throw,15,1,65,82
+843,play_132,defensive-rebound,20:33:00,Al Horford,1,,,,65,82
+844,play_132,pass,20:33:00,Al Horford,1,,,,65,82
+845,play_132,pass,20:33:00,Jrue Holiday,1,,,,65,82
+846,play_132,dribble,20:33:00,Jrue Holiday,1,,,,65,82
+847,play_132,pass,20:33:07,Jrue Holiday,1,,,,65,82
+848,play_132,dribble,20:33:09,Jayson Tatum,1,,,,65,82
+849,play_132,pass,20:33:11,Jayson Tatum,1,,,,65,82
+850,play_132,pass,20:33:12,Jrue Holiday,1,,,,65,82
+851,play_132,dribble,20:33:14,Jayson Tatum,1,,,,65,82
+852,play_132,pass,20:33:17,Jayson Tatum,1,,,,65,82
+853,play_132,pass,20:33:18,Al Horford,1,,,,65,82
+854,play_132,dribble,20:33:19,Sam Hauser,1,,,,65,82
+855,play_132,shot,20:33:21,Sam Hauser,0,pullup jump shot,27,3,65,82
+856,play_133,defensive-rebound,20:33:23,Maxi Kleber,1,,,,65,82
+857,play_133,pass,20:33:24,Maxi Kleber,1,,,,65,82
+858,play_133,dribble,20:33:25,Luka Doncic,1,,,,65,82
+859,play_133,shot,20:33:33,Luka Doncic,0,pullup jump shot,29,3,65,82
+860,play_134,pass,20:33:34,Jrue Holiday,1,,,,65,82
+861,play_134,pass,20:33:34,Jaylen Brown,1,,,,65,82
+862,play_134,dribble,20:33:35,Jrue Holiday,1,,,,65,82
+863,play_134,pass,20:33:42,Jrue Holiday,1,,,,65,82
+864,play_134,dribble,20:33:45,Jaylen Brown,1,,,,65,82
+865,play_134,pass-to-assist,20:33:48,Jaylen Brown,1,,,,65,82
+866,play_134,dribble,20:33:48,Sam Hauser,1,,,,65,82
+867,play_134,shot,20:33:51,Sam Hauser,1,driving floating jump shot,16,2,65,84
+868,play_135,pass,20:33:52,P.J. Washington,1,,,,65,84
+869,play_135,dribble,20:33:54,Kyrie Irving,1,,,,65,84
+870,play_135,pass,20:34:01,Kyrie Irving,1,,,,65,84
+871,play_135,shot,20:34:04,Josh Green,0,jump shot,25,3,65,84
+872,play_136,defensive-rebound,20:34:05,Jaylen Brown,1,,,,65,84
+873,play_136,dribble,20:34:05,Jaylen Brown,1,,,,65,84
+874,play_136,shot,20:34:18,Jaylen Brown,1,pullup jump shot,21,2,65,86
+875,play_137,pass,20:34:19,Josh Green,1,,,,65,86
+876,play_137,dribble,20:34:20,Luka Doncic,1,,,,65,86
+877,play_137,pass,20:34:21,Luka Doncic,1,,,,65,86
+878,play_137,dribble,20:34:23,Josh Green,1,,,,65,86
+879,play_137,shot,20:34:29,Josh Green,0,driving dunk,3,2,65,86
+880,play_138,defensive-rebound,20:34:31,Jrue Holiday,1,,,,65,86
+881,play_138,dribble,20:34:31,Jrue Holiday,1,,,,65,86
+882,play_138,pass,20:34:31,Jrue Holiday,1,,,,65,86
+883,play_138,dribble,20:34:31,Jayson Tatum,1,,,,65,86
+884,play_138,pass,20:34:38,Jayson Tatum,0,,,,65,86
+885,play_138,steal,20:34:38,Luka Doncic,1,,,,65,86
+886,play_138,dribble,20:34:38,Luka Doncic,1,,,,65,86
+887,play_138,shot,20:34:43,Luka Doncic,0,running layup,2,2,65,86
+888,play_139,offensive-rebound,20:34:45,Maxi Kleber,1,,,,65,86
+889,play_139,dribble,20:34:45,Maxi Kleber,1,,,,65,86
+890,play_139,pass,20:34:45,Maxi Kleber,1,,,,65,86
+891,play_139,pass,20:34:46,Josh Green,1,,,,65,86
+892,play_139,shot,20:34:48,P.J. Washington,0,jump shot,25,3,65,86
+893,play_140,defensive-rebound,20:34:49,Jayson Tatum,1,,,,65,86
+894,play_140,dribble,20:34:50,Jayson Tatum,1,,,,65,86
+895,play_140,pass,20:34:56,Jayson Tatum,1,,,,65,86
+896,play_140,dribble,20:34:57,Jaylen Brown,1,,,,65,86
+897,play_140,pass,20:35:07,Jaylen Brown,1,,,,65,86
+898,play_140,shot,20:35:10,Jayson Tatum,0,jump shot,26,3,65,86
+899,play_141,offensive-rebound,20:35:11,Jrue Holiday,1,,,,65,86
+900,play_141,dribble,20:35:12,Jrue Holiday,1,,,,65,86
+901,play_141,pass,20:35:15,Jrue Holiday,1,,,,65,86
+902,play_141,pass,20:35:16,Al Horford,1,,,,65,86
+903,play_141,dribble,20:35:17,Jayson Tatum,1,,,,65,86
+904,play_141,pass,20:35:20,Jayson Tatum,1,,,,65,86
+905,play_141,shot,20:35:21,Sam Hauser,0,jump shot,24,3,65,86
+906,play_142,defensive-rebound,20:35:23,P.J. Washington,1,,,,65,86
+907,play_142,dribble,20:35:24,P.J. Washington,1,,,,65,86
+908,play_142,pass,20:35:30,P.J. Washington,1,,,,65,86
+909,play_142,dribble,20:35:32,Luka Doncic,1,,,,65,86
+910,play_142,shot,20:35:37,Luka Doncic,1,fadeaway bankshot,7,2,67,86
+911,play_143,pass,20:35:38,Jayson Tatum,1,,,,67,86
+912,play_143,pass,20:35:38,Jrue Holiday,1,,,,67,86
+913,play_143,dribble,20:35:40,Jaylen Brown,1,,,,67,86
+914,play_143,pass-to-start-quarter,20:36:00,Al Horford,1,,,,67,86
+915,play_143,dribble,20:36:02,Jrue Holiday,1,,,,67,86
+916,play_143,pass,20:36:07,Jrue Holiday,1,,,,67,86
+917,play_143,pass,20:36:09,Jayson Tatum,1,,,,67,86
+918,play_143,dribble,20:36:10,Derrick White,1,,,,67,86
+919,play_143,pass,20:36:19,Derrick White,1,,,,67,86
+920,play_143,pass,20:36:19,Al Horford,1,,,,67,86
+921,play_143,dribble,20:36:19,Kristaps Porzingis,1,,,,67,86
+922,play_143,shot,20:36:21,Kristaps Porzingis,0,step back jump shot,25,3,67,86
+923,,,,,,,,,,
+924,,,,,,,,,,
+925,,,,,,,,,,
+926,,,,,,,,,,
+927,,,,,,,,,,
+928,,,,,,,,,,
+929,,,,,,,,,,
+930,,,,,,,,,,
+931,,,,,,,,,,
+932,,,,,,,,,,
+933,,,,,,,,,,
+934,,,,,,,,,,
+935,,,,,,,,,,
+936,,,,,,,,,,
+937,,,,,,,,,,
+938,,,,,,,,,,
+939,,,,,,,,,,
+940,,,,,,,,,,
+941,,,,,,,,,,
+942,,,,,,,,,,
+943,,,,,,,,,,
+944,,,,,,,,,,
+945,,,,,,,,,,
+946,,,,,,,,,,
+947,,,,,,,,,,
+948,,,,,,,,,,
+949,,,,,,,,,,
+950,,,,,,,,,,
+951,,,,,,,,,,
+952,,,,,,,,,,
+953,,,,,,,,,,
+954,,,,,,,,,,
+955,,,,,,,,,,
+956,,,,,,,,,,
+957,,,,,,,,,,
+958,,,,,,,,,,
+959,,,,,,,,,,
+960,,,,,,,,,,
+961,,,,,,,,,,
+962,,,,,,,,,,
+963,,,,,,,,,,
+964,,,,,,,,,,
+965,,,,,,,,,,
+966,,,,,,,,,,
+967,,,,,,,,,,
+968,,,,,,,,,,
+969,,,,,,,,,,
+970,,,,,,,,,,
+971,,,,,,,,,,
+972,,,,,,,,,,
+973,,,,,,,,,,
+974,,,,,,,,,,
+975,,,,,,,,,,
+976,,,,,,,,,,
+977,,,,,,,,,,
+978,,,,,,,,,,
+979,,,,,,,,,,
+980,,,,,,,,,,
+981,,,,,,,,,,
+982,,,,,,,,,,
+983,,,,,,,,,,
+984,,,,,,,,,,
+985,,,,,,,,,,
+986,,,,,,,,,,
+987,,,,,,,,,,
+988,,,,,,,,,,
+989,,,,,,,,,,
+990,,,,,,,,,,
+991,,,,,,,,,,
+992,,,,,,,,,,
+993,,,,,,,,,,
+994,,,,,,,,,,
+995,,,,,,,,,,
+996,,,,,,,,,,
+997,,,,,,,,,,
+998,,,,,,,,,,
+999,,,,,,,,,,
+1000,,,,,,,,,,
