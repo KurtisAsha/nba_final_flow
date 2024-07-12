@@ -921,81 +921,88 @@ seq,case_id,activity_id,timestamp,resource_id,outcome,shot_type,shot_distance_by
 920,play_143,pass,20:36:19,Al Horford,1,,,,67,86
 921,play_143,dribble,20:36:19,Kristaps Porzingis,1,,,,67,86
 922,play_143,shot,20:36:21,Kristaps Porzingis,0,step back jump shot,25,3,67,86
-923,,,,,,,,,,
-924,,,,,,,,,,
-925,,,,,,,,,,
-926,,,,,,,,,,
-927,,,,,,,,,,
-928,,,,,,,,,,
-929,,,,,,,,,,
-930,,,,,,,,,,
-931,,,,,,,,,,
-932,,,,,,,,,,
-933,,,,,,,,,,
-934,,,,,,,,,,
-935,,,,,,,,,,
-936,,,,,,,,,,
-937,,,,,,,,,,
-938,,,,,,,,,,
-939,,,,,,,,,,
-940,,,,,,,,,,
-941,,,,,,,,,,
-942,,,,,,,,,,
-943,,,,,,,,,,
-944,,,,,,,,,,
-945,,,,,,,,,,
-946,,,,,,,,,,
-947,,,,,,,,,,
-948,,,,,,,,,,
-949,,,,,,,,,,
-950,,,,,,,,,,
-951,,,,,,,,,,
-952,,,,,,,,,,
-953,,,,,,,,,,
-954,,,,,,,,,,
-955,,,,,,,,,,
-956,,,,,,,,,,
-957,,,,,,,,,,
-958,,,,,,,,,,
-959,,,,,,,,,,
-960,,,,,,,,,,
-961,,,,,,,,,,
-962,,,,,,,,,,
-963,,,,,,,,,,
-964,,,,,,,,,,
-965,,,,,,,,,,
-966,,,,,,,,,,
-967,,,,,,,,,,
-968,,,,,,,,,,
-969,,,,,,,,,,
-970,,,,,,,,,,
-971,,,,,,,,,,
-972,,,,,,,,,,
-973,,,,,,,,,,
-974,,,,,,,,,,
-975,,,,,,,,,,
-976,,,,,,,,,,
-977,,,,,,,,,,
-978,,,,,,,,,,
-979,,,,,,,,,,
-980,,,,,,,,,,
-981,,,,,,,,,,
-982,,,,,,,,,,
-983,,,,,,,,,,
-984,,,,,,,,,,
-985,,,,,,,,,,
-986,,,,,,,,,,
-987,,,,,,,,,,
-988,,,,,,,,,,
-989,,,,,,,,,,
-990,,,,,,,,,,
-991,,,,,,,,,,
-992,,,,,,,,,,
-993,,,,,,,,,,
-994,,,,,,,,,,
-995,,,,,,,,,,
-996,,,,,,,,,,
-997,,,,,,,,,,
-998,,,,,,,,,,
-999,,,,,,,,,,
-1000,,,,,,,,,,
+923,play_144,defensive-rebound,20:36:23,Kyrie Irving,1,,,,67,86
+924,play_144,pass,20:36:24,Kyrie Irving,1,,,,67,86
+925,play_144,dribble,20:36:24,Luka Doncic,1,,,,67,86
+926,play_144,shot,20:36:35,Luka Doncic,0,fadeaway jumpshot,16,2,67,86
+927,play_145,offensive-rebound,20:36:37,Dereck Lively II,1,,,,67,86
+928,play_145,shot,20:36:39,Dereck Lively II,0,putback dunk,3,2,67,86
+929,play_146,block,20:36:39,Derrick White,1,,,,67,86
+930,play_146,defensive-rebound,20:36:41,Kristaps Porzingis,1,,,,67,86
+931,play_146,pass,20:36:41,Kristaps Porzingis,1,,,,67,86
+932,play_146,dribble,20:36:41,Derrick White,1,,,,67,86
+933,play_146,foul,20:36:48,Dereck Lively II,1,,,,67,86
+934,play_146,pass,20:36:50,Kristaps Porzingis,1,,,,67,86
+935,play_146,pass,20:36:51,Jayson Tatum,1,,,,67,86
+936,play_146,dribble,20:36:51,Derrick White,1,,,,67,86
+937,play_146,out-of-bounds,20:36:54,Derrick White,1,,,,67,86
+938,play_146,pass,20:36:55,Kyrie Irving,1,,,,67,86
+939,play_146,dribble,20:36:58,Luka Doncic,1,,,,67,86
+940,play_146,pass,20:37:06,Luka Doncic,1,,,,67,86
+941,play_146,shot,20:37:09,Derrick Jones Jr.,0,jump shot,26,3,67,86
+942,play_147,defensive-rebound,20:37:11,Jrue Holiday,1,,,,67,86
+943,play_147,dribble,20:37:13,Jrue Holiday,1,,,,67,86
+944,play_147,pass,20:37:14,Jrue Holiday,1,,,,67,86
+945,play_147,dribble,20:37:15,Jayson Tatum,1,,,,67,86
+946,play_147,pass,20:37:19,Jayson Tatum,1,,,,67,86
+947,play_147,foul,20:37:21,P.J. Washington,1,,,,67,86
+948,play_147,pass,20:37:21,Jayson Tatum,1,,,,67,86
+949,play_147,pass,20:37:23,Jaylen Brown,1,,,,67,86
+950,play_147,dribble,20:37:24,Kristaps Porzingis,1,,,,67,86
+951,play_147,pass,20:37:26,Kristaps Porzingis,1,,,,67,86
+952,play_147,dribble,20:37:26,Jaylen Brown,1,,,,67,86
+953,play_147,pass,20:37:27,Jaylen Brown,1,,,,67,86
+954,play_147,dribble,20:37:28,Jrue Holiday,1,,,,67,86
+955,play_147,shot,20:37:30,Jrue Holiday,0,pullup jump shot,24,3,67,86
+956,play_148,turnover-shotclock,20:37:35,Boston Celtics,1,,,,67,86
+957,play_148,pass,20:37:35,Luka Doncic,1,,,,67,86
+958,play_148,dribble,20:37:36,Kyrie Irving,1,,,,67,86
+959,play_148,pass,20:37:43,Kyrie Irving,1,,,,67,86
+960,play_148,dribble,20:37:44,Derrick Jones Jr.,1,,,,67,86
+961,play_148,shot,20:37:49,Derrick Jones Jr.,0,driving floating jump shot,9,2,67,86
+962,play_149,defensive-rebound,20:37:50,Jayson Tatum,1,,,,67,86
+963,play_149,pass,20:37:51,Jayson Tatum,1,,,,67,86
+964,play_149,dribble,20:37:51,Jrue Holiday,1,,,,67,86
+965,play_149,pass,20:37:53,Jrue Holiday,1,,,,67,86
+966,play_149,dribble,20:37:56,Jaylen Brown,1,,,,67,86
+967,play_149,pass,20:38:02,Jaylen Brown,1,,,,67,86
+968,play_149,dribble,20:38:02,Jayson Tatum,1,,,,67,86
+969,play_149,foul,20:38:02,Jaylen Brown,1,,,,67,86
+970,play_149,turnover,20:38:02,Jaylen Brown,1,,,,67,86
+971,play_149,pass,20:38:02,Luka Doncic,1,,,,67,86
+972,play_149,dribble,20:38:04,Kyrie Irving,1,,,,67,86
+973,play_149,pass,20:38:11,Kyrie Irving,1,,,,67,86
+974,play_149,dribble,20:38:12,Luka Doncic,1,,,,67,86
+975,play_149,pass,20:38:15,Luka Doncic,1,,,,67,86
+976,play_149,pass,20:38:16,Josh Green,1,,,,67,86
+977,play_149,shot,20:38:18,P.J. Washington,0,jump shot,27,3,67,86
+978,play_150,offensive-rebound,20:38:22,Dallas Mavericks,1,,,,67,86
+979,play_150,pass,20:38:22,Luka Doncic,1,,,,67,86
+980,play_150,pass,20:38:27,P.J. Washington,1,,,,67,86
+981,play_150,dribble,20:38:29,Kyrie Irving,1,,,,67,86
+982,play_150,shot,20:38:32,Kyrie Irving,0,pullup jump shot,27,3,67,86
+983,play_151,defensive-rebound,20:38:33,Jrue Holiday,1,,,,67,86
+984,play_151,dribble,20:38:35,Jrue Holiday,1,,,,67,86
+985,play_151,pass,20:38:36,Jrue Holiday,1,,,,67,86
+986,play_151,dribble,20:38:36,Jaylen Brown,1,,,,67,86
+987,play_151,pass-to-assist,20:38:50,Jaylen Brown,1,,,,67,86
+988,play_151,shot,20:38:51,Kristaps Porzingis,1,cutting dunk shot,3,2,67,88
+989,play_152,pass,20:38:52,Dereck Lively II,1,,,,67,88
+990,play_152,pass,20:38:54,Josh Green,1,,,,67,88
+991,play_152,dribble,20:38:55,Kyrie Irving,1,,,,67,88
+992,play_152,pass,20:38:57,Kyrie Irving,1,,,,67,88
+993,play_152,dribble,20:39:01,Dereck Lively II,1,,,,67,88
+994,play_152,pass,20:39:04,Dereck Lively II,1,,,,67,88
+995,play_152,dribble,20:39:05,Luka Doncic,1,,,,67,88
+996,play_152,pass,20:39:06,Luka Doncic,1,,,,67,88
+997,play_152,pass-to-assist,20:39:08,Kyrie Irving,1,,,,67,88
+998,play_152,shot,20:39:10,Luka Doncic,1,jump shot,28,3,70,88
+999,play_153,pass,20:39:13,Jaylen Brown,1,,,,70,88
+1000,play_153,dribble,20:39:14,Derrick White,1,,,,70,88
+1001,play_153,pass,20:39:20,Derrick White,1,,,,70,88
+1002,play_153,dribble,20:39:23,Jayson Tatum,1,,,,70,88
+1003,play_153,pass,20:39:28,Jayson Tatum,1,,,,70,88
+1004,play_153,pass,20:39:29,Kristaps Porzingis,1,,,,70,88
+1005,play_153,dribble,20:39:31,Jayson Tatum,1,,,,70,88
+1006,play_153,pass-to-assist,20:39:33,Jayson Tatum,1,,,,70,88
+1007,play_153,shot,20:39:35,Derrick White,1,jump shot,26,3,70,91
