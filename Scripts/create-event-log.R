@@ -1,7 +1,15 @@
 
+# Introduction ------------------------------------------------------------
+
+# My words 
+
+# Acknowledgements
+# data source - https://www.basketball-reference.com/
+# Package Maintainer(s):
+## tidyverse and rvest - Hadley Wickham
+
 # Setup -------------------------------------------------------------------
 
-library(bupaverse)
 library(tidyverse)
 library(rvest)
 
