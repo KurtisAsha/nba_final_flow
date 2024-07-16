@@ -12,6 +12,7 @@
 
 library(tidyverse)
 library(rvest)
+library(bupaverse)
 
 source("./Functions/data-transformations.R")
 
@@ -84,13 +85,12 @@ roster_data <- roster_raw %>%
 
 # Create event log --------------------------------------------------------
 
-nba_final_2024_game_5 <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE) 
+nba_final_2024_game_5 <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE) %>% 
 
 nba_eventlog <-  nba_final_2024_game_5 %>% 
  mutate(
   activity_instance_id = seq_len(nrow(nba_final_2024_game_5)), 
-  lifecycle_id = "complete",
-  order = seq_len(nrow(nba_final_2024_game_5)),
+  lifecycle_id = "complete"
  ) %>% 
  eventlog(case_id = "case_id", 
           activity_id = "activity_id", 
@@ -98,7 +98,7 @@ nba_eventlog <-  nba_final_2024_game_5 %>%
           lifecycle_id = "lifecycle_id", 
           timestamp = "timestamp", 
           resource_id = "resource_id", 
-          order = "order", 
+          order = "seq", 
           validate = TRUE)
 
 
