@@ -4,12 +4,9 @@ author: "Author: Kurtis Smith"
 date: "Published Date: TBC"
 output: 
  html_document:
-  toc: TRUE
-  toc_float: TRUE
   fig_width: 10
   fig_height: 6
   theme: journal
-  highlight: kate
 ---
 
 ## Project Introduction 👋🏽
@@ -44,12 +41,58 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
           order = "seq", 
           validate = TRUE)
 
+```
 
-nba_eventlog %>% 
- process_map()
+## Analysis {.tabset}
+
+### Control-Flow
+
+```{r}
+
+nba_final_g5_eventlog %>%
+ activity_presence() %>%
+ plot()
+
+nba_final_g5_eventlog %>%
+    activity_frequency("activity")
+
+nba_final_g5_eventlog %>%
+    start_activities("resource-activity")
+
+nba_final_g5_eventlog %>%
+    end_activities("resource-activity")
+
+nba_final_g5_eventlog %>%
+    trace_coverage("trace") %>%
+    plot()
+
+nba_final_g5_eventlog %>%
+    trace_length("log") %>%
+    plot
+
+nba_final_g5_eventlog %>%
+    number_of_repetitions() 
 
 ```
 
+
+### Performance
+
+```{r}
+
+```
+
+### Organisational
+
+```{r}
+
+```
+
+### Multi-dimensional
+
+```{r}
+
+```
 
 ## Reproducibility 🔂
 
