@@ -33,10 +33,11 @@ nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = 
 ```{r}
 
 nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>% 
- mutate(lifecycle_id = "complete") %>% 
+ mutate(lifecycle_id = "complete", 
+        timestamp = ymd_hms(paste0("20240617 ", timestamp))) %>% 
  eventlog(case_id = "case_id", 
           activity_id = "activity_id", 
-          activity_instance_id = "activity_instance_id", 
+          activity_instance_id = "seq", 
           lifecycle_id = "lifecycle_id", 
           timestamp = "timestamp", 
           resource_id = "resource_id", 
