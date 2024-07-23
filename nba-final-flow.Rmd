@@ -1,0 +1,64 @@
+---
+title: "NBA 2024 Final Process Mining"
+author: "Author: Kurtis Smith"
+date: "Published Date: TBC"
+output: 
+ html_document:
+  toc: TRUE
+  toc_float: TRUE
+  fig_width: 10
+  fig_height: 6
+  theme: journal
+  highlight: kate
+---
+
+## Project Introduction 👋🏽
+
+My intent was to explore process mining techniques on the NBA final, to that end I web scraped the play by play (pbp) data, cleaned and combined until realising. The data is not in the write format to use process mining...gutted. In an effort to make sure my time wasn't a total waste. I've uploaded the data on Kaggle and posted this here script. Hope someone finds it remotely useful. For the curious, to see the process mining analysis see `link`
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load packages
+library(tidyverse)
+library(bupaverse)
+
+# Get data
+nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE)
+
+```
+
+## Create Eventlog
+
+```{r}
+
+nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>% 
+ mutate(lifecycle_id = "complete") %>% 
+ eventlog(case_id = "case_id", 
+          activity_id = "activity_id", 
+          activity_instance_id = "activity_instance_id", 
+          lifecycle_id = "lifecycle_id", 
+          timestamp = "timestamp", 
+          resource_id = "resource_id", 
+          order = "seq", 
+          validate = TRUE)
+
+
+nba_eventlog %>% 
+ process_map()
+
+```
+
+
+## Reproducibility 🔂
+
+I attempt to make a habit of coding functionally and with reproducibility in mind. However, for this project I only needed the final 5 games of the 2024 NBA final. As such, for those wanting to reuse code to scrape other games, please check: - List names for object `roster_html` - In code chunk `transform_roster_data` the team names have been manually added
+
+## Acknowledgements 👏🏽
+
+Packages and package maintainer(s):
+
+-   tidyverse \| Hadley Wickham
+-   bupaverse \| Gert Janssenswillen
+
+## References
