@@ -2,6 +2,7 @@
 title: "NBA 2024 Final Process Mining"
 author: "Author: Kurtis Smith"
 date: "Published Date: TBC"
+bibliography: references.bib
 output: 
  html_document:
   fig_width: 10
@@ -11,7 +12,7 @@ output:
 
 ## Project Introduction 👋🏽
 
-My intent was to explore process mining techniques on the NBA final, to that end I web scraped the play by play (pbp) data, cleaned and combined until realising. The data is not in the write format to use process mining...gutted. In an effort to make sure my time wasn't a total waste. I've uploaded the data on Kaggle and posted this here script. Hope someone finds it remotely useful. For the curious, to see the process mining analysis see `link`
+Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball 🏀😍. I've played basketball all my life, although my failing left knee means I play infrequently in my older age. I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -19,13 +20,22 @@ knitr::opts_chunk$set(echo = TRUE)
 # Load packages
 library(tidyverse)
 library(bupaverse)
+library(patchwork)
 
 # Get data
 nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE)
 
 ```
 
-## Create Eventlog
+## Data Treatment 🧪
+
+The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp. To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
+
+A few self imposed rules during data creation:
+-   To define the process under analysis, one end to end run or "case" ends with a shot 
+-   Unless specified from the nba website I've timestamped at the beginning of each activity
+
+## Create Eventlog ⏳
 
 ```{r}
 
@@ -43,38 +53,32 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
 
 ```
 
-## Analysis {.tabset}
+## Analysis 🔬 {.tabset} 
 
 ### Control-Flow
 
+Control flow in process mining refers to the sequence and decision points of activities within a business process.
+
 ```{r}
 
-nba_final_g5_eventlog %>%
- activity_presence() %>%
- plot()
+shot_made_plot <- nba_final_g5_eventlog %>%
+ filter_activity_presence("shot-make") %>%
+ group_by(teams_play) %>%
+ trace_length("log") %>%
+ plot() +
+ labs(title = "Teams Traces by Shot Made")
 
-nba_final_g5_eventlog %>%
-    activity_frequency("activity")
 
-nba_final_g5_eventlog %>%
-    start_activities("resource-activity")
+shot_miss_plot <- nba_final_g5_eventlog %>%
+ filter_activity_presence("shot-miss") %>%
+ group_by(teams_play) %>%
+ trace_length("log") %>%
+ plot() +
+ labs(title = "Teams Traces by Shot Miss")
 
-nba_final_g5_eventlog %>%
-    end_activities("resource-activity")
-
-nba_final_g5_eventlog %>%
-    trace_coverage("trace") %>%
-    plot()
-
-nba_final_g5_eventlog %>%
-    trace_length("log") %>%
-    plot
-
-nba_final_g5_eventlog %>%
-    number_of_repetitions() 
+shot_made_plot + shot_miss_plot
 
 ```
-
 
 ### Performance
 
@@ -93,6 +97,15 @@ nba_final_g5_eventlog %>%
 ```{r}
 
 ```
+
+## Conclusion 🎁
+
+
+Improvements
+
+Automate data collection
+Have all 5 games in the data set
+Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Boston Celtics held the ball increase in quarter 4 as they attempt to run the clock.
 
 ## Reproducibility 🔂
 
