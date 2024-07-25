@@ -12,7 +12,9 @@ output:
 
 ## Project Introduction 👋🏽
 
-Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball 🏀😍. I've played basketball all my life, although my failing left knee means I play infrequently in my older age. I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
+Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball 🏀😍. I've played basketball all my life, although my failing left knee means I play infrequently in my older age. 
+
+I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -30,7 +32,9 @@ nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = 
 
 ## Data Treatment 🧪
 
-The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp. To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
+The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp. 
+
+To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
 
 A few self imposed rules during data creation:
 
@@ -40,7 +44,9 @@ A few self imposed rules during data creation:
 
 ## Create Eventlog ⏳
 
-An eventlog in process mining is a structured collection of recorded events that represent the execution of activities usually within a business process, in this context, an NBA game. It typically contains information such as the event type, timestamp, case identifier, and other relevant attributes, serving as the primary input for process mining techniques to discover, monitor, and improve actual processes.
+An eventlog in process mining is a structured collection of recorded events that represent the execution of activities usually within a business process, in this context, an NBA game. 
+
+It typically contains information such as the event type, timestamp, case identifier, and other relevant attributes, serving as the primary input for process mining techniques to discover, monitor, and improve actual processes.
 
 ```{r create_eventlog}
 
@@ -72,7 +78,7 @@ Process mining isn't complete without a process map, so let's start there. Split
 ```{r process_map}
 
 nba_final_g5_eventlog %>%
- group_by(teams_play, quarter) %>%
+ #group_by(teams_play, quarter) %>%
  process_map(
   type_nodes = frequency("absolute"),
   type_edges = performance(mean, "secs"),
