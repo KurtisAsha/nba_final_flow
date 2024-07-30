@@ -41,6 +41,8 @@ A few self imposed rules during data creation:
 
 \- To define the process under analysis, one end to end run or "case" ends with a shot
 
+\- At free throws the case ends at the last free throw attempt
+
 \- Unless specified from the nba website I've timestamped at the beginning of each activity
 
 ## Create Eventlog
@@ -71,19 +73,27 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
 
 Control flow in process mining refers to the sequence and decision points of activities within a process. This perspective explores the flow of the game.
 
-I could check pass repitition
+#### Precedences
 
-```{r precedence_matrix}
+Reviewing the activity process matrix allows for investigation into antecedent and consequential activities. Each activity row will sum to 100%.
+
+```{r precedence, echo=FALSE}
 
 nba_final_g5_eventlog %>%
- process_matrix(type = frequency("relative-case")) %>% 
+ process_matrix(type = frequency("relative-antecedent")) %>% 
  plot()
-
 
 ```
 
+Across the game ~70% of all passes were followed by a dribble whilst ~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
 
-```{r trace_sizes}
+~55% of the time a defensive rebound was followed by a dribble, and ~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation. 
+
+#### Traces
+
+Reviewing the trace sizes for each team, that is to say, the length of a play from post shot until another shot is attempted, by shot attempt outcome. 
+
+```{r trace_sizes, echo=FALSE}
 
 shot_made_plot <- nba_final_g5_eventlog %>%
  filter_activity_presence("shot-make") %>%
@@ -104,6 +114,8 @@ shot_made_plot + shot_miss_plot
 
 ```
 
+further analysis 
+
 ### Performance
 
 ```{r}
@@ -116,7 +128,7 @@ shot_made_plot + shot_miss_plot
 
 Looking at the top 10 industrious players, the players with higher frequency of activities. This is were you would expect to see your stars. 
 
-```{r industry}
+```{r industry, echo=FALSE}
 
 nba_final_g5_eventlog %>% 
  resource_frequency(level = "resource") %>%
@@ -127,7 +139,7 @@ nba_final_g5_eventlog %>%
 
 As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas. 
 
-```{r specialisation}
+```{r specialisation, echo=FALSE}
 
 nba_final_g5_eventlog %>% 
  group_by(player_team) %>% 
@@ -154,7 +166,7 @@ Process mining isn't complete without a process map. Split by team plays across 
 \-   The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
 \-   Another one
 
-```{r process_map}
+```{r process_map, echo=FALSE}
 
 nba_final_g5_eventlog %>%
  #group_by(teams_play, quarter) %>%
