@@ -50,3 +50,4 @@ rsconnect/
 
 # Manually added
 *.html
+/Scripts/quality-checks.R
