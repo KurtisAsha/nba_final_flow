@@ -79,11 +79,13 @@ Reviewing the activity process matrix allows for investigation into antecedent a
 
 ```{r precedence, echo=FALSE}
 
+suppressMessages(
 nba_final_g5_eventlog %>%
  process_matrix(type = frequency("relative-antecedent")) %>% 
  plot() +
  theme(legend.position = "top") +
- scale_fill_viridis_b()
+ scale_fill_viridis_b(name = "Relative Antecedence")
+)
 
 ```
 
@@ -93,7 +95,39 @@ Across the game ~70% of all passes were followed by a dribble whilst ~20% of the
 
 #### Traces
 
-Reviewing the trace sizes for each team, that is to say, the length of a play from post shot until another shot is attempted, by shot attempt outcome. 
+Traces are the distinct processes of an eventlog, in this context, a play which starts post shot attempt until another shot attempt. 
+
+##### Coverage
+
+Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.  
+
+```{r}
+
+x <- nba_final_g5_eventlog %>%
+ trace_coverage("trace") %>% 
+ plot()
+
+y <- nba_final_g5_eventlog %>%
+ act_unite(pass = c("pass-to-assist", "pass", "pass-turnover", "pass-to-start-quarter"),
+           dribble = c("dribble", "dribble-turnover"),
+           rebound = c("defensive-rebound", "offensive-rebound"),
+           shot = c("shot-miss", "shot-make")) %>% 
+ trace_coverage("trace") %>% 
+ plot()
+
+ x + y
+
+```
+
+As the left plot displays a max relative frequency of 0.03, the plays of this game varied considerably. Even when grouping activities e.g. dribble and dribble-turnover both set as dribble, a max relative frequency of 0.06 as shown in the right plot. 
+
+With more detailed data around off the ball movements and data on many more games, perhaps you could use trace coverage analysis to:
+\- See if what looks seemingly like a collect of passes and dribbles is a drawn up play which would in theory increase the relative frequency
+\- Compare across teams and games to see if this metric shares patterns with tradition metrics i.e. win/loss, plus/minus etc
+
+##### Length by Team
+
+Reviewing the trace sizes for each team.
 
 ```{r trace_sizes, echo=FALSE}
 
@@ -118,7 +152,30 @@ shot_made_plot + shot_miss_plot
 
 ```
 
-further analysis 
+All look similar except Dallas Mavericks for plays which end in a miss. 
+
+```{r trace_sizes, echo=FALSE}
+
+nba_final_g5_eventlog %>%
+ filter(teams_play == "Dallas Mavericks") %>% 
+ filter_activity_presence("shot-miss") %>%
+ group_by(quarter) %>% 
+ trace_length("log") %>%
+ plot() 
+
+```
+
+Looking into this further by quarter, you see the 3 outliers spread across the game. 
+
+```{r}
+
+nba_final_g5_eventlog %>%
+ trace_coverage("trace") %>% 
+ plot()
+ 
+```
+
+
 
 ### Performance
 
@@ -187,7 +244,9 @@ nba_final_g5_eventlog %>%
 
 Improvements
 
-Automate data collection Have all 5 games in the data set Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Boston Celtics held the ball increase in quarter 4 as they attempt to run the clock.
+Automate data collection
+Have all 5 games in the data set
+Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Boston Celtics held the ball increase in quarter 4 as they attempt to run the clock.
 
 ## Acknowledgements
 
