@@ -327,7 +327,7 @@ seq,case_id,activity_id,timestamp,resource_id,player_team,teams_play,quarter,out
 326,play_49,shot-make,20:12:45,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,jump shot,27,3,20,31
 327,play_50,pass,20:12:48,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
 328,play_50,dribble,20:12:49,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
-329,play_50,pass,20:12:05,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+329,play_50,pass,20:12:52,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
 330,play_50,dribble,20:12:53,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
 331,play_50,pass,20:12:58,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
 332,play_50,dribble,20:13:00,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
@@ -1084,7 +1084,7 @@ seq,case_id,activity_id,timestamp,resource_id,player_team,teams_play,quarter,out
 1083,play_167,pass,20:43:21,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
 1084,play_167,dribble,20:43:23,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
 1085,play_167,pass,20:43:26,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
-1086,play_167,dribble,20:06:00,Kyrie Irving,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1086,play_167,dribble,20:43:26,Kyrie Irving,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
 1087,play_167,pass,20:43:29,Kyrie Irving,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
 1088,play_167,dribble-turnover,20:43:36,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,0,,,,78,102
 1089,play_167,steal,20:43:36,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,102

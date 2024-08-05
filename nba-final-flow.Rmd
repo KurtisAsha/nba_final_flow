@@ -73,26 +73,6 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
 
 Control flow in process mining refers to the sequence and decision points of activities within a process. This perspective explores the flow of the game.
 
-#### Precedences
-
-Reviewing the activity process matrix allows for investigation into antecedent and consequential activities. Each activity row will sum to 100%.
-
-```{r precedence, echo=FALSE}
-
-suppressMessages(
-nba_final_g5_eventlog %>%
- process_matrix(type = frequency("relative-antecedent")) %>% 
- plot() +
- theme(legend.position = "top") +
- scale_fill_viridis_b(name = "Relative Antecedence")
-)
-
-```
-
-Across the game ~70% of all passes were followed by a dribble whilst ~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
-
-~55% of the time a defensive rebound was followed by a dribble, and ~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation. 
-
 #### Traces
 
 Traces are the distinct processes of an eventlog, in this context, a play which starts post shot attempt until another shot attempt. 
@@ -192,13 +172,67 @@ nba_final_g5_eventlog %>%
 
 This outlier is explained by how a play is defined by a shot attempt. Boston held position at the onset but turned over possession to Dallas, shortly after Dallas made a shot attempt.
 
+#### Precedences
+
+Reviewing the activity process matrix allows for investigation into antecedent and consequential activities. Each activity row will sum to 100%.
+
+```{r precedence, echo=FALSE}
+
+suppressMessages(
+nba_final_g5_eventlog %>%
+ process_matrix(type = frequency("relative-antecedent")) %>% 
+ plot() +
+ theme(legend.position = "top") +
+ scale_fill_viridis_b(name = "Relative Antecedence")
+)
+
+```
+
+Across the game ~70% of all passes were followed by a dribble whilst ~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
+
+~55% of the time a defensive rebound was followed by a dribble, and ~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation.
+
 ### Performance
+
+Process mining isn't complete without a process map. Split by team plays across quarters, you could dig for many insights looking across both maps.
+
+```{r process_map, echo=FALSE}
+
+nba_final_g5_eventlog %>%
+ #group_by(teams_play, quarter) %>%
+ process_map(
+  type_nodes = frequency("absolute"),
+  type_edges = performance(mean, "secs"),
+  rankdir = "TB"
+ )
+
+```
+
+A few noteworthy insights:
+\-   Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
+\-   The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
+\-   Another one
+
+
 
 ```{r}
 
-# Holding
+nba_final_g5_eventlog %>% 
+ group_by(teams_play) %>% 
+ throughput_time("log", units = "secs") %>%
+ plot()
 
 ```
+
+```{r}
+
+nba_final_g5_eventlog %>% 
+ group_by(teams_play) %>% 
+ throughput_time("log", units = "secs") %>%
+ plot()
+
+```
+
 
 ### Organisational
 
@@ -232,28 +266,9 @@ nba_final_g5_eventlog %>%
 
 ```{r}
 
-Holding
-```
-
-### Process Map
-
-Process mining isn't complete without a process map. Split by team plays across quarters, you could dig for many insights looking across both maps, a few to note:
-\-   Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
-\-   The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
-\-   Another one
-
-```{r process_map, echo=FALSE}
-
-nba_final_g5_eventlog %>%
- #group_by(teams_play, quarter) %>%
- process_map(
-  type_nodes = frequency("absolute"),
-  type_edges = performance(mean, "secs"),
-  rankdir = "TB"
- )
+# Holding
 
 ```
-
 
 ## Conclusion
 
