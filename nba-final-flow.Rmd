@@ -101,7 +101,7 @@ Traces are the distinct processes of an eventlog, in this context, a play which 
 
 Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.  
 
-```{r}
+```{r trace_coverage, echo=FALSE}
 
 x <- nba_final_g5_eventlog %>%
  trace_coverage("trace") %>% 
@@ -129,7 +129,7 @@ With more detailed data around off the ball movements and data on many more game
 
 Reviewing the trace sizes for each team.
 
-```{r trace_sizes, echo=FALSE}
+```{r trace_length, echo=FALSE}
 
 shot_made_plot <- nba_final_g5_eventlog %>%
  filter_activity_presence("shot-make") %>%
@@ -152,7 +152,7 @@ shot_made_plot + shot_miss_plot
 
 ```
 
-All look similar except Dallas Mavericks for plays which end in a miss. 
+All look similar except Dallas for plays which end in a miss. Lets look into this further by spliting Dallas traces by quarter.
 
 ```{r trace_sizes, echo=FALSE}
 
@@ -165,17 +165,32 @@ nba_final_g5_eventlog %>%
 
 ```
 
-Looking into this further by quarter, you see the 3 outliers spread across the game. 
+The 4th quarter has higher average and max trace lengths at a time when they needed to make a push.
 
-```{r}
+There could be multiple reasons as to why, perhaps Boston played brilliant defence forcing Dallas to pass more in order to shift the defence and make space. 
+
+Regardless this ran down the clock limiting the number of available opportunities to reduce the deficit.
+
+Let's view that 4th quarter outlier process to see why.
+
+```{r trace_outlier}
+
+longest_trace <- nba_final_g5_eventlog %>%
+ filter(teams_play == "Dallas Mavericks") %>%
+ filter_activity_presence("shot-miss") %>%
+ filter_trace_length(percentage = 0.01) %>% 
+ count(case_id, sort = TRUE) %>% 
+ head(1) %>% 
+ pull(case_id)
 
 nba_final_g5_eventlog %>%
- trace_coverage("trace") %>% 
- plot()
+ filter_case(cases = longest_trace) %>% 
+ select(activity_id, player_team, teams_play) %>% 
+ datatable(class = c("compact", "hover", "row-border"),  rownames = FALSE)
  
 ```
 
-
+This outlier is explained by how a play is defined by a shot attempt. Boston held position at the onset but turned over possession to Dallas, shortly after Dallas made a shot attempt.
 
 ### Performance
 
@@ -211,19 +226,19 @@ nba_final_g5_eventlog %>%
  #head(10) %>% 
  plot()
 
-
 ```
 
 ### Multi-dimensional
 
 ```{r}
-# Holding
+
+Holding
 ```
 
 ### Process Map
 
 Process mining isn't complete without a process map. Split by team plays across quarters, you could dig for many insights looking across both maps, a few to note:
-\-   Boston Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
+\-   Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
 \-   The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
 \-   Another one
 
@@ -246,7 +261,7 @@ Improvements
 
 Automate data collection
 Have all 5 games in the data set
-Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Boston Celtics held the ball increase in quarter 4 as they attempt to run the clock.
+Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock.
 
 ## Acknowledgements
 
