@@ -16,8 +16,8 @@ Inspired by @PmInspiration, this blog will use R to explore process mining on a 
 
 I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 
 # Load packages
 library(tidyverse)
@@ -81,7 +81,7 @@ Traces are the distinct processes of an eventlog, in this context, a play which 
 
 Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.
 
-```{r trace_coverage, echo=FALSE}
+```{r trace_coverage}
 
 log_trace <- nba_final_g5_eventlog %>%
  trace_coverage("trace") %>% 
@@ -107,7 +107,7 @@ With more detailed data around off the ball movements and data on many more game
 
 Reviewing the trace sizes for each team.
 
-```{r trace_length, echo=FALSE}
+```{r trace_length}
 
 shot_made_plot <- nba_final_g5_eventlog %>%
  filter_activity_presence("shot-make") %>%
@@ -132,7 +132,7 @@ shot_made_plot + shot_miss_plot
 
 All look similar except Dallas for plays which end in a miss. Lets look into this further by spliting Dallas traces by quarter.
 
-```{r trace_sizes, echo=FALSE}
+```{r trace_sizes}
 
 nba_final_g5_eventlog %>%
  filter(teams_play == "Dallas Mavericks") %>% 
@@ -163,8 +163,9 @@ longest_trace <- nba_final_g5_eventlog %>%
 
 nba_final_g5_eventlog %>%
  filter_case(cases = longest_trace) %>% 
+ as.data.frame() %>% 
  select(activity_id, player_team, teams_play) %>% 
- datatable(class = c("compact", "hover", "row-border"),  rownames = FALSE)
+ datatable(class = c("compact", "hover", "row-border"), rownames = FALSE)
  
 ```
 
@@ -174,7 +175,7 @@ This outlier is explained by how a play is defined by a shot attempt. Boston hel
 
 Reviewing the activity process matrix allows for investigation into antecedent and consequential activities. Each activity row will sum to 100%.
 
-```{r precedence, echo=FALSE}
+```{r precedence}
 
 suppressMessages(
 nba_final_g5_eventlog %>%
@@ -192,14 +193,63 @@ Across the game \~70% of all passes were followed by a dribble whilst \~20% of t
 
 ### Performance
 
+Performance analysis typically involves metrics such as time to complete activity, time in between each activity, and total time of process to understand the factors affecting process performance.
+
+#### Throughput Time
+
+This analysis is limited by the time stamps collected. If I had start and end times of each activity, more granular analysis could be performed. As it stands only total time across process is available, also know as throughput time.
+
+```{r throughput}
+suppressMessages(
+throughput_make_plot <- nba_final_g5_eventlog %>% 
+ group_by(teams_play) %>%
+ filter_activity_presence("shot-make", method = "none") %>% 
+ throughput_time("log", units = "secs") %>%
+ plot() +
+ scale_y_continuous(limits = c(0, 45)) +
+ labs(title = "Teams Traces by Shot Make"))
+
+suppressMessages(
+throughput_miss_plot <- nba_final_g5_eventlog %>% 
+ group_by(teams_play) %>%
+ filter_activity_presence("shot-miss", method = "none") %>% 
+ throughput_time("log", units = "secs") %>%
+ plot() +
+ scale_y_continuous(limits = c(0, 45)) +
+ labs(title = "Teams Traces by Shot Miss"))
+
+throughput_make_plot + throughput_miss_plot 
+
+```
+
+\- Bostons interquartile range is wider than Dallas's, 50% of  Bostons plays are more varied in time than 50% of Dallas'. 
+
+\- For shots made by Dallas the interquartile range is half that of Boston. 50% of Dallas's plays were quick, perhaps rushed due to score deficit. 
+
 #### Process Map
 
-Process mining isn't complete without a process map. Split by team plays across quarters, you could dig for many insights looking across both maps.
+Process mining isn't complete without a process map. Split by team plays, you could dig for many insights looking across both maps.
 
-```{r process_map, echo=FALSE}
+##### Boston Celtics
+
+```{r process_map_boston}
 
 nba_final_g5_eventlog %>%
- #group_by(teams_play, quarter) %>%
+ filter(teams_play == "Boston Celtics") %>% 
+ process_map(
+  type_nodes = frequency("absolute"),
+  type_edges = performance(mean, "secs"),
+  rankdir = "TB"
+ )
+
+```
+
+##### Dallas Mavericks
+
+```{r process_map_dallas}
+
+nba_final_g5_eventlog %>%
+ filter(teams_play == "Dallas Mavericks") %>% 
  process_map(
   type_nodes = frequency("absolute"),
   type_edges = performance(mean, "secs"),
@@ -210,29 +260,21 @@ nba_final_g5_eventlog %>%
 
 A few noteworthy insights:
 
-\- Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
+\- Celtics were more industrious than Dallas. Having completed more passes, dribbles, rebounds, blocks etc
 
-\- The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
+\- Boston were 1 second quicker on average to make a shot attempt after a defensive rebound.
 
-\- Another one
-
-
-#### Throughput Time
-
-```{r}
-
-nba_final_g5_eventlog %>% 
- group_by(teams_play) %>% 
- throughput_time("log", units = "secs") %>%
- plot()
-
-```
+\- Both teams passed the ball with similar average times: Boston with 1.2 seconds and Dallas 1.51 seconds, for passes not leading to an assist. Boston 2.31 seconds and Dallas 2.5 seconds for passes leading to an assist. In both cases Boston were on average quicker and sharper in moving the ball. 
 
 ### Organisational
 
+Organisational analysis refers to the examination of the social and organisational aspects of a business process, such as the resources, responsibilities, and interactions of the individuals involved.
+
+#### Resource Industry
+
 Looking at the top 10 industrious players, the players with higher frequency of activities. This is were you would expect to see your stars.
 
-```{r industry, echo=FALSE}
+```{r industry}
 
 nba_final_g5_eventlog %>% 
  resource_frequency(level = "resource") %>%
@@ -243,26 +285,30 @@ nba_final_g5_eventlog %>%
 
 As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
 
-```{r specialisation, echo=FALSE}
+#### Specialisation
+
+```{r specialisation}
 
 nba_final_g5_eventlog %>% 
  group_by(player_team) %>% 
  resource_frequency(level = "resource-activity") %>%
  filter(!resource_id %in% c("Boston Celtics", "Dallas Mavericks"), 
-        !activity_id %in% c("pass", "dribble"),
         absolute > 1) %>%
- #head(10) %>% 
  plot()
 
 ```
 
-### Multi-dimensional
+One game doesn't make a specialist but for the purposes of exploration let's see who was a one-game specialist, who excels at a type of activity. Note, I've removed any activities that happended once plot dimensions and make it easy viewing.
 
-```{r}
+A few noteworthy insights
 
-# Holding
+\- There are more Dallas players than Boston, the specialisation of activities was spread wider for Dallas. 
 
-```
+\- Luka held the pass master title for Dallas and was certainly his teams passing specialist whilst Boston shared that specialisation across 4 players.
+
+\- Luka specialised in defensive rebound for his team as well as passing, were as Boston shared this responsibility across 4 players.
+
+Although there were more Dallas specialists, Luka was the main specialist in passing, and defensive rebounded comparative to his team whilst Boston often had several specialists in any given activity. This would have hindered Dallas when Luka was subbed and benefited Boston during bench rotation.
 
 ## Conclusion
 
