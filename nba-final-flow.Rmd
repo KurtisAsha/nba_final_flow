@@ -12,7 +12,7 @@ output:
 
 ## Project Introduction 👋🏽
 
-Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball. I've played basketball all my life, although my failing left knee means I play infrequently in my older age. 
+Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball. I've played basketball all my life, although my failing left knee means I play infrequently in my older age.
 
 I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
@@ -33,9 +33,9 @@ nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = 
 
 ## Data Treatment
 
-The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp. 
+The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp.
 
-To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
+To add assurance to this data set I checked each activity available on [\@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [\@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
 
 A few self imposed rules during data creation:
 
@@ -47,7 +47,7 @@ A few self imposed rules during data creation:
 
 ## Create Eventlog
 
-An eventlog in process mining is a structured collection of recorded events that represent the execution of activities usually within a business process, in this context, an NBA game. 
+An eventlog in process mining is a structured collection of recorded events that represent the execution of activities usually within a business process, in this context, an NBA game.
 
 It typically contains information such as the event type, timestamp, case identifier, and other relevant attributes, serving as the primary input for process mining techniques to discover, monitor, and improve actual processes.
 
@@ -75,19 +75,19 @@ Control flow in process mining refers to the sequence and decision points of act
 
 #### Traces
 
-Traces are the distinct processes of an eventlog, in this context, a play which starts post shot attempt until another shot attempt. 
+Traces are the distinct processes of an eventlog, in this context, a play which starts post shot attempt until another shot attempt.
 
 ##### Coverage
 
-Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.  
+Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.
 
 ```{r trace_coverage, echo=FALSE}
 
-x <- nba_final_g5_eventlog %>%
+log_trace <- nba_final_g5_eventlog %>%
  trace_coverage("trace") %>% 
  plot()
 
-y <- nba_final_g5_eventlog %>%
+united_log_trace <- nba_final_g5_eventlog %>%
  act_unite(pass = c("pass-to-assist", "pass", "pass-turnover", "pass-to-start-quarter"),
            dribble = c("dribble", "dribble-turnover"),
            rebound = c("defensive-rebound", "offensive-rebound"),
@@ -95,17 +95,15 @@ y <- nba_final_g5_eventlog %>%
  trace_coverage("trace") %>% 
  plot()
 
- x + y
+ log_trace + united_log_trace
 
 ```
 
-As the left plot displays a max relative frequency of 0.03, the plays of this game varied considerably. Even when grouping activities e.g. dribble and dribble-turnover both set as dribble, a max relative frequency of 0.06 as shown in the right plot. 
+As the left plot displays a max relative frequency of 0.03, the plays of this game varied considerably. Even when grouping activities e.g. dribble and dribble-turnover both set as dribble, a max relative frequency of 0.06 as shown in the right plot.
 
-With more detailed data around off the ball movements and data on many more games, perhaps you could use trace coverage analysis to:
-\- See if what looks seemingly like a collect of passes and dribbles is a drawn up play which would in theory increase the relative frequency
-\- Compare across teams and games to see if this metric shares patterns with tradition metrics i.e. win/loss, plus/minus etc
+With more detailed data around off the ball movements and data on many more games, perhaps you could use trace coverage analysis to: - See if what looks seemingly like a collect of passes and dribbles is a drawn up play which would in theory increase the relative frequency - Compare across teams and games to see if this metric shares patterns with tradition metrics i.e. win/loss, plus/minus etc
 
-##### Length by Team
+##### Team Trace Length 
 
 Reviewing the trace sizes for each team.
 
@@ -147,7 +145,7 @@ nba_final_g5_eventlog %>%
 
 The 4th quarter has higher average and max trace lengths at a time when they needed to make a push.
 
-There could be multiple reasons as to why, perhaps Boston played brilliant defence forcing Dallas to pass more in order to shift the defence and make space. 
+There could be multiple reasons as to why, perhaps Boston played brilliant defence forcing Dallas to pass more in order to shift the defence and make space.
 
 Regardless this ran down the clock limiting the number of available opportunities to reduce the deficit.
 
@@ -188,11 +186,13 @@ nba_final_g5_eventlog %>%
 
 ```
 
-Across the game ~70% of all passes were followed by a dribble whilst ~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
+Across the game \~70% of all passes were followed by a dribble whilst \~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
 
-~55% of the time a defensive rebound was followed by a dribble, and ~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation.
+\~55% of the time a defensive rebound was followed by a dribble, and \~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation.
 
 ### Performance
+
+#### Process Map
 
 Process mining isn't complete without a process map. Split by team plays across quarters, you could dig for many insights looking across both maps.
 
@@ -209,20 +209,15 @@ nba_final_g5_eventlog %>%
 ```
 
 A few noteworthy insights:
-\-   Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
-\-   The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
-\-   Another one
+
+\- Celtics were more industrious than Dallas. Having completed more of passes, dribbles, rebounds, blocks etc
+
+\- The mean average time dribbled before passing in the 4th quarter for Boston was much higher. Demonstrating a classic tactic to slow the game down, especially when your up by so many points, using your full 24 seconds means the other team have half the available time to stage a comeback.
+
+\- Another one
 
 
-
-```{r}
-
-nba_final_g5_eventlog %>% 
- group_by(teams_play) %>% 
- throughput_time("log", units = "secs") %>%
- plot()
-
-```
+#### Throughput Time
 
 ```{r}
 
@@ -232,11 +227,10 @@ nba_final_g5_eventlog %>%
  plot()
 
 ```
-
 
 ### Organisational
 
-Looking at the top 10 industrious players, the players with higher frequency of activities. This is were you would expect to see your stars. 
+Looking at the top 10 industrious players, the players with higher frequency of activities. This is were you would expect to see your stars.
 
 ```{r industry, echo=FALSE}
 
@@ -247,7 +241,7 @@ nba_final_g5_eventlog %>%
 
 ```
 
-As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas. 
+As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
 
 ```{r specialisation, echo=FALSE}
 
@@ -274,9 +268,7 @@ nba_final_g5_eventlog %>%
 
 Improvements
 
-Automate data collection
-Have all 5 games in the data set
-Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock.
+Automate data collection Have all 5 games in the data set Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock.
 
 ## Acknowledgements
 
