@@ -25,6 +25,7 @@ library(bupaverse)
 library(processanimateR)
 library(patchwork)
 library(DT)
+library(psmineR)
 
 # Get data
 nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE)
@@ -164,7 +165,7 @@ longest_trace <- nba_final_g5_eventlog %>%
 nba_final_g5_eventlog %>%
  filter_case(cases = longest_trace) %>% 
  as.data.frame() %>% 
- select(activity_id, player_team, teams_play) %>% 
+ select(case_id, seq, activity_id, player_team, teams_play) %>% 
  datatable(class = c("compact", "hover", "row-border"), rownames = FALSE)
  
 ```
@@ -182,7 +183,7 @@ nba_final_g5_eventlog %>%
  process_matrix(type = frequency("relative-antecedent")) %>% 
  plot() +
  theme(legend.position = "top") +
- scale_fill_viridis_b(name = "Relative Antecedence")
+ scale_fill_viridis_b(name = "Relative Antecedence", direction = -1)
 )
 
 ```
@@ -226,6 +227,8 @@ throughput_make_plot + throughput_miss_plot
 
 \- For shots made by Dallas the interquartile range is half that of Boston. 50% of Dallas's plays were quick, perhaps rushed due to score deficit. 
 
+
+
 #### Process Map
 
 Process mining isn't complete without a process map. Split by team plays, you could dig for many insights looking across both maps.
@@ -265,6 +268,27 @@ A few noteworthy insights:
 \- Boston were 1 second quicker on average to make a shot attempt after a defensive rebound.
 
 \- Both teams passed the ball with similar average times: Boston with 1.2 seconds and Dallas 1.51 seconds, for passes not leading to an assist. Boston 2.31 seconds and Dallas 2.5 seconds for passes leading to an assist. In both cases Boston were on average quicker and sharper in moving the ball. 
+
+#### Spectra
+
+Referenced in [@bupar](https://bupaverse.github.io/docs/performance_spectrum.html){.uri}, @inproceedings provides another avenue to analyse performance. What the authors term "performance spectra" defined as "The Performance Spectrum is a fully detailed data structure and visualization of all cases over all segments over time" provides a taxonomy of performance patterns. 
+
+```{r spectra}
+
+nba_final_g5_eventlog %>% 
+ ps_detailed(segment_coverage = 0.15, classification = "teams_play") + 
+ scale_colour_viridis_d()
+
+```
+
+I've opted for 15% coverage of plays (or cases) which contain the activity pairs as most would be sparce and beyond evaluating. 
+
+In line with the taxonomy, this event can be categorised as:
+\- A **scope** which is segmented and globally occurring, that is continuously occurring. Having more comprehensive game data on off the ball movement may have changed this.
+\- A **shape** which is combined was an order close to FIFO-variable speed (FIFO stands for fly-in fly-out, thanks to @eca for the assist on that meaning)
+\- A **workload** which is continuous in some activity pairs and sparse in others
+
+
 
 ### Organisational
 
