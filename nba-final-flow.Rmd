@@ -22,7 +22,6 @@ knitr::opts_chunk$set(echo = FALSE)
 # Load packages
 library(tidyverse)
 library(bupaverse)
-library(processanimateR)
 library(patchwork)
 library(DT)
 library(psmineR)
@@ -336,6 +335,43 @@ A few noteworthy insights
 -   Luka specialised in defensive rebound for his team as well as passing, were as Boston shared this responsibility across 4 players.
 
 Although there were more Dallas specialists, Luka was the main specialist in passing, and defensive rebounded comparative to his team whilst Boston often had several specialists in any given activity. This would have hindered Dallas when Luka was subbed and benefited Boston during bench rotation.
+
+#### Handover work
+
+Handover analysis explores how work is handed off from one person or step to the next.
+
+In the following resource maps, I'll be looking at the 20% most frequent plays or traces.
+
+##### Boston Celtics
+
+```{r handover_work_boston}
+
+nba_final_g5_eventlog %>%
+ filter(teams_play == "Boston Celtics") %>% 
+ filter_trace_frequency(percentage = 0.2) %>% 
+ resource_map()
+ 
+```
+
+Jayson Tatum was passed to most (9) by Derrick White but only by 1 more pass. Followed by Jrue Holiday passing to Derrick White (8). Handover work is generally even across the most industrious players in Boston
+
+##### Dallas Mavericks
+
+```{r handover_work_dallas}
+
+nba_final_g5_eventlog %>%
+ filter(teams_play == "Dallas Mavericks") %>% 
+ filter_trace_frequency(percentage = 0.2) %>% 
+ resource_map()
+
+```
+
+Comparative to Boston, Dallas rotated the basketball less. The highest handover score between players being 3. 
+
+Shows for at least 20% of the most frequent plays, Boston moved the ball more, this is almost always a good sign in basketball, it often equates to:
+\-  Improved player engagement
+\-  Players better attuned to game tempo
+\-  Players warm up quicker, essential for a sport which has constant substitutions
 
 ## Conclusion
 
