@@ -150,19 +150,29 @@ shot_made_plot <- nba_final_g5_eventlog %>%
  group_by(teams_play) %>%
  trace_length("log") %>%
  plot() +
+ theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+ geom_jitter(alpha = 0.7, size = 2) +
+ geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+              colour = "#000000") +
+ stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
  scale_y_continuous(limits = c(0, 18)) +
  labs(title = "Teams Traces by Shot Made")
-
 
 shot_miss_plot <- nba_final_g5_eventlog %>%
  filter_activity_presence("shot-miss") %>%
  group_by(teams_play) %>%
  trace_length("log") %>%
  plot() +
+ theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+ geom_jitter(alpha = 0.7, size = 2) +
+ geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+              colour = "#000000") +
+ stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
  scale_y_continuous(limits = c(0, 18)) +
  labs(title = "Teams Traces by Shot Miss")
 
-shot_made_plot + shot_miss_plot
+(shot_made_plot + shot_miss_plot) +
+ plot_layout(axes = "collect")
 
 ```
 
@@ -175,7 +185,14 @@ nba_final_g5_eventlog %>%
  filter_activity_presence("shot-miss") %>%
  group_by(quarter) %>% 
  trace_length("log") %>%
- plot() 
+ plot() +
+ theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+ geom_jitter(alpha = 0.7, size = 2) +
+ geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+              colour = "#000000") +
+ stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+ scale_y_continuous(limits = c(0, 18)) +
+ labs(title = "Dallas Traces by Shot Miss & Quarter")
 
 ```
 
@@ -243,7 +260,12 @@ throughput_make_plot <- nba_final_g5_eventlog %>%
  group_by(teams_play) %>%
  filter_activity_presence("shot-make", method = "none") %>% 
  throughput_time("log", units = "secs") %>%
- plot() +
+ plot() + 
+ theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+ geom_jitter(alpha = 0.7, size = 2) +
+ geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+              colour = "#000000") +
+ stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
  scale_y_continuous(limits = c(0, 45)) +
  labs(title = "Teams Traces by Shot Make"))
 
@@ -253,10 +275,16 @@ throughput_miss_plot <- nba_final_g5_eventlog %>%
  filter_activity_presence("shot-miss", method = "none") %>% 
  throughput_time("log", units = "secs") %>%
  plot() +
+ theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+ geom_jitter(alpha = 0.7, size = 2) +
+ geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+              colour = "#000000") +
+ stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
  scale_y_continuous(limits = c(0, 45)) +
  labs(title = "Teams Traces by Shot Miss"))
 
-throughput_make_plot + throughput_miss_plot 
+(throughput_make_plot + throughput_miss_plot) +
+ plot_layout(axes = "collect")
 
 ```
 
@@ -434,5 +462,9 @@ Packages and package maintainer(s):
 
 -   tidyverse \| Hadley Wickham
 -   bupaverse \| Gert Janssenswillen
+-   patchwork \| Thomas Lin Pedersen
+-   viridis \| Simon Garnier
+-   DT \| 	Joe Cheng
+-   psmineR \|	Gert Janssenswillen
 
 ## References
