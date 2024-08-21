@@ -17,14 +17,18 @@ Inspired by @PmInspiration, this blog will use R to explore process mining on a 
 I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
 
 # Load packages
 library(tidyverse)
 library(bupaverse)
 library(patchwork)
+library(viridis)
 library(DT)
 library(psmineR)
+
+# Global settings
+knitr::opts_chunk$set(echo = FALSE)
+theme_set(theme_minimal(base_family = "serif"))
 
 # Get data
 nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE)
@@ -79,23 +83,55 @@ Traces are the distinct processes of an eventlog, in this context, a play which 
 
 ##### Coverage
 
-Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent.
+Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent. The plots display relative frequencies above 0.02 to remove the plot tail and make for better viewing. 
 
 ```{r trace_coverage}
 
+suppressMessages(
 log_trace <- nba_final_g5_eventlog %>%
- trace_coverage("trace") %>% 
- plot()
+ trace_coverage("trace") %>%
+ filter(relative > 0.02) %>%
+ plot() +
+ theme(legend.position = "top") +
+ scale_fill_viridis("Relative Frequency",
+                    option = "D",
+                    direction = -1) +
+ scale_y_continuous(limits = c(0, 0.45), 
+                    breaks = seq(0, 0.45, 0.05)) +
+ scale_x_continuous(breaks = seq(0, 1, 0.2)) +
+ labs(title = "Play variance") +
+ ylab("")
+)
 
+suppressMessages(
 united_log_trace <- nba_final_g5_eventlog %>%
- act_unite(pass = c("pass-to-assist", "pass", "pass-turnover", "pass-to-start-quarter"),
-           dribble = c("dribble", "dribble-turnover"),
-           rebound = c("defensive-rebound", "offensive-rebound"),
-           shot = c("shot-miss", "shot-make")) %>% 
- trace_coverage("trace") %>% 
- plot()
+ act_unite(
+  pass = c(
+   "pass-to-assist",
+   "pass",
+   "pass-turnover",
+   "pass-to-start-quarter"
+  ),
+  dribble = c("dribble", "dribble-turnover"),
+  rebound = c("defensive-rebound", "offensive-rebound"),
+  shot = c("shot-miss", "shot-make")
+ ) %>%
+ trace_coverage("trace") %>%
+ filter(relative > 0.02) %>%
+ plot() +
+ theme(legend.position = "top") +
+ scale_fill_viridis("Relative Frequency",
+                    option = "D",
+                    direction = -1) +
+ scale_y_continuous(limits = c(0, 0.45), 
+                    breaks = seq(0, 0.45, 0.05)) +
+ scale_x_continuous(breaks = seq(0, 1, 0.2)) +
+ labs(title = "Play variance with unified activities") +
+ ylab("")
+)
 
- log_trace + united_log_trace
+ (log_trace + united_log_trace) +
+ plot_layout(axes = "collect")
 
 ```
 
@@ -184,7 +220,7 @@ nba_final_g5_eventlog %>%
  process_matrix(type = frequency("relative-antecedent")) %>% 
  plot() +
  theme(legend.position = "top") +
- scale_fill_viridis_b(name = "Relative Antecedence", direction = -1)
+ scale_fill_viridis(option = "D", name = "Relative Antecedence", direction = -1)
 )
 
 ```
@@ -302,10 +338,18 @@ Looking at the top 10 industrious players, the players with higher frequency of 
 
 ```{r industry}
 
+suppressMessages(
 nba_final_g5_eventlog %>% 
  resource_frequency(level = "resource") %>%
  head(10) %>% 
- plot()
+ plot() +
+ theme(legend.position = "none") +
+ scale_fill_viridis("Frequency",
+                    option = "D",
+                    direction = -1) +
+ labs(title = "Player Industriousness") +
+ xlab("")
+)
 
 ```
 
@@ -315,12 +359,17 @@ As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not a
 
 ```{r specialisation}
 
+suppressMessages(
 nba_final_g5_eventlog %>% 
  group_by(player_team) %>% 
  resource_frequency(level = "resource-activity") %>%
  filter(!resource_id %in% c("Boston Celtics", "Dallas Mavericks"), 
         absolute > 1) %>%
- plot()
+ plot() + 
+ theme(legend.position = "top") +
+ scale_fill_viridis(option = "D", name = "Relative Antecedence", direction = -1) +
+ ylab("")
+)
 
 ```
 
@@ -369,9 +418,9 @@ nba_final_g5_eventlog %>%
 Comparative to Boston, Dallas rotated the basketball less. The highest handover score between players being 3. 
 
 Shows for at least 20% of the most frequent plays, Boston moved the ball more, this is almost always a good sign in basketball, it often equates to:
-\-  Improved player engagement
-\-  Players better attuned to game tempo
-\-  Players warm up quicker, essential for a sport which has constant substitutions
+-   Improved player engagement
+-   Players better attuned to game tempo
+-   Players warm up quicker, essential for a sport which has constant substitutions
 
 ## Conclusion
 
