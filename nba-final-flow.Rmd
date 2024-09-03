@@ -31,7 +31,14 @@ knitr::opts_chunk$set(echo = FALSE)
 theme_set(theme_minimal(base_family = "serif"))
 
 # Get data
-nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE)
+nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE) %>% 
+ mutate(
+  resource_id = case_when(
+   resource_id == "Luka Doncic" ~ "Luka_Dončić", 
+   resource_id == "Kristaps Porzingis" ~ "Kristaps_Porziņģis",
+   TRUE ~ str_replace_all(resource_id, " ", "_")
+  )
+ )
 
 ```
 
@@ -220,8 +227,9 @@ nba_final_g5_eventlog %>%
  select(case_id, seq, activity_id, player_team, teams_play) %>% 
  datatable(class = c("compact", "hover", "row-border"), 
            rownames = FALSE, 
-           options = list(pageLength = 20))
- 
+           options = list(dom = 't'))
+
+
 ```
 
 This outlier is explained by how a play is defined by a shot attempt. Boston held position at the onset but turned over possession to Dallas, shortly after Dallas made a shot attempt.
@@ -255,7 +263,7 @@ Performance analysis typically involves metrics such as time to complete activit
 This analysis is limited by the time stamps collected. If I had start and end times of each activity, more granular analysis could be performed. As it stands only total time across process is available, also know as throughput time.
 
 ```{r throughput}
-suppressMessages(
+suppressWarnings(
 throughput_make_plot <- nba_final_g5_eventlog %>% 
  group_by(teams_play) %>%
  filter_activity_presence("shot-make", method = "none") %>% 
@@ -269,7 +277,7 @@ throughput_make_plot <- nba_final_g5_eventlog %>%
  scale_y_continuous(limits = c(0, 45)) +
  labs(title = "Teams Traces by Shot Make"))
 
-suppressMessages(
+suppressWarnings(
 throughput_miss_plot <- nba_final_g5_eventlog %>% 
  group_by(teams_play) %>%
  filter_activity_presence("shot-miss", method = "none") %>% 
@@ -326,7 +334,7 @@ nba_final_g5_eventlog %>%
 
 A few noteworthy insights:
 
--   Celtics were more industrious than Dallas. Having completed more passes, dribbles, rebounds, blocks etc
+-   Boston were more industrious than Dallas. Having completed more passes, dribbles, rebounds, blocks etc
 
 -   Boston were 1 second quicker on average to make a shot attempt after a defensive rebound.
 
@@ -452,9 +460,32 @@ Shows for at least 20% of the most frequent plays, Boston moved the ball more, t
 
 ## Conclusion
 
-Improvements
+### Game
+- Game had little variety in plays
+- Dallas was stopped in trying to build a momement
+- Dallas's plays were quicker than that of Boston, due to Dallas pushing to close lead or Boston slowing down the game
+- Boston were more industrious
+- Boston were quicker at shot attempts post defensive rebounds
+- Boston were quicker at passing the ball
+- Boston spread activities across the team comparative to Dallas
+- Jayson Tatum was passed to most (9) by Derrick White but only by 1 more pass. Followed by Jrue Holiday passing to Derrick White (8)
+- 
 
-Automate data collection Have all 5 games in the data set Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock.
+### Method
+
+
+
+### Improvements
+
+- Process mining for an evasion sport like basketball would surely benefit from process data for off the ball activity. Perhaps individual sports would prove a better prospect requiring less data to generate insight.
+
+- The automating of data collection
+
+- Have all 5 games in the data set, including season pbp data to boot
+
+- Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock
+
+
 
 ## Acknowledgements
 
