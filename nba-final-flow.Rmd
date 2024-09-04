@@ -2,7 +2,6 @@
 title: "NBA 2024 Final Process Mining"
 author: "Author: Kurtis Smith"
 date: "Published Date: TBC"
-bibliography: references.bib
 output: 
  html_document:
   fig_width: 10
@@ -493,3 +492,16 @@ Packages and package maintainer(s):
 -   psmineR \|	Gert Janssenswillen
 
 ## References
+
+| bupaverse. 2024. “BupaR Docs | Performance Spectrum — Bupaverse.github.io.”
+|    https://bupaverse.github.io/docs/performance_spectrum.html.
+| Denisov, Vadim, Dirk Fahland, and Wil Aalst. 2018. “Unbiased, Fine-Grained Description of Processes   
+|    Performance from Event Data: 16th International Conference, BPM 2018, Sydney, NSW, Australia,   
+|    September 9–14, 2018, Proceedings.” https://doi.org/10.1007/978-3-319-98648-7_9.
+| Kröckel, Pavlina, and Freimut Bodendorf. 2020. “Process Mining of Football Event Data: A Novel Approach 
+|    for Tactical Insights into the Game.” Frontiers in Artificial Intelligence.     
+|    https://doi.org/10.3389/frai.2020.00047.
+| nba.com/box-score. 2024. “Dallas Mavericks Vs Boston Celtics Jun 17, 2024 Box Scores — Nba.com.” 
+|    https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All.
+| nba.com/play-by-play. 2024. “Dallas Mavericks Vs Boston Celtics Jun 17, 2024 Play-by-Play — Nba.com.” 
+|    https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All.
