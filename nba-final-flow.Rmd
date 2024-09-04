@@ -1,8 +1,7 @@
 ---
-title: "NBA 2024 Final Process Mining"
-author: "Author: Kurtis Smith"
-date: "Published Date: TBC"
-bibliography: references.bib
+title: 'NBA 2024 Final Process Mining'
+author: 'Author: Kurtis Smith'
+date: 'Published Date: TBC'
 output: 
  html_document:
   fig_width: 10
@@ -12,9 +11,9 @@ output:
 
 ## Project Introduction 👋🏽
 
-Inspired by @PmInspiration, this analysis will use R to explore process mining on a subject I'm fond of - basketball. I've played basketball all my life, although my failing left knee means I play infrequently in my older age.
+Inspired by @PmInspiration, this analysis will use R to explore process mining on a subject I am fond of - basketball. I have played basketball all my life, although my failing left knee means I play infrequently in my older age.
 
-I'll be analysing game 5 of the 2024 NBA final between Dončić's Dallas Mavericks and Tatum's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
+I will be analysing game 5 of the 2024 NBA final between Dončić, Dallas Mavericks and Tatum, Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I will avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let us start with the data.
 
 ```{r setup, include=FALSE}
 
@@ -28,14 +27,14 @@ library(psmineR)
 
 # Global settings
 knitr::opts_chunk$set(echo = FALSE)
-theme_set(theme_minimal(base_family = "serif"))
+theme_set(theme_minimal(base_family = 'serif'))
 
 # Get data
-nba_2024_g5_pm_data <- read_csv("./input/nba-final-2024-game-5.csv", col_names = TRUE) %>% 
+nba_2024_g5_pm_data <- read_csv('./input/nba-final-2024-game-5.csv', col_names = TRUE) %>% 
  mutate(
   resource_id = case_when(
-   resource_id == "Luka Doncic" ~ "Luka_Dončić", 
-   resource_id == "Kristaps Porzingis" ~ "Kristaps_Porziņģis",
+   resource_id == 'Luka Doncic' ~ 'Luka_Dončić', 
+   resource_id == 'Kristaps Porzingis' ~ 'Kristaps_Porziņģis',
    TRUE ~ resource_id)
   )
 
@@ -49,11 +48,11 @@ To add assurance to this data set I checked each activity available on [@nba.com
 
 A few self imposed rules during data creation:
 
--   To define the process under analysis, one end to end run or "case" ends with a shot
+-   To define the process under analysis, one end to end run or 'case' ends with a shot
 
 -   For free throws the case ends at the last free throw attempt
 
--   Unless specified from the nba website I've timestamped at the beginning of each activity
+-   Unless specified from the nba website I have timestamped at the beginning of each activity
 
 ## Create Eventlog
 
@@ -66,15 +65,15 @@ Once an event log object has been created, the object can be used across multipl
 ```{r create_eventlog}
 
 nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>% 
- mutate(lifecycle_id = "complete", 
-        timestamp = ymd_hms(paste0("20240617 ", timestamp))) %>% 
- eventlog(case_id = "case_id", 
-          activity_id = "activity_id", 
-          activity_instance_id = "seq", 
-          lifecycle_id = "lifecycle_id", 
-          timestamp = "timestamp", 
-          resource_id = "resource_id", 
-          order = "seq", 
+ mutate(lifecycle_id = 'complete', 
+        timestamp = ymd_hms(paste0('20240617 ', timestamp))) %>% 
+ eventlog(case_id = 'case_id', 
+          activity_id = 'activity_id', 
+          activity_instance_id = 'seq', 
+          lifecycle_id = 'lifecycle_id', 
+          timestamp = 'timestamp', 
+          resource_id = 'resource_id', 
+          order = 'seq', 
           validate = TRUE)
 
 ```
@@ -91,55 +90,55 @@ Traces are the distinct processes of an eventlog, in this context, a play which 
 
 ##### Coverage
 
-Reviewing the trace coverage relative to cases let's us see if the same plays are used throughout or if plays are variable. The plots display relative frequencies above 0.02 to remove the plot tail and make for better viewing. 
+Reviewing the trace coverage relative to cases let us us see if the same plays are used throughout or if plays are variable. The plots display relative frequencies above 0.02 to remove the plot tail and make for better viewing. 
 
 ```{r trace_coverage}
 
 suppressMessages(
 log_trace <- nba_final_g5_eventlog %>%
- trace_coverage("trace") %>%
+ trace_coverage('trace') %>%
  filter(relative > 0.02) %>%
  plot() +
- theme(legend.position = "top") +
- scale_fill_viridis("Relative Frequency",
-                    option = "D",
+ theme(legend.position = 'top') +
+ scale_fill_viridis('Relative Frequency',
+                    option = 'D',
                     direction = -1) +
  scale_y_continuous(limits = c(0, 0.45), 
                     breaks = seq(0, 0.45, 0.05)) +
  scale_x_continuous(breaks = seq(0, 1, 0.2)) +
- labs(title = "Play variance") +
- ylab("")
+ labs(title = 'Play variance') +
+ ylab('')
 )
 
 suppressMessages(
 united_log_trace <- nba_final_g5_eventlog %>%
  act_unite(
   pass = c(
-   "pass-to-assist",
-   "pass",
-   "pass-turnover",
-   "pass-to-start-quarter"
+   'pass-to-assist',
+   'pass',
+   'pass-turnover',
+   'pass-to-start-quarter'
   ),
-  dribble = c("dribble", "dribble-turnover"),
-  rebound = c("defensive-rebound", "offensive-rebound"),
-  shot = c("shot-miss", "shot-make")
+  dribble = c('dribble', 'dribble-turnover'),
+  rebound = c('defensive-rebound', 'offensive-rebound'),
+  shot = c('shot-miss', 'shot-make')
  ) %>%
- trace_coverage("trace") %>%
+ trace_coverage('trace') %>%
  filter(relative > 0.02) %>%
  plot() +
- theme(legend.position = "top") +
- scale_fill_viridis("Relative Frequency",
-                    option = "D",
+ theme(legend.position = 'top') +
+ scale_fill_viridis('Relative Frequency',
+                    option = 'D',
                     direction = -1) +
  scale_y_continuous(limits = c(0, 0.45), 
                     breaks = seq(0, 0.45, 0.05)) +
  scale_x_continuous(breaks = seq(0, 1, 0.2)) +
- labs(title = "Play variance with unified activities") +
- ylab("")
+ labs(title = 'Play variance with unified activities') +
+ ylab('')
 )
 
  (log_trace + united_log_trace) +
- plot_layout(axes = "collect")
+ plot_layout(axes = 'collect')
 
 ```
 
@@ -154,33 +153,33 @@ Reviewing the trace sizes for each team i.e. The number of activities used until
 ```{r trace_length}
 
 shot_made_plot <- nba_final_g5_eventlog %>%
- filter_activity_presence("shot-make") %>%
+ filter_activity_presence('shot-make') %>%
  group_by(teams_play) %>%
- trace_length("log") %>%
+ trace_length('log') %>%
  plot() +
  theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
  geom_jitter(alpha = 0.7, size = 2) +
  geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-              colour = "#000000") +
- stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+              colour = '#000000') +
+ stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
  scale_y_continuous(limits = c(0, 18)) +
- labs(title = "Teams Traces by Shot Made")
+ labs(title = 'Teams Traces by Shot Made')
 
 shot_miss_plot <- nba_final_g5_eventlog %>%
- filter_activity_presence("shot-miss") %>%
+ filter_activity_presence('shot-miss') %>%
  group_by(teams_play) %>%
- trace_length("log") %>%
+ trace_length('log') %>%
  plot() +
  theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
  geom_jitter(alpha = 0.7, size = 2) +
  geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-              colour = "#000000") +
- stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+              colour = '#000000') +
+ stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
  scale_y_continuous(limits = c(0, 18)) +
- labs(title = "Teams Traces by Shot Miss")
+ labs(title = 'Teams Traces by Shot Miss')
 
 (shot_made_plot + shot_miss_plot) +
- plot_layout(axes = "collect")
+ plot_layout(axes = 'collect')
 
 ```
 
@@ -189,18 +188,18 @@ All look similar except Dallas for plays which end in a miss. Lets look into thi
 ```{r trace_sizes}
 
 nba_final_g5_eventlog %>%
- filter(teams_play == "Dallas Mavericks") %>% 
- filter_activity_presence("shot-miss") %>%
+ filter(teams_play == 'Dallas Mavericks') %>% 
+ filter_activity_presence('shot-miss') %>%
  group_by(quarter) %>% 
- trace_length("log") %>%
+ trace_length('log') %>%
  plot() +
  theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
  geom_jitter(alpha = 0.7, size = 2) +
  geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-              colour = "#000000") +
- stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+              colour = '#000000') +
+ stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
  scale_y_continuous(limits = c(0, 18)) +
- labs(title = "Dallas Traces by Shot Miss & Quarter")
+ labs(title = 'Dallas Traces by Shot Miss & Quarter')
 
 ```
 
@@ -210,13 +209,13 @@ There could be multiple reasons as to why, perhaps Boston played brilliant defen
 
 Regardless this ran down the clock limiting the number of available opportunities to reduce the deficit.
 
-Let's view that 4th quarter outlier process to see why.
+Let us view that 4th quarter outlier process to see why.
 
 ```{r trace_outlier}
 
 longest_trace <- nba_final_g5_eventlog %>%
- filter(teams_play == "Dallas Mavericks") %>%
- filter_activity_presence("shot-miss") %>%
+ filter(teams_play == 'Dallas Mavericks') %>%
+ filter_activity_presence('shot-miss') %>%
  filter_trace_length(percentage = 0.01) %>% 
  count(case_id, sort = TRUE) %>% 
  head(1) %>% 
@@ -226,7 +225,7 @@ nba_final_g5_eventlog %>%
  filter_case(cases = longest_trace) %>% 
  as.data.frame() %>% 
  select(case_id, seq, activity_id, player_team, teams_play) %>% 
- datatable(class = c("compact", "hover", "row-border"), 
+ datatable(class = c('compact', 'hover', 'row-border'), 
            rownames = FALSE, 
            options = list(dom = 't'))
 
@@ -243,10 +242,10 @@ Reviewing the activity process matrix allows for investigation into antecedent a
 
 suppressMessages(
 nba_final_g5_eventlog %>%
- process_matrix(type = frequency("relative-antecedent")) %>% 
+ process_matrix(type = frequency('relative-antecedent')) %>% 
  plot() +
- theme(legend.position = "top") +
- scale_fill_viridis(option = "D", name = "Relative Antecedence", direction = -1)
+ theme(legend.position = 'top') +
+ scale_fill_viridis(option = 'D', name = 'Relative Antecedence', direction = -1)
 )
 
 ```
@@ -268,34 +267,34 @@ This analysis is limited by the time stamps collected. If I had start and end ti
 suppressMessages(
  throughput_make_plot <- nba_final_g5_eventlog %>% 
   group_by(teams_play) %>%
-  filter_activity_presence("shot-make", method = "none") %>% 
-  throughput_time("log", units = "secs") %>%
+  filter_activity_presence('shot-make', method = 'none') %>% 
+  throughput_time('log', units = 'secs') %>%
   plot() + 
   theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
   geom_jitter(alpha = 0.7, size = 2, ) +
   geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-               colour = "#000000") +
-  stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+               colour = '#000000') +
+  stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
   scale_y_continuous(limits = c(-5, 45)) +
-  labs(title = "Teams Traces by Shot Make"))
+  labs(title = 'Teams Traces by Shot Make'))
 
 suppressMessages(
  throughput_miss_plot <- nba_final_g5_eventlog %>% 
   group_by(teams_play) %>%
-  filter_activity_presence("shot-miss", method = "none") %>% 
-  throughput_time("log", units = "secs") %>%
+  filter_activity_presence('shot-miss', method = 'none') %>% 
+  throughput_time('log', units = 'secs') %>%
   plot() +
   theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
   geom_jitter(alpha = 0.7, size = 2) +
   geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-               colour = "#000000") +
-  stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+               colour = '#000000') +
+  stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
   scale_y_continuous(limits = c(-5, 45)) +
-  labs(title = "Teams Traces by Shot Miss"))
+  labs(title = 'Teams Traces by Shot Miss'))
 
 suppressWarnings(
  (throughput_make_plot + throughput_miss_plot) +
-  plot_layout(axes = "collect")
+  plot_layout(axes = 'collect')
 )
 
 ```
@@ -313,11 +312,11 @@ Process mining isn't complete without a process map. Split by team plays, you co
 ```{r process_map_boston}
 
 nba_final_g5_eventlog %>%
- filter(teams_play == "Boston Celtics") %>% 
+ filter(teams_play == 'Boston Celtics') %>% 
  process_map(
-  type_nodes = frequency("absolute"),
-  type_edges = performance(mean, "secs"),
-  rankdir = "TB"
+  type_nodes = frequency('absolute'),
+  type_edges = performance(mean, 'secs'),
+  rankdir = 'TB'
  )
 
 ```
@@ -327,11 +326,11 @@ nba_final_g5_eventlog %>%
 ```{r process_map_dallas}
 
 nba_final_g5_eventlog %>%
- filter(teams_play == "Dallas Mavericks") %>% 
+ filter(teams_play == 'Dallas Mavericks') %>% 
  process_map(
-  type_nodes = frequency("absolute"),
-  type_edges = performance(mean, "secs"),
-  rankdir = "TB"
+  type_nodes = frequency('absolute'),
+  type_edges = performance(mean, 'secs'),
+  rankdir = 'TB'
  )
 
 ```
@@ -346,23 +345,23 @@ A few noteworthy insights:
 
 #### Spectra
 
-Referenced in [@bupaverse_spectrum](https://bupaverse.github.io/docs/performance_spectrum.html){.uri}, @inproceedings provides another avenue to analyse performance. What the authors term "performance spectra" defined as "The Performance Spectrum is a fully detailed data structure and visualization of all cases over all segments over time" provides a taxonomy of performance patterns.
+Referenced in [@bupaverse_spectrum](https://bupaverse.github.io/docs/performance_spectrum.html){.uri}, @inproceedings provides another avenue to analyse performance. What the authors term 'performance spectra' defined as 'The Performance Spectrum is a fully detailed data structure and visualization of all cases over all segments over time' provides a taxonomy of performance patterns.
 
 ```{r spectra}
 
 suppressMessages(
  nba_final_g5_eventlog %>%
-  ps_detailed(segment_coverage = 0.15, classification = "teams_play") +
-  scale_colour_viridis_d(name = "Team Plays") +
+  ps_detailed(segment_coverage = 0.15, classification = 'teams_play') +
+  scale_colour_viridis_d(name = 'Team Plays') +
   theme(
    strip.background = element_rect(fill = viridis::viridis(1, direction = 1)),
-   strip.text = element_text(colour = "#ffffff")
+   strip.text = element_text(colour = '#ffffff')
   )
 )
 
 ```
 
-I've opted for 15% coverage of plays (or cases) as most would be sparse and beyond evaluating. In line with the taxonomy, this event has generally 2 elementary patterns:
+I have opted for 15% coverage of plays (or cases) as most would be sparse and beyond evaluating. In line with the taxonomy, this event has generally 2 elementary patterns:
 
 -   For dribble to pass and vice versa: The pattern follows a **single segment** with **globally occurring** instances, with **regular repetitions**, and a **continuous** workload across the course of the event, the full 45 mins.
 
@@ -382,15 +381,15 @@ Looking at the top 10 industrious players, the players with higher frequency of 
 
 suppressMessages(
 nba_final_g5_eventlog %>% 
- resource_frequency(level = "resource") %>%
+ resource_frequency(level = 'resource') %>%
  head(10) %>%
  plot() +
- theme(legend.position = "none") +
- scale_fill_viridis("Frequency",
-                    option = "D",
+ theme(legend.position = 'none') +
+ scale_fill_viridis('Frequency',
+                    option = 'D',
                     direction = -1) +
- labs(title = "Player Industriousness") +
- xlab("")
+ labs(title = 'Player Industriousness') +
+ xlab('')
 )
 
 ```
@@ -404,18 +403,18 @@ As you would expect, Tatum, Dončić, and Brown rank in the top 3. Irving was no
 suppressMessages(
 nba_final_g5_eventlog %>% 
  group_by(player_team) %>% 
- resource_frequency(level = "resource-activity") %>%
- filter(!resource_id %in% c("Boston Celtics", "Dallas Mavericks"), 
+ resource_frequency(level = 'resource-activity') %>%
+ filter(!resource_id %in% c('Boston Celtics', 'Dallas Mavericks'), 
         absolute > 1) %>%
  plot() + 
- theme(legend.position = "top") +
- scale_fill_viridis(option = "D", name = "Relative Antecedence", direction = -1) +
- ylab("")
+ theme(legend.position = 'top') +
+ scale_fill_viridis(option = 'D', name = 'Relative Antecedence', direction = -1) +
+ ylab('')
 )
 
 ```
 
-One game doesn't make a specialist but for the purposes of exploration let's see who was a one-game specialist, who excels at a type of activity. Note, I've removed any activities that happened only once to reduce dimensions and make it easy viewing.
+One game doesn't make a specialist but for the purposes of exploration let us see who was a one-game specialist, who excels at a type of activity. Note, I have removed any activities that happened only once to reduce dimensions and make it easy viewing.
 
 A few noteworthy insights
 
@@ -431,15 +430,15 @@ Although there were more Dallas specialists, Dončić was the main specialist in
 
 Handover analysis explores how work is handed off from one person or step to the next.
 
-In the following resource maps, I'll be looking at the 20% most frequent plays or traces.
+In the following resource maps, I will be looking at the 20% most frequent plays or traces.
 
 ##### Boston Celtics
 
 ```{r handover_work_boston}
 
 nba_final_g5_eventlog %>%
- mutate(resource_id = if_else(resource_id == "Jaylen Brown", "J. Brown", resource_id)) %>% 
- filter(teams_play == "Boston Celtics") %>% 
+ mutate(resource_id = if_else(resource_id == 'Jaylen Brown', 'J. Brown', resource_id)) %>% 
+ filter(teams_play == 'Boston Celtics') %>% 
  filter_trace_frequency(percentage = 0.2) %>% 
  resource_map()
  
@@ -452,7 +451,7 @@ Jayson Tatum was passed to most (9) by Derrick White but only by 1 more pass. Fo
 ```{r handover_work_dallas}
 
 nba_final_g5_eventlog %>%
- filter(teams_play == "Dallas Mavericks") %>% 
+ filter(teams_play == 'Dallas Mavericks') %>% 
  filter_trace_frequency(percentage = 0.2) %>% 
  resource_map()
 
@@ -493,3 +492,16 @@ Packages and package maintainer(s):
 -   psmineR \|	Gert Janssenswillen
 
 ## References
+
+| bupaverse. 2024. “BupaR Docs | Performance Spectrum — Bupaverse.github.io.”
+|    https://bupaverse.github.io/docs/performance_spectrum.html.
+| Denisov, Vadim, Dirk Fahland, and Wil Aalst. 2018. “Unbiased, Fine-Grained Description of Processes   
+|    Performance from Event Data: 16th International Conference, BPM 2018, Sydney, NSW, Australia,   
+|    September 9–14, 2018, Proceedings.” https://doi.org/10.1007/978-3-319-98648-7_9.
+| Kröckel, Pavlina, and Freimut Bodendorf. 2020. “Process Mining of Football Event Data: A Novel Approach 
+|    for Tactical Insights into the Game.” Frontiers in Artificial Intelligence.     
+|    https://doi.org/10.3389/frai.2020.00047.
+| nba.com/box-score. 2024. “Dallas Mavericks Vs Boston Celtics Jun 17, 2024 Box Scores — Nba.com.” 
+|    https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All.
+| nba.com/play-by-play. 2024. “Dallas Mavericks Vs Boston Celtics Jun 17, 2024 Play-by-Play — Nba.com.” 
+|    https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All.
