@@ -1,0 +1,1188 @@
+seq,case_id,activity_id,timestamp,resource_id,player_team,teams_play,quarter,outcome,shot_type,shot_distance_by_foot,shot_points,score_board_dal,score_board_bos
+1,play_1,dribble,20:00:00,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+2,play_1,pass-turnover,20:00:05,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,,,,0,0
+3,play_1,pass,20:00:06,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+4,play_1,dribble,20:00:10,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+5,play_1,pass,20:00:12,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+6,play_1,dribble,20:00:14,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+7,play_1,pass-to-assist,20:00:14,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+8,play_1,dribble,20:00:15,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,0
+9,play_1,shot-make,20:00:20,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,driving layup,1,2,0,2
+10,play_2,pass,20:00:20,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+11,play_2,dribble,20:00:22,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+12,play_2,pass,20:00:32,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+13,play_2,dribble,20:00:33,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+14,play_2,shot-miss,20:00:37,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,0,step back jump shot,27,3,0,2
+15,play_3,defensive-rebound,20:00:38,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+16,play_3,pass,20:00:39,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+17,play_3,dribble,20:00:40,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+18,play_3,pass,20:00:42,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+19,play_3,dribble,20:00:43,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+20,play_3,foul,20:00:44,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,0,2
+21,play_3,pass,20:00:44,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+22,play_3,dribble,20:00:45,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+23,play_3,pass,20:00:47,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+24,play_3,pass,20:00:48,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+25,play_3,dribble,20:00:49,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+26,play_3,shot-miss,20:00:55,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,pull up jump shot,31,3,0,2
+27,play_4,defensive-rebound,20:00:57,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,0,2
+28,play_4,dribble-turnover,20:00:58,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,0,,,,0,2
+29,play_4,steal,20:01:03,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+30,play_4,pass,20:01:03,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+31,play_4,pass,20:01:04,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+32,play_4,dribble,20:01:05,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+33,play_4,pass,20:01:08,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+34,play_4,dribble,20:01:11,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+35,play_4,shot-miss,20:01:14,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,0,driving floating bank jump shot,9,2,0,2
+36,play_5,pass,20:01:15,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+37,play_5,shot-miss,20:01:17,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,jump shot,25,3,0,2
+38,play_6,foul,20:01:18,Jrue Holiday,Boston Celtics,Dallas Mavericks,1st quarter,1,,,,0,2
+39,play_6,pass,20:01:22,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+40,play_6,pass,20:01:25,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+41,play_6,dribble,20:01:29,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+42,play_6,shot-miss,20:01:34,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,27,3,0,2
+43,play_7,defensive-rebound,20:01:37,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+44,play_7,pass,20:01:38,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+45,play_7,dribble,20:01:39,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+46,play_7,pass,20:01:44,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+47,play_7,dribble,20:01:45,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+48,play_7,shot-miss,20:01:50,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,fadeaway shot,10,2,0,2
+49,play_8,defensive-rebound,20:01:51,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+50,play_8,pass,20:01:52,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+51,play_8,dribble,20:01:53,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,2
+52,play_8,shot-miss,20:02:05,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,0,step back jump shot,28,3,0,2
+53,play_9,defensive-rebound,20:02:06,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+54,play_9,pass,20:02:07,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+55,play_9,dribble,20:02:09,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+56,play_9,pass,20:02:12,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+57,play_9,pass,20:02:13,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+58,play_9,dribble,20:02:15,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+59,play_9,pass,20:02:16,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+60,play_9,dribble,20:02:17,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+61,play_9,pass,20:02:21,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+62,play_9,pass-to-assist,20:02:23,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+63,play_9,dribble,20:02:21,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,0,2
+64,play_9,shot-make,20:02:26,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,driving finger roll layup,2,2,0,4
+65,play_10,pass,20:02:28,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+66,play_10,pass,20:02:29,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+67,play_10,dribble,20:02:30,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+68,play_10,pass,20:02:34,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+69,play_10,dribble,20:02:37,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+70,play_10,pass,20:02:39,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+71,play_10,dribble,20:02:40,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+72,play_10,pass,20:02:42,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+73,play_10,dribble,20:02:44,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+74,play_10,pass-turnover,20:02:46,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,0,,,,0,4
+75,play_10,dribble,20:02:47,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+76,play_10,pass,20:02:49,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+77,play_10,shot-miss,20:02:52,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,26,3,0,4
+78,play_11,pass,20:02:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+79,play_11,pass,20:02:56,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+80,play_11,dribble,20:02:57,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+81,play_11,pass-to-assist,20:02:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,0,4
+82,play_11,shot-make,20:03:01,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,alley oop dunk,2,2,2,4
+83,play_12,pass,20:03:03,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+84,play_12,pass,20:03:04,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+85,play_12,dribble,20:03:05,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+86,play_12,pass,20:03:13,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+87,play_12,dribble,20:03:15,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+88,play_12,shot-miss,20:03:18,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,0,pull up jump shot,26,3,2,4
+89,play_13,pass,20:03:20,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,4
+90,play_13,dribble,20:03:22,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,4
+91,play_13,shot-miss,20:03:31,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,0,driving layup,11,2,2,4
+92,play_14,block,20:03:31,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+93,play_14,defensive-rebound,20:03:32,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+94,play_14,dribble,20:03:32,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+95,play_14,pass-to-assist,20:03:33,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+96,play_14,dribble,20:03:33,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,4
+97,play_14,shot-make,20:03:36,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,running layup,1,2,2,6
+98,play_15,pass,20:03:38,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+99,play_15,dribble,20:03:38,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+100,play_15,pass,20:03:40,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+101,play_15,dribble,20:03:41,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+102,play_15,shot-miss,20:03:48,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,0,driving floating jump shot,11,2,2,6
+103,play_16,defensive-rebound,20:03:51,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+104,play_16,jump ball,20:03:51,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+105,play_16,pass,20:03:51,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+106,play_16,pass,20:03:55,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+107,play_16,dribble,20:03:56,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+108,play_16,pass,20:03:57,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+109,play_16,dribble,20:03:58,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+110,play_16,pass,20:04:00,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+111,play_16,dribble,20:04:02,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+112,play_16,pass,20:04:04,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+113,play_16,dribble,20:04:05,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+114,play_16,pass,20:04:07,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+115,play_16,dribble,20:04:08,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+116,play_16,shot-miss,20:04:08,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,driving layup,8,2,2,6
+117,play_17,block,20:04:11,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+118,play_17,defensive-rebound,20:04:12,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+119,play_17,dribble,20:04:12,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+120,play_17,pass,20:04:16,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+121,play_17,dribble,20:04:17,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+122,play_17,pass,20:04:19,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+123,play_17,shot-miss,20:04:21,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,24,3,2,6
+124,play_18,offensive-rebound,20:04:22,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,6
+125,play_18,shot-miss,20:04:22,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,1st quarter,0,tip layup,1,2,2,6
+126,play_19,defensive-rebound,20:04:24,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+127,play_19,dribble,20:04:24,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+128,play_19,pass-to-assist,20:04:30,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,2,6
+129,play_19,shot-make,20:04:30,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,jump shot,26,3,2,9
+130,play_20,pass,20:04:30,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+131,play_20,dribble,20:04:31,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+132,play_20,pass,20:04:46,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+133,play_20,dribble,20:04:47,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+134,play_20,foul,20:04:48,Jaylen Brown,Boston Celtics,Dallas Mavericks,1st quarter,1,,,,2,9
+135,play_20,pass,20:04:48,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+136,play_20,pass,20:04:51,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+137,play_20,dribble,20:04:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,2,9
+138,play_20,foul,20:04:58,Al Horford,Boston Celtics,Dallas Mavericks,1st quarter,1,,,,4,9
+139,play_20,shot-make,20:04:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,pull up jump shot,7,2,4,9
+140,play_20,shot-make,20:04:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,free throw,15,1,5,9
+141,play_21,pass,20:04:58,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+142,play_21,dribble,20:05:00,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+143,play_21,pass,20:05:02,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+144,play_21,dribble,20:05:02,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+145,play_21,pass,20:05:06,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+146,play_21,dribble,20:05:06,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+147,play_21,pass,20:05:07,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+148,play_21,dribble,20:05:07,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+149,play_21,pass,20:05:08,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+150,play_21,pass,20:05:09,Al Horford,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+151,play_21,dribble,20:05:09,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,9
+152,play_21,foul,20:05:11,Kyrie Irving,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,5,9
+153,play_21,shot-make,20:05:11,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,free throw,15,1,5,9
+154,play_21,shot-make,20:05:11,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,free throw,15,1,5,11
+155,play_22,pass,20:05:11,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,5,11
+156,play_22,dribble,20:05:12,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,5,11
+157,play_22,shot-miss,20:05:26,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,0,pullup jump shot,28,3,5,11
+158,play_23,defensive-rebound,20:05:28,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,11
+159,play_23,dribble,20:05:29,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,5,11
+160,play_23,shot-make,20:05:35,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,driving floating bank jump shot,7,2,5,13
+161,play_24,pass,20:05:36,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,5,13
+162,play_24,dribble,20:05:37,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,5,13
+163,play_24,pass-to-assist,20:05:51,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,5,13
+164,play_24,shot-make,20:05:53,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,jump shot,27,3,8,13
+165,play_25,pass,20:05:55,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+166,play_25,dribble,20:05:55,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+167,play_25,pass,20:06:03,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+168,play_25,dribble,20:06:05,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+169,play_25,pass,20:06:06,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+170,play_25,dribble,20:06:09,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,8,13
+171,play_25,shot-miss,20:06:14,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,0,driving layup,1,2,8,13
+172,play_26,defensive-rebound,20:06:15,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+173,play_26,dribble,20:06:15,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+174,play_26,pass,20:06:21,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+175,play_26,pass,20:06:22,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+176,play_26,pass,20:06:27,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+177,play_26,pass,20:06:27,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+178,play_26,dribble,20:06:29,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+179,play_26,pass-to-assist,20:06:29,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,8,13
+180,play_26,shot-make,20:06:32,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,jump shot,28,3,11,13
+181,play_27,pass,20:06:34,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+182,play_27,dribble,20:06:37,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+183,play_27,pass,20:06:38,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+184,play_27,dribble,20:06:40,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+185,play_27,pass,20:06:42,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+186,play_27,dribble,20:06:44,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+187,play_27,shot-miss,20:06:51,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,0,driving layup,7,2,11,13
+188,play_28,block,20:06:51,P.J. Washington,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,11,13
+189,play_28,jump ball,20:06:52,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+190,play_28,pass-to-assist,20:06:52,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,13
+191,play_28,shot-make,20:06:57,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,jump shot,26,3,11,16
+192,play_29,pass,20:06:58,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+193,play_29,dribble,20:07:00,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+194,play_29,pass,20:07:09,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+195,play_29,pass,20:07:10,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+196,play_29,pass,20:07:11,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+197,play_29,shot-miss,20:07:13,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,27,3,11,16
+198,play_30,defensive-rebound,20:07:15,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+199,play_30,dribble,20:07:16,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+200,play_30,pass,20:07:21,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+201,play_30,dribble,20:07:22,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+202,play_30,pass,20:07:23,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+203,play_30,shot-miss,20:07:26,Kristaps Porzingis,Boston Celtics,Boston Celtics,1st quarter,0,jump shot,25,3,11,16
+204,play_31,offensive-rebound,20:07:28,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+205,play_31,pass,20:07:28,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+206,play_31,dribble,20:07:31,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,11,16
+207,play_31,shot-miss,20:07:37,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,0,turnaround fadeaway shot,7,2,11,16
+208,play_32,defensive-rebound,20:07:39,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+209,play_32,dribble,20:07:39,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+210,play_32,pass,20:07:46,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+211,play_32,dribble,20:07:48,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+212,play_32,pass,20:07:49,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+213,play_32,dribble,20:07:50,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+214,play_32,pass,20:07:51,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+215,play_32,pass,20:07:54,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+216,play_32,dribble,20:07:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+217,play_32,pass,20:07:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+218,play_32,dribble,20:07:59,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+219,play_32,pass-to-assist,20:08:02,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,11,16
+220,play_32,shot-make,20:08:03,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,1st quarter,1,alley oop dunk,1,2,13,16
+221,play_33,pass,20:08:04,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,13,16
+222,play_33,dribble,20:08:05,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,13,16
+223,play_33,pass,20:08:16,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,13,16
+224,play_33,dribble,20:08:17,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,13,16
+225,play_33,shot-miss,20:08:18,Derrick White,Boston Celtics,Boston Celtics,1st quarter,0,pullup jump shot,27,3,13,16
+226,play_34,defensive-rebound,20:08:20,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,13,16
+227,play_34,pass,20:08:21,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,13,16
+228,play_34,pass,20:08:22,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,13,16
+229,play_34,dribble,20:08:23,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,13,16
+230,play_34,shot-make,20:08:37,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,fadeaway jumpshot,19,2,15,16
+231,play_35,pass,20:08:38,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,16
+232,play_35,dribble,20:08:39,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,16
+233,play_35,pass,20:08:47,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,16
+234,play_35,dribble,20:08:51,Kristaps Porzingis,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,16
+235,play_35,foul,20:08:53,Josh Green,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,15,16
+236,play_35,shot-miss,20:08:53,Kristaps Porzingis,Boston Celtics,Boston Celtics,1st quarter,0,free throw,15,1,15,16
+237,play_35,shot-make,20:08:53,Kristaps Porzingis,Boston Celtics,Boston Celtics,1st quarter,1,free throw,15,1,15,17
+238,play_36,pass,20:08:53,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,17
+239,play_36,dribble,20:08:54,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,17
+240,play_36,shot-miss,20:09:07,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,0,pullup jump shot,17,2,15,17
+241,play_37,defensive-rebound,20:09:08,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+242,play_37,pass,20:09:10,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+243,play_37,dribble,20:09:10,Derrick White,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+244,play_37,shot-miss,20:09:21,Derrick White,Boston Celtics,Boston Celtics,1st quarter,0,driving floating jump shot,5,2,15,17
+245,play_38,defensive-rebound,20:09:22,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,15,17
+246,play_38,dribble,20:09:22,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,15,17
+247,play_38,foul,20:09:27,Dereck Lively II,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,15,17
+248,play_38,turnover,20:09:27,Dereck Lively II,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,15,17
+249,play_38,pass,20:09:29,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+250,play_38,dribble,20:09:29,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+251,play_38,shot-miss,20:09:38,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,0,jump shot,26,3,15,17
+252,play_39,offensive-rebound,20:09:40,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+253,play_39,pass,20:09:40,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+254,play_39,dribble,20:09:41,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,15,17
+255,play_39,shot-make,20:09:48,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,driving finger roll layup,1,2,15,19
+256,play_40,pass,20:09:49,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+257,play_40,dribble,20:09:50,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+258,play_40,pass,20:09:52,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+259,play_40,pass,20:09:54,Josh Green,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+260,play_40,dribble,20:09:55,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+261,play_40,pass,20:09:56,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+262,play_40,pass,20:09:57,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+263,play_40,dribble,20:10:02,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,15,19
+264,play_40,shot-make,20:10:05,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,pullup jump shot,27,3,18,19
+265,play_41,pass,20:10:07,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+266,play_41,dribble,20:10:09,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+267,play_41,pass,20:10:16,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+268,play_41,dribble,20:10:16,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+269,play_41,pass,20:10:17,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+270,play_41,dribble,20:10:18,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+271,play_41,pass-to-assist,20:10:19,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,19
+272,play_41,shot-make,20:10:21,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,cutting dunk shot,2,2,18,21
+273,play_42,pass,20:10:25,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+274,play_42,dribble,20:10:26,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+275,play_42,pass,20:10:38,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+276,play_42,pass,20:10:39,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+277,play_42,dribble,20:10:40,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+278,play_42,pass,20:10:44,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,21
+279,play_42,shot-miss,20:10:47,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,27,3,18,21
+280,play_43,defensive-rebound,20:10:48,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,21
+281,play_43,dribble,20:10:48,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,21
+282,play_43,pass-to-assist,20:10:53,Jrue Holiday,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,21
+283,play_43,shot-make,20:10:56,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,jump shot,27,3,18,24
+284,play_44,pass,20:10:57,P.J. Washington,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,18,24
+285,play_44,dribble,20:10:59,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,18,24
+286,play_44,pass-turnover,20:11:06,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,0,,,,18,24
+287,play_44,steal,20:11:06,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,24
+288,play_44,pass,20:11:06,Sam Hauser,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,24
+289,play_44,dribble,20:11:07,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,24
+290,play_44,pass-to-assist,20:11:08,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,24
+291,play_44,shot-make,20:11:10,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,running reverse layup,1,2,18,26
+292,play_45,pass,20:11:11,P.J. Washington,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,18,26
+293,play_45,pass,20:11:11,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,18,26
+294,play_45,pass,20:11:12,Luka Doncic,Dallas Mavericks,Boston Celtics,1st quarter,1,,,,18,26
+295,play_45,dribble-turnover,20:11:13,P.J. Washington,Dallas Mavericks,Boston Celtics,1st quarter,0,,,,18,26
+296,play_45,steal,20:11:18,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,26
+297,play_45,dribble,20:11:18,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,26
+298,play_45,shot-make,20:11:21,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,running layup,2,2,18,28
+299,play_46,pass,20:11:22,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+300,play_46,dribble,20:11:24,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+301,play_46,pass,20:11:31,Luka Doncic,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+302,play_46,shot-miss,20:11:31,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,1st quarter,0,jump shot,31,3,18,28
+303,play_47,defensive-rebound,20:11:33,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,28
+304,play_47,dribble,20:11:35,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,28
+305,play_47,pass,20:11:41,Jaylen Brown,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,28
+306,play_47,dribble,20:11:49,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,1,,,,18,28
+307,play_47,shot-miss,20:11:54,Jayson Tatum,Boston Celtics,Boston Celtics,1st quarter,0,step back jump shot,27,3,18,28
+308,play_48,defensive-rebound,20:11:56,P.J. Washington,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+309,play_48,pass,20:11:59,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+310,play_48,dribble,20:11:59,Dante Exum,Dallas Mavericks,Dallas Mavericks,1st quarter,1,,,,18,28
+311,play_48,pass-to-start-quarter,20:12:00,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+312,play_48,dribble,20:12:01,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+313,play_48,pass,20:12:06,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+314,play_48,dribble,20:12:06,Dante Exum,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+315,play_48,pass,20:12:14,Dante Exum,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+316,play_48,pass-to-assist,20:12:19,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+317,play_48,dribble,20:12:20,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,18,28
+318,play_48,shot-make,20:12:24,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,driving layup,3,2,20,28
+319,play_49,pass,20:12:25,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+320,play_49,dribble,20:12:26,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+321,play_49,pass,20:12:27,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+322,play_49,dribble,20:12:28,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+323,play_49,pass,20:12:36,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+324,play_49,dribble,20:12:38,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+325,play_49,pass-to-assist,20:12:43,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,20,28
+326,play_49,shot-make,20:12:45,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,jump shot,27,3,20,31
+327,play_50,pass,20:12:48,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+328,play_50,dribble,20:12:49,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+329,play_50,pass,20:12:52,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+330,play_50,dribble,20:12:53,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+331,play_50,pass,20:12:58,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+332,play_50,dribble,20:13:00,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+333,play_50,pass,20:13:04,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+334,play_50,dribble,20:13:07,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,20,31
+335,play_50,shot-make,20:13:11,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,driving floating jump shot,5,2,22,31
+336,play_51,pass,20:13:19,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,31
+337,play_51,dribble,20:13:20,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,31
+338,play_51,pass,20:13:25,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,31
+339,play_51,dribble,20:13:27,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,31
+340,play_51,pass-to-assist,20:13:34,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,31
+341,play_51,shot-make,20:13:37,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,jump shot,26,3,22,34
+342,play_52,pass,20:13:39,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+343,play_52,dribble,20:13:40,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+344,play_52,shot-miss,20:13:49,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,driving layup,4,2,22,34
+345,play_53,defensive-rebound,20:13:50,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+346,play_53,dribble,20:13:51,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+347,play_53,pass,20:13:57,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+348,play_53,dribble,20:13:59,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+349,play_53,foul,20:14:00,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,22,34
+350,play_53,pass,20:14:00,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+351,play_53,dribble,20:14:08,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+352,play_53,shot-miss,20:14:10,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,0,jump shot,26,3,22,34
+353,play_54,defensive-rebound,20:14:11,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+354,play_54,pass,20:14:11,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+355,play_54,dribble,20:14:12,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+356,play_54,pass,20:14:15,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+357,play_54,dribble,20:14:16,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+358,play_54,shot-miss,20:14:19,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,running jump shot,27,3,22,34
+359,play_55,offensive-rebound,20:14:21,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+360,play_55,pass,20:14:21,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+361,play_55,dribble,20:14:24,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+362,play_55,pass,20:14:26,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+363,play_55,pass,20:14:27,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,34
+364,play_55,shot-miss,20:14:31,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,jump shoty,26,3,22,34
+365,play_56,defensive-rebound,20:14:32,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+366,play_56,dribble,20:14:33,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+367,play_56,pass,20:14:36,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+368,play_56,dribble,20:14:36,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+369,play_56,foul,20:14:37,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,22,34
+370,play_56,pass,20:14:37,Kristaps Porzingis,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+371,play_56,pass-to-assist,20:14:43,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+372,play_56,dribble,20:14:45,Kristaps Porzingis,Boston Celtics,Boston Celtics,2nd quarter,1,,,,22,34
+373,play_56,shot-make,20:14:50,Kristaps Porzingis,Boston Celtics,Boston Celtics,2nd quarter,1,pullup jump shot,5,2,22,36
+374,play_57,pass,20:14:51,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,36
+375,play_57,dribble,20:14:51,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,36
+376,play_57,pass,20:15:01,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,36
+377,play_57,dribble,20:15:05,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,36
+378,play_57,pass-to-assist,20:15:11,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,22,36
+379,play_57,shot-make,20:15:14,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,cutting finger roll layup,3,2,24,36
+380,play_58,pass,20:15:14,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+381,play_58,dribble,20:15:15,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+382,play_58,pass,20:15:21,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+383,play_58,dribble,20:15:22,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+384,play_58,pass,20:15:27,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+385,play_58,pass,20:15:29,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+386,play_58,dribble,20:15:31,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,24,36
+387,play_58,foul,20:15:33,Kyrie Irving,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,24,36
+388,play_58,shot-make,20:15:33,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,free throw,15,1,24,37
+389,play_58,shot-make,20:15:33,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,free throw,15,1,24,38
+390,play_59,pass,20:15:33,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,24,38
+391,play_59,shot-make,20:15:33,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,pullup jump shot,27,3,27,38
+392,play_60,pass,20:15:41,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,27,38
+393,play_60,dribble,20:15:43,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,27,38
+394,play_60,shot-make,20:15:50,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,pullup jump shot,25,3,27,41
+395,play_61,pass,20:15:51,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,27,41
+396,play_61,dribble,20:15:52,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,27,41
+397,play_61,foul,20:15:57,Kristaps Porzingis,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,27,41
+398,play_61,pass,20:15:57,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,27,41
+399,play_61,pass-to-assist,20:15:59,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,27,41
+400,play_61,shot-make,20:16:04,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,jump shot,24,3,30,41
+401,play_62,pass,20:16:06,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,30,41
+402,play_62,dribble,20:16:07,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,30,41
+403,play_62,pass,20:16:15,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,30,41
+404,play_62,dribble,20:16:17,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,30,41
+405,play_62,shot-make,20:16:28,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,driving layup,3,2,30,43
+406,play_63,pass,20:16:30,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,30,43
+407,play_63,dribble,20:16:31,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,30,43
+408,play_63,foul,20:16:37,Jaylen Brown,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,30,43
+409,play_63,shot-miss,20:16:37,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,free throw,15,1,30,43
+410,play_63,shot-make,20:16:37,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,free throw,15,1,31,43
+411,play_64,pass,20:16:37,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,43
+412,play_64,dribble,20:16:38,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,43
+413,play_64,pass,20:16:38,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,43
+414,play_64,dribble,20:16:46,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,43
+415,play_64,foul,20:16:52,Maxi Kleber,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,31,43
+416,play_64,shot-make,20:16:52,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,driving layup,2,2,31,45
+417,play_64,shot-make,20:16:52,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,free throw,15,1,31,46
+418,play_65,pass,20:16:52,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+419,play_65,dribble,20:16:55,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+420,play_65,pass,20:17:00,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+421,play_65,dribble,20:17:01,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+422,play_65,foul,20:17:04,Jayson Tatum,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,31,46
+423,play_65,shot-miss,20:17:04,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,free throw,15,1,31,46
+424,play_65,shot-miss,20:17:04,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,free throw,15,1,31,46
+425,play_66,defensive-rebound,20:17:05,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,46
+426,play_66,dribble,20:17:05,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,46
+427,play_66,shot-miss,20:17:13,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,0,running layup,4,2,31,46
+428,play_67,offensive-rebound,20:17:15,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,31,46
+429,play_67,shot-miss,20:17:15,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,0,tip layup,3,2,31,46
+430,play_68,defensive-rebound,20:17:17,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+431,play_68,dribble,20:17:17,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+432,play_68,pass,20:17:27,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+433,play_68,shot-miss,20:17:28,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,jump shot,26,3,31,46
+434,play_69,offensive-rebound,20:17:29,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+435,play_69,pass,20:17:31,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+436,play_69,dribble,20:17:32,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+437,play_69,pass-to-assist,20:17:33,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,31,46
+438,play_69,shot-make,20:17:35,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,alley oop dunk,2,2,33,46
+439,play_70,pass,20:17:37,Jayson Tatum,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,33,46
+440,play_70,dribble,20:17:39,Jrue Holiday,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,33,46
+441,play_70,pass,20:17:44,Jrue Holiday,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,33,46
+442,play_70,dribble,20:17:46,Jayson Tatum,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,33,46
+443,play_70,pass,20:17:47,Jayson Tatum,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,33,46
+444,play_70,pass-turnover,20:17:52,Jrue Holiday,Boston Celtics,Dallas Mavericks,2nd quarter,0,,,,33,46
+445,play_70,pass,20:17:52,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,33,46
+446,play_70,dribble,20:17:53,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,33,46
+447,play_70,pass-to-assist,20:17:58,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,33,46
+448,play_70,shot-make,20:18:00,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,cutting dunk shot,1,2,35,46
+449,play_71,pass,20:18:02,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+450,play_71,dribble,20:18:02,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+451,play_71,pass,20:18:07,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+452,play_71,dribble,20:18:10,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+453,play_71,pass,20:18:10,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+454,play_71,dribble,20:18:12,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+455,play_71,pass,20:18:13,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+456,play_71,dribble,20:18:14,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+457,play_71,pass,20:18:16,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+458,play_71,dribble,20:18:17,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+459,play_71,pass,20:18:17,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+460,play_71,dribble,20:18:18,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+461,play_71,pass,20:18:19,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+462,play_71,shot-miss,20:18:21,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,0,jump shot,26,3,35,46
+463,play_72,offensive-rebound,20:18:23,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+464,play_72,dribble,20:18:23,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+465,play_72,pass-to-assist,20:18:23,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+466,play_72,dribble,20:18:24,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,35,46
+467,play_72,shot-make,20:18:27,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,driving layup,2,2,35,48
+468,play_73,pass,20:18:28,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+469,play_73,pass,20:18:28,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+470,play_73,dribble,20:18:28,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+471,play_73,pass,20:18:34,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+472,play_73,pass,20:18:39,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+473,play_73,dribble,20:18:43,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+474,play_73,pass-to-assist,20:18:47,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+475,play_73,dribble,20:18:47,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,35,48
+476,play_73,shot-make,20:18:50,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,driving layup,1,2,37,48
+477,play_74,pass,20:18:52,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,37,48
+478,play_74,dribble,20:18:53,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,37,48
+479,play_74,shot-miss,20:19:00,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,0,driving layup,3,2,37,48
+480,play_75,defensive-rebound,20:19:01,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,37,48
+481,play_75,pass,20:19:01,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,37,48
+482,play_75,dribble,20:19:01,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,37,48
+483,play_75,pass-to-assist,20:19:03,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,37,48
+484,play_75,shot-make,20:19:06,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,running layup,3,2,39,48
+485,play_76,pass,20:19:08,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+486,play_76,dribble,20:19:09,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+487,play_76,pass,20:19:19,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+488,play_76,dribble,20:19:21,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+489,play_76,shot-miss,20:19:24,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,0,driving layup,7,2,39,48
+490,play_77,block,20:19:24,Derrick Jones Jr.,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+491,play_77,pass,20:19:25,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+492,play_77,shot-miss,20:19:25,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,0,jump shot,25,3,39,48
+493,play_78,offensive-rebound,20:19:31,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+494,play_78,pass,20:19:31,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+495,play_78,pass,20:19:31,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+496,play_78,dribble,20:19:31,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+497,play_78,shot-miss,20:19:33,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,0,step back jump shot,25,3,39,48
+498,play_79,defensive-rebound,20:19:35,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+499,play_79,dribble,20:19:35,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+500,play_79,pass,20:19:48,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+501,play_79,out-of-bounds,20:19:50,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+502,play_79,pass,20:19:50,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+503,play_79,travelling-turnover,20:19:53,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,48
+504,play_79,pass,20:19:54,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+505,play_79,dribble,20:19:57,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+506,play_79,pass,20:20:00,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+507,play_79,dribble,20:20:01,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+508,play_79,shot-miss,20:20:06,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,0,driving finger roll layup,1,2,39,48
+509,play_80,defensive-rebound,20:20:08,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,48
+510,play_80,pass,20:20:08,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,48
+511,play_80,dribble,20:20:08,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,48
+512,play_80,shot-miss,20:20:14,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,fadeaway jumpshot,12,3,39,48
+513,play_81,defensive-rebound,20:20:15,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+514,play_81,dribble,20:20:15,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+515,play_81,pass,20:20:22,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+516,play_81,pass,20:20:23,Sam Hauser,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+517,play_81,dribble,20:20:24,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+518,play_81,pass,20:20:26,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+519,play_81,dribble,20:20:31,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,48
+520,play_81,shot-make,20:20:35,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,driving layup,3,2,39,50
+521,play_82,pass,20:20:36,Daniel Gafford,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,50
+522,play_82,dribble,20:20:37,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,50
+523,play_82,pass-turnover,20:20:49,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,0,,,,39,50
+524,play_82,pass,20:20:50,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,50
+525,play_82,dribble,20:20:53,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,50
+526,play_82,pass,20:20:54,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,50
+527,play_82,dribble,20:20:57,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,50
+528,play_82,pass-to-assist,20:21:07,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,50
+529,play_82,shot-make,20:21:09,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,cutting layup shot,1,2,39,52
+530,play_83,pass,20:21:11,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,52
+531,play_83,pass,20:21:12,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,52
+532,play_83,dribble,20:21:13,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,52
+533,play_83,pass,20:21:14,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,52
+534,play_83,dribble,20:21:15,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,39,52
+535,play_83,pass-turnover,20:21:30,P.J. Washington,Dallas Mavericks,Boston Celtics,2nd quarter,0,,,,39,52
+536,play_83,steal,20:21:30,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,52
+537,play_83,pass-to-assist,20:21:30,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,52
+538,play_83,dribble,20:21:30,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,39,52
+539,play_83,shot-make,20:21:34,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,running layup,2,2,39,54
+540,play_84,pass,20:21:36,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,54
+541,play_84,dribble,20:21:37,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,54
+542,play_84,pass,20:21:43,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,54
+543,play_84,dribble,20:21:44,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,54
+544,play_84,pass-to-assist,20:21:46,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,39,54
+545,play_84,shot-make,20:21:49,Josh Green,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,jump shot,24,3,42,54
+546,play_85,pass,20:21:50,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,54
+547,play_85,dribble,20:21:55,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,54
+548,play_85,pass,20:21:57,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,54
+549,play_85,dribble,20:21:58,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,54
+550,play_85,pass-to-assist,20:22:06,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,54
+551,play_85,shot-make,20:22:08,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,jump shot,24,3,42,57
+552,play_86,pass,20:22:08,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,57
+553,play_86,dribble,20:22:09,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,57
+554,play_86,pass,20:22:16,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,57
+555,play_86,dribble,20:22:17,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,57
+556,play_86,shot-miss,20:22:25,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,driving layup,6,2,42,57
+557,play_87,defensive-rebound,20:22:27,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,57
+558,play_87,dribble,20:22:27,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,57
+559,play_87,pass,20:22:29,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,57
+560,play_87,dribble,20:22:33,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,57
+561,play_87,pass-to-assist,20:22:37,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,42,57
+562,play_87,shot-make,20:22:40,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,jump shot,25,3,42,60
+563,play_88,pass,20:22:42,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,60
+564,play_88,dribble,20:22:44,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,42,60
+565,play_88,shot-make,20:22:57,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,driving layup,2,2,44,60
+566,play_89,pass,20:22:57,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+567,play_89,dribble,20:22:58,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+568,play_89,pass,20:23:02,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+569,play_89,dribble,20:23:08,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+570,play_89,pass,20:23:09,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+571,play_89,pass,20:23:10,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+572,play_89,turnover,20:23:11,Derrick White,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+573,play_89,steal,20:23:11,Kyrie Irving,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,44,60
+574,play_89,pass-turnover,20:23:14,Kyrie Irving,Dallas Mavericks,Boston Celtics,2nd quarter,0,,,,44,60
+575,play_89,steal,20:23:14,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+576,play_89,dribble,20:23:16,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,60
+577,play_89,foul,20:23:18,Luka Doncic,Dallas Mavericks,Boston Celtics,2nd quarter,1,,,,44,60
+578,play_89,shot-miss,20:23:18,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,0,free throw,15,1,44,60
+579,play_89,shot-make,20:23:18,Jaylen Brown,Boston Celtics,Boston Celtics,2nd quarter,1,free throw,15,1,44,61
+580,play_90,pass,20:23:19,Josh Green,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,44,61
+581,play_90,dribble,20:23:20,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,44,61
+582,play_90,pass,20:23:25,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,44,61
+583,play_90,shot-miss,20:23:26,P.J. Washington,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,jump shot,28,3,44,61
+584,play_91,defensive-rebound,20:23:29,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,61
+585,play_91,pass,20:23:30,Jrue Holiday,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,61
+586,play_91,dribble,20:23:31,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,,,,44,61
+587,play_91,shot-make,20:23:47,Jayson Tatum,Boston Celtics,Boston Celtics,2nd quarter,1,pullup jump shot,28,3,44,64
+588,play_92,pass,20:23:49,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,44,64
+589,play_92,dribble,20:23:50,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,,,,44,64
+590,play_92,foul,20:23:56,Jayson Tatum,Boston Celtics,Dallas Mavericks,2nd quarter,1,,,,44,64
+591,play_92,shot-make,20:23:56,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,1,driving floating jump shot,5,2,46,64
+592,play_92,shot-miss,20:23:56,Luka Doncic,Dallas Mavericks,Dallas Mavericks,2nd quarter,0,free throw,15,1,46,64
+593,play_93,defensive-rebound,20:23:58,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,46,64
+594,play_93,pass-to-assist,20:23:58,Al Horford,Boston Celtics,Boston Celtics,2nd quarter,1,,,,46,64
+595,play_93,dribble,20:23:58,Payton Pritchard,Boston Celtics,Boston Celtics,2nd quarter,1,,,,46,64
+596,play_93,shot-make,20:24:00,Payton Pritchard,Boston Celtics,Boston Celtics,2nd quarter,1,pullup jump shot,49,3,46,67
+597,play_94,pass-to-start-quarter,20:24:00,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+598,play_94,dribble,20:24:03,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+599,play_94,pass,20:24:03,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+600,play_94,dribble,20:24:04,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+601,play_94,pass,20:24:08,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+602,play_94,dribble,20:24:13,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+603,play_94,shot-miss,20:24:15,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,driving layup,3,2,46,67
+604,play_95,defensive-rebound,20:24:16,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+605,play_95,dribble,20:24:16,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+606,play_95,pass,20:24:18,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+607,play_95,dribble,20:24:19,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+608,play_95,pass,20:24:21,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+609,play_95,dribble,20:24:22,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,46,67
+610,play_95,shot-miss,20:24:25,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,0,turnaround fadeaway shot,12,2,46,67
+611,play_96,defensive-rebound,20:24:26,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+612,play_96,pass,20:24:26,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+613,play_96,dribble,20:24:27,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,46,67
+614,play_96,shot-make,20:24:36,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,turnaround fadeaway shot,13,2,48,67
+615,play_97,pass,20:24:38,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+616,play_97,dribble,20:24:39,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+617,play_97,pass,20:24:48,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+618,play_97,pass,20:24:49,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+619,play_97,dribble,20:24:50,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+620,play_97,pass,20:24:51,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+621,play_97,dribble,20:24:52,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+622,play_97,pass-to-assist,20:24:54,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,67
+623,play_97,shot-make,20:24:56,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,Dunk,1,2,48,69
+624,play_98,pass,20:25:00,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,69
+625,play_98,dribble,20:25:01,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,69
+626,play_98,pass,20:25:05,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,69
+627,play_98,pass,20:25:06,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,69
+628,play_98,pass,20:25:08,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,69
+629,play_98,shot-miss,20:25:12,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,jump shot,25,3,48,69
+630,play_99,defensive-rebound,20:25:13,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+631,play_99,dribble,20:25:14,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+632,play_99,pass,20:25:18,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+633,play_99,dribble,20:25:23,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+634,play_99,foul,20:25:29,Daniel Gafford,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,48,69
+635,play_99,pass,20:25:29,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+636,play_99,dribble,20:25:31,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+637,play_99,pass-to-assist,20:25:36,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+638,play_99,dribble,20:25:37,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,48,69
+639,play_99,shot-make,20:25:38,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,step back jump shot,27,3,48,72
+640,play_100,pass,20:25:41,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,72
+641,play_100,dribble,20:25:43,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,72
+642,play_100,pass,20:25:57,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,72
+643,play_100,foul,20:25:57,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,48,72
+644,play_100,pass-to-assist,20:25:58,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,48,72
+645,play_100,shot-make,20:26:00,Daniel Gafford,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,cutting layup shot,3,2,50,72
+646,play_101,pass,20:26:00,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+647,play_101,pass,20:26:02,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+648,play_101,dribble,20:26:04,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+649,play_101,pass,20:26:06,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+650,play_101,pass,20:26:07,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+651,play_101,dribble,20:26:09,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+652,play_101,pass-to-assist,20:26:12,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,50,72
+653,play_101,shot-make,20:26:14,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,jump shot,24,3,50,75
+654,play_102,pass,20:26:15,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,50,75
+655,play_102,dribble,20:26:17,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,50,75
+656,play_102,foul,20:26:23,Jaylen Brown,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,50,75
+657,play_102,pass,20:26:23,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,50,75
+658,play_102,pass,20:26:24,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,50,75
+659,play_102,dribble,20:26:25,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,50,75
+660,play_102,foul,20:26:28,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,50,75
+661,play_102,shot-make,20:26:28,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,free throw,15,1,51,75
+662,play_102,shot-make,20:26:28,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,free throw,15,1,52,75
+663,play_103,pass,20:26:28,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+664,play_103,dribble,20:26:28,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+665,play_103,pass,20:26:32,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+666,play_103,dribble,20:26:34,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+667,play_103,pass,20:26:37,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+668,play_103,dribble,20:26:38,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,75
+669,play_103,foul,20:26:41,Dereck Lively II,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,52,75
+670,play_103,shot-make,20:26:41,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,free throw,15,1,52,76
+671,play_103,shot-miss,20:26:41,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,0,free throw,15,1,52,76
+672,play_104,offensive-rebound,20:26:43,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+673,play_104,dribble,20:26:43,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+674,play_104,pass,20:26:44,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+675,play_104,pass,20:26:45,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+676,play_104,dribble,20:26:45,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+677,play_104,pass-to-assist,20:26:47,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,76
+678,play_104,shot-make,20:26:50,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,cutting layup shot,5,2,52,78
+679,play_105,pass,20:26:51,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+680,play_105,dribble,20:26:51,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+681,play_105,pass,20:26:57,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+682,play_105,pass,20:26:58,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+683,play_105,dribble,20:27:04,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+684,play_105,shot-miss,20:27:10,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,step back jump shot,25,3,52,78
+685,play_106,defensive-rebound,20:27:11,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+686,play_106,dribble,20:27:11,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+687,play_106,pass,20:27:12,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+688,play_106,dribble,20:27:13,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+689,play_106,pass,20:27:15,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+690,play_106,dribble,20:27:20,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,52,78
+691,play_106,shot-miss,20:27:27,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,0,driving finger roll layup,4,3,52,78
+692,play_107,defensive-rebound,20:27:28,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+693,play_107,pass,20:27:28,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+694,play_107,dribble,20:27:29,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+695,play_107,pass,20:27:31,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+696,play_107,dribble,20:27:34,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+697,play_107,pass,20:27:36,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+698,play_107,dribble,20:27:37,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+699,play_107,pass,20:27:39,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+700,play_107,pass,20:27:39,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+701,play_107,shot-miss,20:27:41,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,jump shot,24,3,52,78
+702,play_108,offensive-rebound,20:27:42,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,52,78
+703,play_108,shot-make,20:27:43,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,putback layup,1,2,54,78
+704,play_109,pass,20:27:45,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+705,play_109,dribble,20:27:46,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+706,play_109,pass,20:27:48,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+707,play_109,dribble,20:27:49,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+708,play_109,pass,20:27:52,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+709,play_109,shot-miss,20:27:52,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,0,jump shot,24,3,54,78
+710,play_110,defensive-rebound,20:27:54,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+711,play_110,dribble,20:27:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+712,play_110,shot-miss,20:28:06,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,fadeaway jumpshot,17,2,54,78
+713,play_111,defensive-rebound,20:28:08,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+714,play_111,dribble,20:28:08,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+715,play_111,pass,20:28:11,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+716,play_111,dribble,20:28:11,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+717,play_111,pass,20:28:15,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+718,play_111,dribble,20:28:16,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+719,play_111,pass,20:28:17,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,54,78
+720,play_111,shot-miss,20:28:20,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,0,jump shot,28,3,54,78
+721,play_112,defensive-rebound,20:28:21,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+722,play_112,pass,20:28:21,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+723,play_112,dribble,20:28:23,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+724,play_112,pass,20:28:27,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+725,play_112,dribble,20:28:28,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,54,78
+726,play_112,shot-make,20:28:34,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,turnaround fadeaway shot,11,2,56,78
+727,play_113,pass,20:28:37,Jaylen Brown,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,56,78
+728,play_113,dribble,20:28:37,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,56,78
+729,play_113,pass,20:28:44,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,56,78
+730,play_113,dribble,20:28:46,Jayson Tatum,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,56,78
+731,play_113,pass-turnover,20:28:56,Jayson Tatum,Boston Celtics,Dallas Mavericks,3rd quarter,0,,,,56,78
+732,play_113,steal,20:28:56,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+733,play_113,pass,20:28:56,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+734,play_113,pass,20:28:57,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+735,play_113,dribble,20:28:58,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+736,play_113,pass,20:29:00,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+737,play_113,dribble,20:29:02,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+738,play_113,shot-miss,20:29:05,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,step back jump shot,26,3,56,78
+739,play_114,defensive-rebound,20:29:06,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+740,play_114,dribble,20:29:08,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+741,play_114,pass,20:29:09,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+742,play_114,dribble,20:29:09,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+743,play_114,pass,20:29:14,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+744,play_114,dribble,20:29:14,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+745,play_114,pass,20:29:15,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+746,play_114,dribble,20:29:18,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+747,play_114,shot-miss,20:29:19,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,0,pullup jump shot,28,3,56,78
+748,play_115,offensive-rebound,20:29:22,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+749,play_115,dribble,20:29:22,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+750,play_115,pass,20:29:23,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+751,play_115,dribble,20:29:24,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+752,play_115,foul,20:29:29,Luka Doncic,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,56,78
+753,play_115,pass,20:29:29,Kristaps Porzingis,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+754,play_115,foul,20:29:32,Dereck Lively II,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,56,78
+755,play_115,pass,20:29:32,Kristaps Porzingis,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+756,play_115,pass,20:29:37,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+757,play_115,pass,20:29:37,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+758,play_115,pass,20:29:39,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+759,play_115,dribble,20:29:39,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+760,play_115,pass,20:29:43,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+761,play_115,shot-miss,20:29:46,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,0,jump bank shot,27,3,56,78
+762,play_116,offensive-rebound,20:29:50,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+763,play_116,dribble,20:29:50,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+764,play_116,pass,20:29:51,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+765,play_116,pass,20:29:52,Kristaps Porzingis,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+766,play_116,pass,20:29:53,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+767,play_116,dribble,20:29:55,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,56,78
+768,play_116,shot-miss,20:29:58,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,0,driving reverse layup,3,1,56,78
+769,play_117,defensive-rebound,20:30:00,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+770,play_117,pass,20:30:00,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+771,play_117,pass,20:30:00,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+772,play_117,dribble,20:30:00,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+773,play_117,pass-to-assist,20:30:02,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,56,78
+774,play_117,shot-make,20:30:05,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,running jump shot,25,3,59,78
+775,play_118,pass,20:30:12,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,59,78
+776,play_118,dribble,20:30:14,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,59,78
+777,play_118,pass,20:30:31,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,59,78
+778,play_118,pass-to-assist,20:30:32,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,59,78
+779,play_118,dribble,20:30:33,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,59,78
+780,play_118,shot-make,20:30:35,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,pullup jump shot,16,2,59,80
+781,play_119,pass,20:30:37,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,59,80
+782,play_119,dribble,20:30:39,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,59,80
+783,play_119,foul,20:30:51,Kristaps Porzingis,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,59,80
+784,play_119,shot-make,20:30:51,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,driving layup,2,2,61,80
+785,play_119,shot-make,20:30:51,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,free throw,15,1,62,80
+786,play_120,pass,20:30:51,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+787,play_120,dribble,20:30:52,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+788,play_120,pass,20:30:55,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+789,play_120,dribble,20:31:00,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+790,play_120,pass,20:31:06,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+791,play_120,shot-miss,20:31:08,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,0,cutting dunk shot,1,2,62,80
+792,play_121,block,20:31:08,Dereck Lively II,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,62,80
+793,play_121,defensive-rebound,20:31:10,Luka Doncic,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,62,80
+794,play_121,dribble-turnover,20:31:10,Luka Doncic,Dallas Mavericks,Boston Celtics,3rd quarter,0,,,,62,80
+795,play_121,steal,20:31:15,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+796,play_121,dribble,20:31:15,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,80
+797,play_121,foul,20:31:19,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,3rd quarter,1,,,,62,80
+798,play_121,shot-make,20:31:19,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,free throw,15,1,62,81
+799,play_121,shot-make,20:31:19,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,free throw,15,1,62,82
+800,play_122,pass,20:31:19,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,62,82
+801,play_122,dribble,20:31:21,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,62,82
+802,play_122,shot-miss,20:31:27,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,pullup jump shot,10,2,62,82
+803,play_123,defensive-rebound,20:31:31,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,82
+804,play_123,pass,20:31:31,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,82
+805,play_123,dribble,20:31:32,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,82
+806,play_123,pass,20:31:35,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,82
+807,play_123,dribble,20:31:40,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,62,82
+808,play_123,shot-miss,20:31:48,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,0,driving layup,3,2,62,82
+809,play_124,defensive-rebound,20:31:50,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,62,82
+810,play_124,dribble,20:31:50,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,62,82
+811,play_124,shot-make,20:31:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,running layup,3,2,64,82
+812,play_125,pass,20:31:56,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+813,play_125,dribble,20:31:57,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+814,play_125,pass,20:32:03,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+815,play_125,pass,20:32:07,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+816,play_125,pass,20:32:08,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+817,play_125,pass,20:32:10,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+818,play_125,dribble,20:32:11,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+819,play_125,pass,20:32:17,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+820,play_125,shot-miss,20:32:19,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,0,fadeaway jumpshot,17,2,64,82
+821,play_126,offensive-rebound,20:32:21,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+822,play_126,dribble,20:32:21,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+823,play_126,pass,20:32:30,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+824,play_126,dribble,20:32:31,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+825,play_126,shot-miss,20:32:35,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,0,driving floating jump shot,8,2,64,82
+826,play_127,offensive-rebound,20:32:36,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+827,play_127,shot-miss,20:32:37,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,0,putback layup,4,2,64,82
+828,play_128,offensive-rebound,20:32:38,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+829,play_128,shot-miss,20:32:39,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,0,putback layup,4,2,64,82
+830,play_129,defensive-rebound,20:32:40,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,64,82
+831,play_129,dribble,20:32:40,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,64,82
+832,play_129,pass,20:32:45,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,64,82
+833,play_129,dribble,20:32:46,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,64,82
+834,play_129,shot-miss,20:32:47,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,pullup jump shot,26,3,64,82
+835,play_130,defensive-rebound,20:32:48,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+836,play_130,pass,20:32:50,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+837,play_130,pass,20:32:50,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+838,play_130,pass,20:32:52,Derrick White,Boston Celtics,Boston Celtics,3rd quarter,1,,,,64,82
+839,play_130,shot-miss,20:32:55,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,0,running jump shot,26,3,64,82
+840,play_131,foul,20:32:57,Al Horford,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,64,82
+841,play_131,shot-make,20:32:57,Dante Exum,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,free throw,15,1,65,82
+842,play_131,shot-miss,20:32:57,Dante Exum,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,free throw,15,1,65,82
+843,play_132,defensive-rebound,20:33:00,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+844,play_132,pass,20:33:00,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+845,play_132,pass,20:33:00,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+846,play_132,dribble,20:33:00,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+847,play_132,pass,20:33:07,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+848,play_132,dribble,20:33:09,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+849,play_132,pass,20:33:11,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+850,play_132,pass,20:33:12,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+851,play_132,dribble,20:33:14,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+852,play_132,pass,20:33:17,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+853,play_132,pass,20:33:18,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+854,play_132,dribble,20:33:19,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+855,play_132,shot-miss,20:33:21,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,0,pullup jump shot,27,3,65,82
+856,play_133,defensive-rebound,20:33:23,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,82
+857,play_133,pass,20:33:24,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,82
+858,play_133,dribble,20:33:25,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,82
+859,play_133,shot-miss,20:33:33,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,pullup jump shot,29,3,65,82
+860,play_134,pass,20:33:34,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+861,play_134,pass,20:33:34,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+862,play_134,dribble,20:33:35,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+863,play_134,pass,20:33:42,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+864,play_134,dribble,20:33:45,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+865,play_134,pass-to-assist,20:33:48,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+866,play_134,dribble,20:33:48,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,82
+867,play_134,shot-make,20:33:51,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,1,driving floating jump shot,16,2,65,84
+868,play_135,pass,20:33:52,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,84
+869,play_135,dribble,20:33:54,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,84
+870,play_135,pass,20:34:01,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,84
+871,play_135,shot-miss,20:34:04,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,jump shot,25,3,65,84
+872,play_136,defensive-rebound,20:34:05,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,84
+873,play_136,dribble,20:34:05,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,84
+874,play_136,shot-make,20:34:18,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,pullup jump shot,21,2,65,86
+875,play_137,pass,20:34:19,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+876,play_137,dribble,20:34:20,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+877,play_137,pass,20:34:21,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+878,play_137,dribble,20:34:23,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+879,play_137,shot-miss,20:34:29,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,driving dunk,3,2,65,86
+880,play_138,defensive-rebound,20:34:31,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,65,86
+881,play_138,dribble,20:34:31,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,65,86
+882,play_138,pass,20:34:31,Jrue Holiday,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,65,86
+883,play_138,dribble,20:34:31,Jayson Tatum,Boston Celtics,Dallas Mavericks,3rd quarter,1,,,,65,86
+884,play_138,pass-turnover,20:34:38,Jayson Tatum,Boston Celtics,Dallas Mavericks,3rd quarter,0,,,,65,86
+885,play_138,steal,20:34:38,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+886,play_138,dribble,20:34:38,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+887,play_138,shot-miss,20:34:43,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,running layup,2,2,65,86
+888,play_139,offensive-rebound,20:34:45,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+889,play_139,dribble,20:34:45,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+890,play_139,pass,20:34:45,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+891,play_139,pass,20:34:46,Josh Green,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+892,play_139,shot-miss,20:34:48,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,0,jump shot,25,3,65,86
+893,play_140,defensive-rebound,20:34:49,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+894,play_140,dribble,20:34:50,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+895,play_140,pass,20:34:56,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+896,play_140,dribble,20:34:57,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+897,play_140,pass,20:35:07,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+898,play_140,shot-miss,20:35:10,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,0,jump shot,26,3,65,86
+899,play_141,offensive-rebound,20:35:11,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+900,play_141,dribble,20:35:12,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+901,play_141,pass,20:35:15,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+902,play_141,pass,20:35:16,Al Horford,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+903,play_141,dribble,20:35:17,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+904,play_141,pass,20:35:20,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,65,86
+905,play_141,shot-miss,20:35:21,Sam Hauser,Boston Celtics,Boston Celtics,3rd quarter,0,jump shot,24,3,65,86
+906,play_142,defensive-rebound,20:35:23,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+907,play_142,dribble,20:35:24,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+908,play_142,pass,20:35:30,P.J. Washington,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+909,play_142,dribble,20:35:32,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,,,,65,86
+910,play_142,shot-make,20:35:37,Luka Doncic,Dallas Mavericks,Dallas Mavericks,3rd quarter,1,fadeaway bankshot,7,2,67,86
+911,play_143,pass,20:35:38,Jayson Tatum,Boston Celtics,Boston Celtics,3rd quarter,1,,,,67,86
+912,play_143,pass,20:35:38,Jrue Holiday,Boston Celtics,Boston Celtics,3rd quarter,1,,,,67,86
+913,play_143,dribble,20:35:40,Jaylen Brown,Boston Celtics,Boston Celtics,3rd quarter,1,,,,67,86
+914,play_143,pass-to-start-quarter,20:36:00,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+915,play_143,dribble,20:36:02,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+916,play_143,pass,20:36:07,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+917,play_143,pass,20:36:09,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+918,play_143,dribble,20:36:10,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+919,play_143,pass,20:36:19,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+920,play_143,pass,20:36:19,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+921,play_143,dribble,20:36:19,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+922,play_143,shot-miss,20:36:21,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,0,step back jump shot,25,3,67,86
+923,play_144,defensive-rebound,20:36:23,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+924,play_144,pass,20:36:24,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+925,play_144,dribble,20:36:24,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+926,play_144,shot-miss,20:36:35,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,0,fadeaway jumpshot,16,2,67,86
+927,play_145,offensive-rebound,20:36:37,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+928,play_145,shot-miss,20:36:39,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,0,putback dunk,3,2,67,86
+929,play_146,block,20:36:39,Derrick White,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+930,play_146,defensive-rebound,20:36:41,Kristaps Porzingis,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+931,play_146,pass,20:36:41,Kristaps Porzingis,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+932,play_146,dribble,20:36:41,Derrick White,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+933,play_146,foul,20:36:48,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+934,play_146,pass,20:36:50,Kristaps Porzingis,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+935,play_146,pass,20:36:51,Jayson Tatum,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+936,play_146,dribble,20:36:51,Derrick White,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+937,play_146,out-of-bounds,20:36:54,Derrick White,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+938,play_146,pass,20:36:55,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+939,play_146,dribble,20:36:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+940,play_146,pass,20:37:06,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+941,play_146,shot-miss,20:37:09,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,0,jump shot,26,3,67,86
+942,play_147,defensive-rebound,20:37:11,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+943,play_147,dribble,20:37:13,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+944,play_147,pass,20:37:14,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+945,play_147,dribble,20:37:15,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+946,play_147,pass,20:37:19,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+947,play_147,foul,20:37:21,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,67,86
+948,play_147,pass,20:37:21,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+949,play_147,pass,20:37:23,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+950,play_147,dribble,20:37:24,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+951,play_147,pass,20:37:26,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+952,play_147,dribble,20:37:26,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+953,play_147,pass,20:37:27,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+954,play_147,dribble,20:37:28,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+955,play_147,shot-miss,20:37:30,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,0,pullup jump shot,24,3,67,86
+956,play_148,turnover-shotclock,20:37:35,Boston Celtics,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+957,play_148,pass,20:37:35,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+958,play_148,dribble,20:37:36,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+959,play_148,pass,20:37:43,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+960,play_148,dribble,20:37:44,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+961,play_148,shot-miss,20:37:49,Derrick Jones Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,0,driving floating jump shot,9,2,67,86
+962,play_149,defensive-rebound,20:37:50,Jayson Tatum,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+963,play_149,pass,20:37:51,Jayson Tatum,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+964,play_149,dribble,20:37:51,Jrue Holiday,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+965,play_149,pass,20:37:53,Jrue Holiday,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+966,play_149,dribble,20:37:56,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+967,play_149,pass,20:38:02,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+968,play_149,dribble,20:38:02,Jayson Tatum,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+969,play_149,foul,20:38:02,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+970,play_149,turnover,20:38:02,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,67,86
+971,play_149,pass,20:38:02,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+972,play_149,dribble,20:38:04,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+973,play_149,pass,20:38:11,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+974,play_149,dribble,20:38:12,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+975,play_149,pass,20:38:15,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+976,play_149,pass,20:38:16,Josh Green,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+977,play_149,shot-miss,20:38:18,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,0,jump shot,27,3,67,86
+978,play_150,offensive-rebound,20:38:22,Dallas Mavericks,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+979,play_150,pass,20:38:22,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+980,play_150,pass,20:38:27,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+981,play_150,dribble,20:38:29,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,86
+982,play_150,shot-miss,20:38:32,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,0,pullup jump shot,27,3,67,86
+983,play_151,defensive-rebound,20:38:33,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+984,play_151,dribble,20:38:35,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+985,play_151,pass,20:38:36,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+986,play_151,dribble,20:38:36,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+987,play_151,pass-to-assist,20:38:50,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,67,86
+988,play_151,shot-make,20:38:51,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,cutting dunk shot,3,2,67,88
+989,play_152,pass,20:38:52,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+990,play_152,pass,20:38:54,Josh Green,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+991,play_152,dribble,20:38:55,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+992,play_152,pass,20:38:57,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+993,play_152,dribble,20:39:01,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+994,play_152,pass,20:39:04,Dereck Lively II,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+995,play_152,dribble,20:39:05,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+996,play_152,pass,20:39:06,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+997,play_152,pass-to-assist,20:39:08,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,67,88
+998,play_152,shot-make,20:39:10,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,jump shot,28,3,70,88
+999,play_153,pass,20:39:13,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1000,play_153,dribble,20:39:14,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1001,play_153,pass,20:39:20,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1002,play_153,dribble,20:39:23,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1003,play_153,pass,20:39:28,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1004,play_153,pass,20:39:29,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1005,play_153,dribble,20:39:31,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1006,play_153,pass-to-assist,20:39:33,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,70,88
+1007,play_153,shot-make,20:39:35,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,jump shot,26,3,70,91
+1008,play_154,pass,20:39:37,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,70,91
+1009,play_154,pass,20:39:38,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,70,91
+1010,play_154,dribble,20:39:38,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,70,91
+1011,play_154,pass-to-assist,20:39:46,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,70,91
+1012,play_154,dribble,20:39:48,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,70,91
+1013,play_154,shot-make,20:39:51,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,driving finger roll layup,3,2,72,91
+1014,play_155,pass,20:39:52,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,72,91
+1015,play_155,dribble,20:39:53,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,72,91
+1016,play_155,pass,20:39:59,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,72,91
+1017,play_155,dribble,20:40:00,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,72,91
+1018,play_155,foul,20:40:08,Dereck Lively II,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,72,91
+1019,play_155,shot-make,20:40:08,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,driving layup,5,2,72,93
+1020,play_155,shot-make,20:40:08,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,72,94
+1021,play_156,pass,20:40:08,Josh Green,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,72,94
+1022,play_156,dribble,20:40:09,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,72,94
+1023,play_156,shot-make,20:40:18,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,pullup jump shot,25,3,75,94
+1024,play_157,pass,20:40:22,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,94
+1025,play_157,dribble,20:40:23,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,94
+1026,play_157,pass,20:40:27,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,94
+1027,play_157,dribble,20:40:33,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,94
+1028,play_157,shot-make,20:40:42,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,turnaround fadeaway shot,18,2,75,96
+1029,play_158,pass,20:40:44,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,75,96
+1030,play_158,pass,20:40:45,Dereck Lively II,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,75,96
+1031,play_158,dribble,20:40:46,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,75,96
+1032,play_158,pass-turnover,20:40:55,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,0,,,,75,96
+1033,play_158,steal,20:40:55,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1034,play_158,pass,20:40:55,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1035,play_158,pass,20:40:55,Kristaps Porzingis,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1036,play_158,dribble,20:40:56,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1037,play_158,pass,20:41:00,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1038,play_158,dribble,20:41:04,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1039,play_158,shot-miss,20:41:11,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,0,step back jump shot,27,3,75,96
+1040,play_159,defensive-rebound,20:41:12,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1041,play_159,dribble,20:41:13,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1042,play_159,pass,20:41:16,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1043,play_159,dribble,20:41:16,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1044,play_159,pass,20:41:17,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1045,play_159,shot-miss,20:41:20,Josh Green,Dallas Mavericks,Dallas Mavericks,4th quarter,0,running jump shot,27,3,75,96
+1046,play_160,offensive-rebound,20:41:22,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,96
+1047,play_160,shot-miss,20:41:25,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,0,jump shot,20,2,75,96
+1048,play_161,defensive-rebound,20:41:27,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1049,play_161,dribble,20:41:27,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,75,96
+1050,play_161,foul,20:41:29,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,75,96
+1051,play_161,shot-make,20:41:29,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,75,97
+1052,play_161,shot-make,20:41:29,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,75,98
+1053,play_162,pass,20:41:29,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,98
+1054,play_162,dribble,20:41:31,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,75,98
+1055,play_162,shot-make,20:41:41,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,step back jump shot,26,3,78,98
+1056,play_163,pass,20:41:46,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1057,play_163,pass,20:41:47,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1058,play_163,dribble,20:41:48,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1059,play_163,pass,20:41:50,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1060,play_163,dribble,20:41:51,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1061,play_163,shot-miss,20:42:06,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,0,pullup jump shot,29,3,78,98
+1062,play_164,pass,20:42:12,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,98
+1063,play_164,pass,20:42:13,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,98
+1064,play_164,dribble,20:42:13,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,98
+1065,play_164,shot-miss,20:42:24,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,0,step back jump shot,25,3,78,98
+1066,play_165,defensive-rebound,20:42:27,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1067,play_165,dribble,20:42:28,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1068,play_165,pass,20:42:30,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1069,play_165,dribble,20:42:31,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1070,play_165,pass,20:42:35,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1071,play_165,dribble,20:42:40,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,98
+1072,play_165,shot-make,20:42:50,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,driving layup,3,2,78,100
+1073,play_166,pass,20:42:52,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,100
+1074,play_166,dribble,20:42:53,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,100
+1075,play_166,pass,20:42:55,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,100
+1076,play_166,dribble,20:42:56,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,100
+1077,play_166,pass-turnover,20:43:00,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,0,,,,78,100
+1078,play_166,steal,20:43:02,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,100
+1079,play_166,dribble,20:43:02,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,100
+1080,play_166,pass,20:43:06,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,100
+1081,play_166,dribble,20:43:14,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,100
+1082,play_166,shot-make,20:43:21,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,driving layup,4,2,78,102
+1083,play_167,pass,20:43:21,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1084,play_167,dribble,20:43:23,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1085,play_167,pass,20:43:26,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1086,play_167,dribble,20:43:26,Kyrie Irving,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1087,play_167,pass,20:43:29,Kyrie Irving,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1088,play_167,dribble-turnover,20:43:36,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,0,,,,78,102
+1089,play_167,steal,20:43:36,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,102
+1090,play_167,dribble,20:43:36,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,102
+1091,play_167,pass,20:43:37,Al Horford,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,102
+1092,play_167,shot-miss,20:43:38,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,0,running layup,3,2,78,102
+1093,play_168,offensive-rebound,20:43:39,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,78,102
+1094,play_168,foul,20:43:40,Maxi Kleber,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,78,102
+1095,play_168,shot-make,20:43:40,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,78,103
+1096,play_168,shot-make,20:43:40,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,78,104
+1097,play_169,pass,20:43:40,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1098,play_169,pass,20:43:41,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1099,play_169,dribble,20:43:42,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1100,play_169,pass,20:43:47,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1101,play_169,pass,20:43:50,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1102,play_169,dribble,20:43:50,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1103,play_169,pass,20:43:53,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1104,play_169,pass-to-assist,20:43:54,Maxi Kleber,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1105,play_169,dribble,20:43:55,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,78,104
+1106,play_169,shot-make,20:43:58,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,driving layup,3,2,80,104
+1107,play_170,pass,20:43:59,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,80,104
+1108,play_170,pass,20:44:00,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,80,104
+1109,play_170,dribble,20:44:01,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,80,104
+1110,play_170,pass,20:44:17,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,80,104
+1111,play_170,dribble,20:44:17,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,80,104
+1112,play_170,foul,20:44:20,Tim Hardaway Jr.,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,80,104
+1113,play_170,shot-make,20:44:20,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,80,105
+1114,play_170,shot-make,20:44:20,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,free throw,15,1,80,106
+1115,play_171,pass,20:44:20,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,80,106
+1116,play_171,dribble,20:44:20,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,80,106
+1117,play_171,pass,20:44:25,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,80,106
+1118,play_171,pass,20:44:26,Tim Hardaway Jr.,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,80,106
+1119,play_171,dribble,20:44:30,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,80,106
+1120,play_171,shot-make,20:44:33,Kyrie Irving,Dallas Mavericks,Dallas Mavericks,4th quarter,1,step back jump shot,26,3,83,106
+1121,play_172,pass,20:44:36,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,83,106
+1122,play_172,dribble-turnover,20:44:38,Jrue Holiday,Boston Celtics,Dallas Mavericks,4th quarter,0,,,,83,106
+1123,play_172,steal,20:44:45,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,83,106
+1124,play_172,dribble,20:44:45,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,83,106
+1125,play_172,pass-to-assist,20:44:49,Luka Doncic,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,83,106
+1126,play_172,shot-make,20:44:50,P.J. Washington,Dallas Mavericks,Dallas Mavericks,4th quarter,1,running layup,2,2,85,106
+1127,play_173,pass,20:44:50,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1128,play_173,dribble,20:44:51,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1129,play_173,pass,20:44:59,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1130,play_173,dribble,20:45:03,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1131,play_173,pass,20:45:04,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1132,play_173,dribble,20:45:07,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1133,play_173,shot-miss,20:45:14,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,0,driving layup,4,2,85,106
+1134,play_174,defensive-rebound,20:45:15,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,85,106
+1135,play_174,dribble,20:45:15,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,85,106
+1136,play_174,pass,20:45:18,P.J. Washington,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,85,106
+1137,play_174,dribble,20:45:19,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,85,106
+1138,play_174,out-of-bounds,20:45:23,Luka Doncic,Dallas Mavericks,Boston Celtics,4th quarter,1,,,,85,106
+1139,play_174,pass,20:45:25,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1140,play_174,dribble,20:45:25,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1141,play_174,pass,20:45:29,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1142,play_174,dribble,20:45:31,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1143,play_174,shot-miss,20:45:35,Jaylen Brown,Boston Celtics,Boston Celtics,4th quarter,0,driving layup,4,2,85,106
+1144,play_175,offensive-rebound,20:45:36,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1145,play_175,dribble,20:45:39,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,85,106
+1146,play_175,shot-miss,20:45:41,Derrick White,Boston Celtics,Boston Celtics,4th quarter,0,pullup jump shot,27,3,85,106
+1147,play_176,defensive-rebound,20:45:42,Dallas Mavericks,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1148,play_176,pass,20:45:45,Dante Exum,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1149,play_176,dribble,20:45:45,A.J. Lawson,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1150,play_176,pass,20:45:50,A.J. Lawson,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1151,play_176,dribble,20:45:53,Dwight Powell,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1152,play_176,pass,20:45:53,Dwight Powell,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1153,play_176,dribble,20:45:54,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,85,106
+1154,play_176,foul,20:45:58,Al Horford,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,85,106
+1155,play_176,shot-miss,20:45:58,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,0,free throw,15,1,85,106
+1156,play_176,shot-make,20:45:58,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,free throw,15,1,86,106
+1157,play_177,pass,20:45:58,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,86,106
+1158,play_177,dribble,20:45:59,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,86,106
+1159,play_177,pass,20:46:05,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,86,106
+1160,play_177,dribble,20:46:14,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,1,,,,86,106
+1161,play_177,shot-miss,20:46:22,Jayson Tatum,Boston Celtics,Boston Celtics,4th quarter,0,step back jump shot,26,3,86,106
+1162,play_178,offensive-rebound,20:46:25,Luke Kornet,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,86,106
+1163,play_178,pass,20:46:25,Luke Kornet,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,86,106
+1164,play_178,pass,20:46:25,Jayson Tatum,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,86,106
+1165,play_178,dribble,20:46:28,Jaylen Brown,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,86,106
+1166,play_178,turnover-shotclock,20:46:39,Boston Celtics,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,86,106
+1167,play_178,pass,20:46:39,Dwight Powell,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,86,106
+1168,play_178,dribble,20:46:39,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,86,106
+1169,play_178,shot-make,20:46:51,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,step back jump shot,18,2,88,106
+1170,play_179,pass,20:46:51,Jrue Holiday,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1171,play_179,dribble,20:46:51,Derrick White,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1172,play_179,shot-miss,20:47:12,Derrick White,Boston Celtics,Boston Celtics,4th quarter,0,pullup jump shot,21,2,88,106
+1173,play_180,defensive-rebound,20:47:14,Olivier-Maxence Prosper,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1174,play_180,dribble,20:47:14,Olivier-Maxence Prosper,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1175,play_180,foul,20:47:21,Sam Hauser,Boston Celtics,Dallas Mavericks,4th quarter,1,,,,88,106
+1176,play_180,pass,20:47:22,A.J. Lawson,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1177,play_180,dribble,20:47:22,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1178,play_180,shot-miss,20:47:27,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,0,driving dunk,2,2,88,106
+1179,play_181,defensive-rebound,20:47:27,Svi Mykhailiuk,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1180,play_181,pass,20:47:28,Svi Mykhailiuk,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1181,play_181,dribble,20:47:28,Payton Pritchard,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1182,play_181,pass,20:47:36,Payton Pritchard,Boston Celtics,Boston Celtics,4th quarter,1,,,,88,106
+1183,play_181,shot-miss,20:47:38,Sam Hauser,Boston Celtics,Boston Celtics,4th quarter,0,jump shot,27,3,88,106
+1184,play_182,defensive-rebound,20:47:39,Dwight Powell,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1185,play_182,pass,20:47:40,Dwight Powell,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1186,play_182,dribble,20:47:40,Jaden Hardy,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
+1187,play_182,game-end,20:48:00,Dallas Mavericks,Dallas Mavericks,Dallas Mavericks,4th quarter,1,,,,88,106
