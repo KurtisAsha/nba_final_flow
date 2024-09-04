@@ -395,7 +395,7 @@ nba_final_g5_eventlog %>%
 
 ```
 
-As you would expect, Tatum, Dončić, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
+As you would expect, Tatum, Dončić, and Brown rank in the top 3. Irving was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
 
 #### Specialisation
 
@@ -471,7 +471,7 @@ For at least 20% of the most frequent plays, Boston moved the ball more, this is
 
 Game 5 of the NBA 2024 finals had high variance in plays, with Boston winning the game. Boston was more industrious, their star players were more effective, were quicker at getting the shot up after defensive rebounds, moved the ball quicker, and had better rotation of the ball than Dallas.
 
-Dallas really were never in the game, being thwarted whenever they mounted an attack. Dallas were unable to get Kyrie into the game, relied too much on Dončić, and were second best. 
+Dallas really were never in the game, being thwarted whenever they mounted an attack. Dallas were unable to get Irving into the game, relied too much on Dončić, and were second best. 
 
 ### Method
 
