@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
 theme_set(theme_minimal(base_family = "serif"))
 
 # Get data
-nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = TRUE) %>% 
+nba_2024_g5_pm_data <- read_csv("./input/nba-final-2024-game-5.csv", col_names = TRUE) %>% 
  mutate(
   resource_id = case_when(
    resource_id == "Luka Doncic" ~ "Luka_Dončić", 
