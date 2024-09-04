@@ -12,9 +12,9 @@ output:
 
 ## Project Introduction 👋🏽
 
-Inspired by @PmInspiration, this blog will use R to explore process mining on a subject I'm fond of - basketball. I've played basketball all my life, although my failing left knee means I play infrequently in my older age.
+Inspired by @PmInspiration, this analysis will use R to explore process mining on a subject I'm fond of - basketball. I've played basketball all my life, although my failing left knee means I play infrequently in my older age.
 
-I'll be analysing game 5 of the 2024 NBA final between Luka's Dallas Mavericks and Jayson's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
+I'll be analysing game 5 of the 2024 NBA final between Dončić's Dallas Mavericks and Tatum's Boston Celtics. Well done Celtics 🍀, who last won a championship 16 years ago. I'll avoid findings which could just as easily be found in a games summary statistics and focus on what unique insights process mining provides. Let's start with the data.
 
 ```{r setup, include=FALSE}
 
@@ -36,9 +36,8 @@ nba_2024_g5_pm_data <- read_csv("./Data/nba-final-2024-game-5.csv", col_names = 
   resource_id = case_when(
    resource_id == "Luka Doncic" ~ "Luka_Dončić", 
    resource_id == "Kristaps Porzingis" ~ "Kristaps_Porziņģis",
-   TRUE ~ str_replace_all(resource_id, " ", "_")
+   TRUE ~ resource_id)
   )
- )
 
 ```
 
@@ -52,7 +51,7 @@ A few self imposed rules during data creation:
 
 -   To define the process under analysis, one end to end run or "case" ends with a shot
 
--   At free throws the case ends at the last free throw attempt
+-   For free throws the case ends at the last free throw attempt
 
 -   Unless specified from the nba website I've timestamped at the beginning of each activity
 
@@ -61,6 +60,8 @@ A few self imposed rules during data creation:
 An eventlog in process mining is a structured collection of recorded events that represent the execution of activities usually within a business process, in this context, an NBA game.
 
 It typically contains information such as the event type, timestamp, case identifier, and other relevant attributes, serving as the primary input for process mining techniques to discover, monitor, and improve actual processes.
+
+Once an event log object has been created, the object can be used across multiple analyses.
 
 ```{r create_eventlog}
 
@@ -78,7 +79,7 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
 
 ```
 
-## Analysis {.tabset}
+## Analyses {.tabset}
 
 ### Control-Flow
 
@@ -86,11 +87,11 @@ Control flow in process mining refers to the sequence and decision points of act
 
 #### Traces
 
-Traces are the distinct processes of an eventlog, in this context, a play which starts post shot attempt until another shot attempt.
+Traces are the distinct processes of an eventlog, in this context, a play which starts at the beginning of a quarter of post shot attempt until another shot attempt.
 
 ##### Coverage
 
-Reviewing the trace coverage to cases let's us see if a team regularly uses the same plays throughout the case or if plays are infrequent. The plots display relative frequencies above 0.02 to remove the plot tail and make for better viewing. 
+Reviewing the trace coverage relative to cases let's us see if the same plays are used throughout or if plays are variable. The plots display relative frequencies above 0.02 to remove the plot tail and make for better viewing. 
 
 ```{r trace_coverage}
 
@@ -144,11 +145,11 @@ united_log_trace <- nba_final_g5_eventlog %>%
 
 As the left plot displays a max relative frequency of 0.03, the plays of this game varied considerably. Even when grouping activities e.g. dribble and dribble-turnover both set as dribble, a max relative frequency of 0.06 as shown in the right plot.
 
-With more detailed data around off the ball movements and data on many more games, perhaps you could use trace coverage analysis to: - See if what looks seemingly like a collect of passes and dribbles is a drawn up play which would in theory increase the relative frequency - Compare across teams and games to see if this metric shares patterns with tradition metrics i.e. win/loss, plus/minus etc
+With more detailed data around off the ball movements and data on many more games, perhaps you could use trace coverage analysis to: - Indicate if systematic plays are used, shown by an increase in the relative frequency - Compare across teams and games to see if this metric shares patterns with tradition metrics i.e. win/loss, plus/minus etc
 
 ##### Team Trace Length
 
-Reviewing the trace sizes for each team.
+Reviewing the trace sizes for each team i.e. The number of activities used until a shot attempt.
 
 ```{r trace_length}
 
@@ -252,7 +253,7 @@ nba_final_g5_eventlog %>%
 
 Across the game \~70% of all passes were followed by a dribble whilst \~20% of the time it was followed by another pass. Additional data and further analysis could shed light on, if these figures typified finals or playing styles of NBA teams.
 
-\~55% of the time a defensive rebound was followed by a dribble, and \~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had distances you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break or at the very least avoid a 8 second violation.
+\~55% of the time a defensive rebound was followed by a dribble, and \~38% a pass. Your taught to grab the rebound and look for the outlet (at least in the United Kingdom) yet in this game the dribble was preferred. If you had player positions you may look to investigate if a lack of outlet options was the reason or perhaps the rebound was caught closer to the 3pt line than under the rim so it made more sense to move the ball up the court for a fast break.
 
 ### Performance
 
@@ -263,36 +264,39 @@ Performance analysis typically involves metrics such as time to complete activit
 This analysis is limited by the time stamps collected. If I had start and end times of each activity, more granular analysis could be performed. As it stands only total time across process is available, also know as throughput time.
 
 ```{r throughput}
-suppressWarnings(
-throughput_make_plot <- nba_final_g5_eventlog %>% 
- group_by(teams_play) %>%
- filter_activity_presence("shot-make", method = "none") %>% 
- throughput_time("log", units = "secs") %>%
- plot() + 
- theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
- geom_jitter(alpha = 0.7, size = 2) +
- geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-              colour = "#000000") +
- stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
- scale_y_continuous(limits = c(0, 45)) +
- labs(title = "Teams Traces by Shot Make"))
+
+suppressMessages(
+ throughput_make_plot <- nba_final_g5_eventlog %>% 
+  group_by(teams_play) %>%
+  filter_activity_presence("shot-make", method = "none") %>% 
+  throughput_time("log", units = "secs") %>%
+  plot() + 
+  theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+  geom_jitter(alpha = 0.7, size = 2, ) +
+  geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+               colour = "#000000") +
+  stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+  scale_y_continuous(limits = c(-5, 45)) +
+  labs(title = "Teams Traces by Shot Make"))
+
+suppressMessages(
+ throughput_miss_plot <- nba_final_g5_eventlog %>% 
+  group_by(teams_play) %>%
+  filter_activity_presence("shot-miss", method = "none") %>% 
+  throughput_time("log", units = "secs") %>%
+  plot() +
+  theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
+  geom_jitter(alpha = 0.7, size = 2) +
+  geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
+               colour = "#000000") +
+  stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
+  scale_y_continuous(limits = c(-5, 45)) +
+  labs(title = "Teams Traces by Shot Miss"))
 
 suppressWarnings(
-throughput_miss_plot <- nba_final_g5_eventlog %>% 
- group_by(teams_play) %>%
- filter_activity_presence("shot-miss", method = "none") %>% 
- throughput_time("log", units = "secs") %>%
- plot() +
- theme(strip.background = element_rect(fill = viridis::viridis(1, direction = 1))) +
- geom_jitter(alpha = 0.7, size = 2) +
- geom_boxplot(fill = viridis::viridis(1, alpha = 0.6, direction = -1), 
-              colour = "#000000") +
- stat_boxplot(geom = "errorbar", linetype = "dashed", width = 0.1) +
- scale_y_continuous(limits = c(0, 45)) +
- labs(title = "Teams Traces by Shot Miss"))
-
-(throughput_make_plot + throughput_miss_plot) +
- plot_layout(axes = "collect")
+ (throughput_make_plot + throughput_miss_plot) +
+  plot_layout(axes = "collect")
+)
 
 ```
 
@@ -334,9 +338,9 @@ nba_final_g5_eventlog %>%
 
 A few noteworthy insights:
 
--   Boston were more industrious than Dallas. Having completed more passes, dribbles, rebounds, blocks etc
+-   Boston was more industrious than Dallas. Having completed more passes, dribbles, rebounds, blocks etc
 
--   Boston were 1 second quicker on average to make a shot attempt after a defensive rebound.
+-   Boston was 1 second quicker on average to make a shot attempt after a defensive rebound.
 
 -   Both teams passed the ball with similar average times: Boston with 1.2 seconds and Dallas 1.51 seconds, for passes not leading to an assist. Boston 2.31 seconds and Dallas 2.5 seconds for passes leading to an assist. In both cases Boston were on average quicker and sharper in moving the ball.
 
@@ -347,22 +351,24 @@ Referenced in [@bupaverse_spectrum](https://bupaverse.github.io/docs/performance
 ```{r spectra}
 
 suppressMessages(
-nba_final_g5_eventlog %>% 
- ps_detailed(segment_coverage = 0.15, classification = "teams_play") + 
- scale_colour_viridis_d()
+ nba_final_g5_eventlog %>%
+  ps_detailed(segment_coverage = 0.15, classification = "teams_play") +
+  scale_colour_viridis_d(name = "Team Plays") +
+  theme(
+   strip.background = element_rect(fill = viridis::viridis(1, direction = 1)),
+   strip.text = element_text(colour = "#ffffff")
+  )
 )
 
 ```
 
-I've opted for 15% coverage of plays (or cases) which contain the activity pairs as most would be sparse and beyond evaluating.
-
-In line with the taxonomy, this event has generally 2 elementary patterns for the 15% coverage:
+I've opted for 15% coverage of plays (or cases) as most would be sparse and beyond evaluating. In line with the taxonomy, this event has generally 2 elementary patterns:
 
 -   For dribble to pass and vice versa: The pattern follows a **single segment** with **globally occurring** instances, with **regular repetitions**, and a **continuous** workload across the course of the event, the full 45 mins.
 
--   For the rest of the pairwise segments had a similar taxonomy with a **sparse** workload.
+-   The rest of the pairwise segments had a similar taxonomy with a **sparse** workload.
 
-Interesting analysis when applied to administrative data as is the case for @inproceedings. However, applied to this dataset offers little more. If this dataset included off the ball movement and/or multiple games, perhaps analysis of performance spectra would be more fruitful.
+Interesting analysis when applied to administrative data as is the case for @inproceedings. However offers little when applied to this dataset. If this dataset included off the ball movement and/or multiple games, perhaps analysis of performance spectra would be more fruitful.
 
 ### Organisational
 
@@ -370,14 +376,14 @@ Organisational analysis refers to the examination of the social and organisation
 
 #### Resource Industry
 
-Looking at the top 10 industrious players, the players with higher frequency of activities. This is were you would expect to see your stars.
+Looking at the top 10 industrious players, the players with higher frequency of activities. You would expect to see your star players at the top.
 
 ```{r industry}
 
 suppressMessages(
 nba_final_g5_eventlog %>% 
  resource_frequency(level = "resource") %>%
- head(10) %>% 
+ head(10) %>%
  plot() +
  theme(legend.position = "none") +
  scale_fill_viridis("Frequency",
@@ -389,7 +395,7 @@ nba_final_g5_eventlog %>%
 
 ```
 
-As you would expect, Tatum, Doncic, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
+As you would expect, Tatum, Dončić, and Brown rank in the top 3. Kyrie was not as involved as Dallas would have liked. Boston hold 4 of the 5 top spots, they certainly brought the game to Dallas.
 
 #### Specialisation
 
@@ -409,17 +415,17 @@ nba_final_g5_eventlog %>%
 
 ```
 
-One game doesn't make a specialist but for the purposes of exploration let's see who was a one-game specialist, who excels at a type of activity. Note, I've removed any activities that happended once plot dimensions and make it easy viewing.
+One game doesn't make a specialist but for the purposes of exploration let's see who was a one-game specialist, who excels at a type of activity. Note, I've removed any activities that happened only once to reduce dimensions and make it easy viewing.
 
 A few noteworthy insights
 
 -   There are more Dallas players than Boston, the specialisation of activities was spread wider for Dallas.
 
--   Luka held the pass master title for Dallas and was certainly his teams passing specialist whilst Boston shared that specialisation across 4 players.
+-   Dončić held the pass master title for Dallas and was certainly his teams passing specialist whilst Boston shared that specialisation across 4 players.
 
--   Luka specialised in defensive rebound for his team as well as passing, were as Boston shared this responsibility across 4 players.
+-   Dončić specialised in defensive rebounds for his team as well as passing, were as Boston shared this responsibility across 4 players.
 
-Although there were more Dallas specialists, Luka was the main specialist in passing, and defensive rebounded comparative to his team whilst Boston often had several specialists in any given activity. This would have hindered Dallas when Luka was subbed and benefited Boston during bench rotation.
+Although there were more Dallas specialists, Dončić was the main specialist in passing, and defensive rebounding comparative to his team whilst Boston often had several specialists in any given activity. This would have hindered Dallas when Dončić was subbed and benefited Boston during bench rotation.
 
 #### Handover work
 
@@ -432,6 +438,7 @@ In the following resource maps, I'll be looking at the 20% most frequent plays o
 ```{r handover_work_boston}
 
 nba_final_g5_eventlog %>%
+ mutate(resource_id = if_else(resource_id == "Jaylen Brown", "J. Brown", resource_id)) %>% 
  filter(teams_play == "Boston Celtics") %>% 
  filter_trace_frequency(percentage = 0.2) %>% 
  resource_map()
@@ -453,7 +460,7 @@ nba_final_g5_eventlog %>%
 
 Comparative to Boston, Dallas rotated the basketball less. The highest handover score between players being 3. 
 
-Shows for at least 20% of the most frequent plays, Boston moved the ball more, this is almost always a good sign in basketball, it often equates to:
+For at least 20% of the most frequent plays, Boston moved the ball more, this is almost always a good sign in basketball, it often equates to:
 -   Improved player engagement
 -   Players better attuned to game tempo
 -   Players warm up quicker, essential for a sport which has constant substitutions
@@ -461,31 +468,18 @@ Shows for at least 20% of the most frequent plays, Boston moved the ball more, t
 ## Conclusion
 
 ### Game
-- Game had little variety in plays
-- Dallas was stopped in trying to build a momement
-- Dallas's plays were quicker than that of Boston, due to Dallas pushing to close lead or Boston slowing down the game
-- Boston were more industrious
-- Boston were quicker at shot attempts post defensive rebounds
-- Boston were quicker at passing the ball
-- Boston spread activities across the team comparative to Dallas
-- Jayson Tatum was passed to most (9) by Derrick White but only by 1 more pass. Followed by Jrue Holiday passing to Derrick White (8)
-- 
+
+Game 5 of the NBA 2024 finals had high variance in plays, with Boston winning the game. Boston was more industrious, their star players were more effective, were quicker at getting the shot up after defensive rebounds, moved the ball quicker, and had better rotation of the ball than Dallas.
+
+Dallas really were never in the game, being thwarted whenever they mounted an attack. Dallas were unable to get Kyrie into the game, relied too much on Dončić, and were second best. 
 
 ### Method
 
+Process mining applied to basketball has shown clear and easily digestible insights into the behaviours of both teams. That being said there is no open dataset well fitted towards this analysis for public use. I had to heavily enrich traditional play-by-play data. This time resource intensive approach, albeit as a personal project, means I will unlikely gather more data despite the analysis benefitting from it.
 
+Further analysis into evasion sports like basketabll could look into including off the ball activity for process mining analysis, in this vein, perhaps individual sports would prove easier requiring less data to generate insight. Either way, the automating of data collection specific and open for the purpose of process mining would spearhead this type of analysis.  
 
-### Improvements
-
-- Process mining for an evasion sport like basketball would surely benefit from process data for off the ball activity. Perhaps individual sports would prove a better prospect requiring less data to generate insight.
-
-- The automating of data collection
-
-- Have all 5 games in the data set, including season pbp data to boot
-
-- Have included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock
-
-
+Specific to this case, having included, as an activity, when players don't move with the ball. This would have been interesting to delve into. I suspect you would see the time Celtics held the ball increase in quarter 4 as they attempt to run the clock.
 
 ## Acknowledgements
 
