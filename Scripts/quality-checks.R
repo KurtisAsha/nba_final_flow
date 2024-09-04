@@ -9,4 +9,3 @@ nba_2024_g5_pm_data %>%
  count(resource_id, sort = TRUE, name = "assists")
 
 # Used in YAML to generate references before copy and pasting to fit with Kaggle
-# bibliography: references.bib
