@@ -1,13 +1,14 @@
 ---
-title: "NBA 2024 Final Process Mining"
+title: "NBA Final 2024 Process Mining"
 author: "Author: Kurtis Smith"
-date: "Published Date: 2024-09-04"
+date: "Published Date: 2024-09-11"
 bibliography: references.bib
 output: 
  html_document:
   fig_width: 10
   fig_height: 6
   theme: journal
+  keep_md: yes
 ---
 
 ## Project Introduction 👋🏽
@@ -27,7 +28,11 @@ library(DT)
 library(psmineR)
 
 # Global settings
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
 theme_set(theme_minimal(base_family = 'serif'))
 
 # Get data
@@ -45,7 +50,7 @@ nba_2024_g5_pm_data <- read_csv('./input/nba-final-2024-game-5.csv', col_names =
 
 The data collation was a manual effort, a labour of love. After watching game 5 of the 2024 NBA finals I painstakingly noted down each activity along with the timestamp.
 
-To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All){.uri} matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All){.uri}.
+To add assurance to this data set I checked each activity available on [@nba.com/play-by-play](https://www.nba.com/game/dal-vs-bos-0042300405/play-by-play?period=All) matched on timestamp and cross checked the summary player stats against [@nba.com/box-score](https://www.nba.com/game/dal-vs-bos-0042300405/box-score?period=All).
 
 A few self imposed rules during data creation:
 
@@ -54,6 +59,8 @@ A few self imposed rules during data creation:
 -   For free throws the case ends at the last free throw attempt
 
 -   Unless specified from the nba website I have timestamped at the beginning of each activity
+
+**Data is available on [Kaggle](https://www.kaggle.com/datasets/kurtissmith/nba-final-game-5-process-mining) or [Github](https://github.com/KurtisAsha/klog/blob/main/content/blog/nba_final_flow_2024/input/nba-final-2024-game-5.csv)**
 
 ## Create Eventlog
 
@@ -79,7 +86,7 @@ nba_final_g5_eventlog <-  nba_2024_g5_pm_data %>%
 
 ```
 
-## Analyses {.tabset}
+## Analyses
 
 ### Control-Flow
 
@@ -95,7 +102,6 @@ Reviewing the trace coverage relative to cases let us us see if the same plays a
 
 ```{r trace_coverage}
 
-suppressMessages(
 log_trace <- nba_final_g5_eventlog %>%
  trace_coverage('trace') %>%
  filter(relative > 0.02) %>%
@@ -109,9 +115,8 @@ log_trace <- nba_final_g5_eventlog %>%
  scale_x_continuous(breaks = seq(0, 1, 0.2)) +
  labs(title = 'Play variance') +
  ylab('')
-)
 
-suppressMessages(
+
 united_log_trace <- nba_final_g5_eventlog %>%
  act_unite(
   pass = c(
@@ -136,7 +141,6 @@ united_log_trace <- nba_final_g5_eventlog %>%
  scale_x_continuous(breaks = seq(0, 1, 0.2)) +
  labs(title = 'Play variance with unified activities') +
  ylab('')
-)
 
  (log_trace + united_log_trace) +
  plot_layout(axes = 'collect')
@@ -241,13 +245,12 @@ Reviewing the activity process matrix allows for investigation into antecedent a
 
 ```{r precedence}
 
-suppressMessages(
 nba_final_g5_eventlog %>%
  process_matrix(type = frequency('relative-antecedent')) %>% 
  plot() +
  theme(legend.position = 'top') +
  scale_fill_viridis(option = 'D', name = 'Relative Antecedence', direction = -1)
-)
+
 
 ```
 
@@ -265,8 +268,7 @@ This analysis is limited by the time stamps collected. If I had start and end ti
 
 ```{r throughput}
 
-suppressMessages(
- throughput_make_plot <- nba_final_g5_eventlog %>% 
+throughput_make_plot <- nba_final_g5_eventlog %>% 
   group_by(teams_play) %>%
   filter_activity_presence('shot-make', method = 'none') %>% 
   throughput_time('log', units = 'secs') %>%
@@ -277,10 +279,9 @@ suppressMessages(
                colour = '#000000') +
   stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
   scale_y_continuous(limits = c(-5, 45)) +
-  labs(title = 'Teams Traces by Shot Make'))
+  labs(title = 'Teams Traces by Shot Make')
 
-suppressMessages(
- throughput_miss_plot <- nba_final_g5_eventlog %>% 
+throughput_miss_plot <- nba_final_g5_eventlog %>% 
   group_by(teams_play) %>%
   filter_activity_presence('shot-miss', method = 'none') %>% 
   throughput_time('log', units = 'secs') %>%
@@ -291,12 +292,10 @@ suppressMessages(
                colour = '#000000') +
   stat_boxplot(geom = 'errorbar', linetype = 'dashed', width = 0.1) +
   scale_y_continuous(limits = c(-5, 45)) +
-  labs(title = 'Teams Traces by Shot Miss'))
+  labs(title = 'Teams Traces by Shot Miss')
 
-suppressWarnings(
  (throughput_make_plot + throughput_miss_plot) +
   plot_layout(axes = 'collect')
-)
 
 ```
 
@@ -346,19 +345,18 @@ A few noteworthy insights:
 
 #### Spectra
 
-Referenced in [@bupaverse_spectrum](https://bupaverse.github.io/docs/performance_spectrum.html){.uri}, @inproceedings provides another avenue to analyse performance. What the authors term 'performance spectra' defined as 'The Performance Spectrum is a fully detailed data structure and visualization of all cases over all segments over time' provides a taxonomy of performance patterns.
+Referenced in [@bupaverse_spectrum](https://bupaverse.github.io/docs/performance_spectrum.html), @inproceedings provides another avenue to analyse performance. What the authors term 'performance spectra' defined as 'The Performance Spectrum is a fully detailed data structure and visualization of all cases over all segments over time' provides a taxonomy of performance patterns.
 
 ```{r spectra}
 
-suppressMessages(
- nba_final_g5_eventlog %>%
+nba_final_g5_eventlog %>%
   ps_detailed(segment_coverage = 0.15, classification = 'teams_play') +
   scale_colour_viridis_d(name = 'Team Plays') +
   theme(
    strip.background = element_rect(fill = viridis::viridis(1, direction = 1)),
-   strip.text = element_text(colour = '#ffffff')
+   strip.text = element_text(colour = '#ffffff'),
+   legend.position = "top"
   )
-)
 
 ```
 
@@ -380,7 +378,6 @@ Looking at the top 10 industrious players, the players with higher frequency of 
 
 ```{r industry}
 
-suppressMessages(
 nba_final_g5_eventlog %>% 
  resource_frequency(level = 'resource') %>%
  head(10) %>%
@@ -391,7 +388,6 @@ nba_final_g5_eventlog %>%
                     direction = -1) +
  labs(title = 'Player Industriousness') +
  xlab('')
-)
 
 ```
 
@@ -401,7 +397,6 @@ As you would expect, Tatum, Dončić, and Brown rank in the top 3. Irving was no
 
 ```{r specialisation}
 
-suppressMessages(
 nba_final_g5_eventlog %>% 
  group_by(player_team) %>% 
  resource_frequency(level = 'resource-activity') %>%
@@ -411,7 +406,6 @@ nba_final_g5_eventlog %>%
  theme(legend.position = 'top') +
  scale_fill_viridis(option = 'D', name = 'Relative Antecedence', direction = -1) +
  ylab('')
-)
 
 ```
 
@@ -438,9 +432,10 @@ In the following resource maps, I will be looking at the 20% most frequent plays
 ```{r handover_work_boston}
 
 nba_final_g5_eventlog %>%
- mutate(resource_id = if_else(resource_id == 'Jaylen Brown', 'J. Brown', resource_id)) %>% 
- filter(teams_play == 'Boston Celtics') %>% 
- filter_trace_frequency(percentage = 0.2) %>% 
+ mutate(resource_id = if_else(
+  resource_id == 'Jaylen Brown', 'J. Brown', resource_id)) %>%
+ filter(teams_play == 'Boston Celtics') %>%
+ filter_trace_frequency(percentage = 0.2) %>%
  resource_map()
  
 ```
